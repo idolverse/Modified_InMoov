@@ -1,0 +1,4 @@
+Invoking command in '/home/guyi/ros2_ws/build/inmoov_description': CONDA_PROMPT_MODIFIER=(base) /usr/local/bin/cmake --build /home/guyi/ros2_ws/build/inmoov_description -- -j16 -l16
+Invoked command in '/home/guyi/ros2_ws/build/inmoov_description' returned '0': CONDA_PROMPT_MODIFIER=(base) /usr/local/bin/cmake --build /home/guyi/ros2_ws/build/inmoov_description -- -j16 -l16
+Invoking command in '/home/guyi/ros2_ws/build/inmoov_description': CONDA_PROMPT_MODIFIER=(base) /usr/local/bin/cmake --install /home/guyi/ros2_ws/build/inmoov_description
+Invoked command in '/home/guyi/ros2_ws/build/inmoov_description' returned '0': CONDA_PROMPT_MODIFIER=(base) /usr/local/bin/cmake --install /home/guyi/ros2_ws/build/inmoov_description

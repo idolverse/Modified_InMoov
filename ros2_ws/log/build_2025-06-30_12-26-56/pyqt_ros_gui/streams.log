@@ -1,0 +1,80 @@
+[0.426s] Invoking command in '/home/guyi/ros2_ws/src/pyqt_ros_gui': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/guyi/ros2_ws/build/pyqt_ros_gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/guyi/ros2_ws/install/pyqt_ros_gui/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pyqt_ros_gui build --build-base /home/guyi/ros2_ws/build/pyqt_ros_gui/build install --record /home/guyi/ros2_ws/build/pyqt_ros_gui/install.log --single-version-externally-managed install_data
+[0.554s] running egg_info
+[0.554s] creating ../../build/pyqt_ros_gui/pyqt_ros_gui.egg-info
+[0.554s] writing ../../build/pyqt_ros_gui/pyqt_ros_gui.egg-info/PKG-INFO
+[0.554s] writing dependency_links to ../../build/pyqt_ros_gui/pyqt_ros_gui.egg-info/dependency_links.txt
+[0.554s] writing entry points to ../../build/pyqt_ros_gui/pyqt_ros_gui.egg-info/entry_points.txt
+[0.554s] writing requirements to ../../build/pyqt_ros_gui/pyqt_ros_gui.egg-info/requires.txt
+[0.554s] writing top-level names to ../../build/pyqt_ros_gui/pyqt_ros_gui.egg-info/top_level.txt
+[0.555s] writing manifest file '../../build/pyqt_ros_gui/pyqt_ros_gui.egg-info/SOURCES.txt'
+[0.556s] reading manifest file '../../build/pyqt_ros_gui/pyqt_ros_gui.egg-info/SOURCES.txt'
+[0.557s] writing manifest file '../../build/pyqt_ros_gui/pyqt_ros_gui.egg-info/SOURCES.txt'
+[0.557s] running build
+[0.557s] running build_py
+[0.557s] creating /home/guyi/ros2_ws/build/pyqt_ros_gui/build
+[0.557s] creating /home/guyi/ros2_ws/build/pyqt_ros_gui/build/lib
+[0.557s] creating /home/guyi/ros2_ws/build/pyqt_ros_gui/build/lib/pyqt_ros_gui
+[0.557s] copying pyqt_ros_gui/__init__.py -> /home/guyi/ros2_ws/build/pyqt_ros_gui/build/lib/pyqt_ros_gui
+[0.557s] copying pyqt_ros_gui/main.py -> /home/guyi/ros2_ws/build/pyqt_ros_gui/build/lib/pyqt_ros_gui
+[0.557s] creating /home/guyi/ros2_ws/build/pyqt_ros_gui/build/lib/pyqt_ros_gui/logic
+[0.557s] copying pyqt_ros_gui/logic/utilities.py -> /home/guyi/ros2_ws/build/pyqt_ros_gui/build/lib/pyqt_ros_gui/logic
+[0.557s] copying pyqt_ros_gui/logic/__init__.py -> /home/guyi/ros2_ws/build/pyqt_ros_gui/build/lib/pyqt_ros_gui/logic
+[0.557s] copying pyqt_ros_gui/logic/joint_sender.py -> /home/guyi/ros2_ws/build/pyqt_ros_gui/build/lib/pyqt_ros_gui/logic
+[0.558s] creating /home/guyi/ros2_ws/build/pyqt_ros_gui/build/lib/pyqt_ros_gui/node
+[0.558s] copying pyqt_ros_gui/node/__init__.py -> /home/guyi/ros2_ws/build/pyqt_ros_gui/build/lib/pyqt_ros_gui/node
+[0.558s] copying pyqt_ros_gui/node/joint_node_receive.py -> /home/guyi/ros2_ws/build/pyqt_ros_gui/build/lib/pyqt_ros_gui/node
+[0.558s] copying pyqt_ros_gui/node/joint_node_publish.py -> /home/guyi/ros2_ws/build/pyqt_ros_gui/build/lib/pyqt_ros_gui/node
+[0.558s] creating /home/guyi/ros2_ws/build/pyqt_ros_gui/build/lib/pyqt_ros_gui/ui
+[0.558s] copying pyqt_ros_gui/ui/__init__.py -> /home/guyi/ros2_ws/build/pyqt_ros_gui/build/lib/pyqt_ros_gui/ui
+[0.558s] copying pyqt_ros_gui/ui/joint_gui.py -> /home/guyi/ros2_ws/build/pyqt_ros_gui/build/lib/pyqt_ros_gui/ui
+[0.558s] creating /home/guyi/ros2_ws/build/pyqt_ros_gui/build/lib/pyqt_ros_gui/actions
+[0.558s] copying pyqt_ros_gui/actions/__init__.py -> /home/guyi/ros2_ws/build/pyqt_ros_gui/build/lib/pyqt_ros_gui/actions
+[0.558s] copying pyqt_ros_gui/actions/actions.json -> /home/guyi/ros2_ws/build/pyqt_ros_gui/build/lib/pyqt_ros_gui/actions
+[0.558s] running install
+[0.558s] running install_lib
+[0.559s] creating /home/guyi/ros2_ws/install/pyqt_ros_gui/lib/python3.10/site-packages/pyqt_ros_gui
+[0.559s] creating /home/guyi/ros2_ws/install/pyqt_ros_gui/lib/python3.10/site-packages/pyqt_ros_gui/logic
+[0.559s] copying /home/guyi/ros2_ws/build/pyqt_ros_gui/build/lib/pyqt_ros_gui/logic/utilities.py -> /home/guyi/ros2_ws/install/pyqt_ros_gui/lib/python3.10/site-packages/pyqt_ros_gui/logic
+[0.559s] copying /home/guyi/ros2_ws/build/pyqt_ros_gui/build/lib/pyqt_ros_gui/logic/__init__.py -> /home/guyi/ros2_ws/install/pyqt_ros_gui/lib/python3.10/site-packages/pyqt_ros_gui/logic
+[0.559s] copying /home/guyi/ros2_ws/build/pyqt_ros_gui/build/lib/pyqt_ros_gui/logic/joint_sender.py -> /home/guyi/ros2_ws/install/pyqt_ros_gui/lib/python3.10/site-packages/pyqt_ros_gui/logic
+[0.559s] creating /home/guyi/ros2_ws/install/pyqt_ros_gui/lib/python3.10/site-packages/pyqt_ros_gui/node
+[0.559s] copying /home/guyi/ros2_ws/build/pyqt_ros_gui/build/lib/pyqt_ros_gui/node/__init__.py -> /home/guyi/ros2_ws/install/pyqt_ros_gui/lib/python3.10/site-packages/pyqt_ros_gui/node
+[0.559s] copying /home/guyi/ros2_ws/build/pyqt_ros_gui/build/lib/pyqt_ros_gui/node/joint_node_receive.py -> /home/guyi/ros2_ws/install/pyqt_ros_gui/lib/python3.10/site-packages/pyqt_ros_gui/node
+[0.559s] copying /home/guyi/ros2_ws/build/pyqt_ros_gui/build/lib/pyqt_ros_gui/node/joint_node_publish.py -> /home/guyi/ros2_ws/install/pyqt_ros_gui/lib/python3.10/site-packages/pyqt_ros_gui/node
+[0.559s] copying /home/guyi/ros2_ws/build/pyqt_ros_gui/build/lib/pyqt_ros_gui/__init__.py -> /home/guyi/ros2_ws/install/pyqt_ros_gui/lib/python3.10/site-packages/pyqt_ros_gui
+[0.559s] creating /home/guyi/ros2_ws/install/pyqt_ros_gui/lib/python3.10/site-packages/pyqt_ros_gui/ui
+[0.560s] copying /home/guyi/ros2_ws/build/pyqt_ros_gui/build/lib/pyqt_ros_gui/ui/__init__.py -> /home/guyi/ros2_ws/install/pyqt_ros_gui/lib/python3.10/site-packages/pyqt_ros_gui/ui
+[0.560s] copying /home/guyi/ros2_ws/build/pyqt_ros_gui/build/lib/pyqt_ros_gui/ui/joint_gui.py -> /home/guyi/ros2_ws/install/pyqt_ros_gui/lib/python3.10/site-packages/pyqt_ros_gui/ui
+[0.560s] creating /home/guyi/ros2_ws/install/pyqt_ros_gui/lib/python3.10/site-packages/pyqt_ros_gui/actions
+[0.560s] copying /home/guyi/ros2_ws/build/pyqt_ros_gui/build/lib/pyqt_ros_gui/actions/__init__.py -> /home/guyi/ros2_ws/install/pyqt_ros_gui/lib/python3.10/site-packages/pyqt_ros_gui/actions
+[0.560s] copying /home/guyi/ros2_ws/build/pyqt_ros_gui/build/lib/pyqt_ros_gui/actions/actions.json -> /home/guyi/ros2_ws/install/pyqt_ros_gui/lib/python3.10/site-packages/pyqt_ros_gui/actions
+[0.560s] copying /home/guyi/ros2_ws/build/pyqt_ros_gui/build/lib/pyqt_ros_gui/main.py -> /home/guyi/ros2_ws/install/pyqt_ros_gui/lib/python3.10/site-packages/pyqt_ros_gui
+[0.560s] byte-compiling /home/guyi/ros2_ws/install/pyqt_ros_gui/lib/python3.10/site-packages/pyqt_ros_gui/logic/utilities.py to utilities.cpython-310.pyc
+[0.560s] byte-compiling /home/guyi/ros2_ws/install/pyqt_ros_gui/lib/python3.10/site-packages/pyqt_ros_gui/logic/__init__.py to __init__.cpython-310.pyc
+[0.560s] byte-compiling /home/guyi/ros2_ws/install/pyqt_ros_gui/lib/python3.10/site-packages/pyqt_ros_gui/logic/joint_sender.py to joint_sender.cpython-310.pyc
+[0.561s] byte-compiling /home/guyi/ros2_ws/install/pyqt_ros_gui/lib/python3.10/site-packages/pyqt_ros_gui/node/__init__.py to __init__.cpython-310.pyc
+[0.561s] byte-compiling /home/guyi/ros2_ws/install/pyqt_ros_gui/lib/python3.10/site-packages/pyqt_ros_gui/node/joint_node_receive.py to joint_node_receive.cpython-310.pyc
+[0.561s] byte-compiling /home/guyi/ros2_ws/install/pyqt_ros_gui/lib/python3.10/site-packages/pyqt_ros_gui/node/joint_node_publish.py to joint_node_publish.cpython-310.pyc
+[0.561s] byte-compiling /home/guyi/ros2_ws/install/pyqt_ros_gui/lib/python3.10/site-packages/pyqt_ros_gui/__init__.py to __init__.cpython-310.pyc
+[0.561s] byte-compiling /home/guyi/ros2_ws/install/pyqt_ros_gui/lib/python3.10/site-packages/pyqt_ros_gui/ui/__init__.py to __init__.cpython-310.pyc
+[0.562s] byte-compiling /home/guyi/ros2_ws/install/pyqt_ros_gui/lib/python3.10/site-packages/pyqt_ros_gui/ui/joint_gui.py to joint_gui.cpython-310.pyc
+[0.562s] byte-compiling /home/guyi/ros2_ws/install/pyqt_ros_gui/lib/python3.10/site-packages/pyqt_ros_gui/actions/__init__.py to __init__.cpython-310.pyc
+[0.563s] byte-compiling /home/guyi/ros2_ws/install/pyqt_ros_gui/lib/python3.10/site-packages/pyqt_ros_gui/main.py to main.cpython-310.pyc
+[0.563s] running install_data
+[0.563s] creating /home/guyi/ros2_ws/install/pyqt_ros_gui/share/ament_index
+[0.563s] creating /home/guyi/ros2_ws/install/pyqt_ros_gui/share/ament_index/resource_index
+[0.563s] creating /home/guyi/ros2_ws/install/pyqt_ros_gui/share/ament_index/resource_index/packages
+[0.563s] copying resource/pyqt_ros_gui -> /home/guyi/ros2_ws/install/pyqt_ros_gui/share/ament_index/resource_index/packages
+[0.563s] copying package.xml -> /home/guyi/ros2_ws/install/pyqt_ros_gui/share/pyqt_ros_gui
+[0.563s] creating /home/guyi/ros2_ws/install/pyqt_ros_gui/share/pyqt_ros_gui/launch
+[0.563s] copying launch/gui_joint_gui.launch.py -> /home/guyi/ros2_ws/install/pyqt_ros_gui/share/pyqt_ros_gui/launch
+[0.563s] creating /home/guyi/ros2_ws/install/pyqt_ros_gui/share/pyqt_ros_gui/actions
+[0.563s] copying pyqt_ros_gui/actions/actions.json -> /home/guyi/ros2_ws/install/pyqt_ros_gui/share/pyqt_ros_gui/actions
+[0.563s] running install_egg_info
+[0.565s] Copying ../../build/pyqt_ros_gui/pyqt_ros_gui.egg-info to /home/guyi/ros2_ws/install/pyqt_ros_gui/lib/python3.10/site-packages/pyqt_ros_gui-0.0.0-py3.10.egg-info
+[0.565s] running install_scripts
+[0.576s] Installing gui_node script to /home/guyi/ros2_ws/install/pyqt_ros_gui/lib/pyqt_ros_gui
+[0.576s] Installing joint_node_publish script to /home/guyi/ros2_ws/install/pyqt_ros_gui/lib/pyqt_ros_gui
+[0.576s] Installing joint_node_receive script to /home/guyi/ros2_ws/install/pyqt_ros_gui/lib/pyqt_ros_gui
+[0.576s] writing list of installed files to '/home/guyi/ros2_ws/build/pyqt_ros_gui/install.log'
+[0.598s] Invoked command in '/home/guyi/ros2_ws/src/pyqt_ros_gui' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/guyi/ros2_ws/build/pyqt_ros_gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/guyi/ros2_ws/install/pyqt_ros_gui/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pyqt_ros_gui build --build-base /home/guyi/ros2_ws/build/pyqt_ros_gui/build install --record /home/guyi/ros2_ws/build/pyqt_ros_gui/install.log --single-version-externally-managed install_data
