@@ -1,0 +1,17 @@
+package.xml
+setup.cfg
+setup.py
+../../build/ce_python/ce_python.egg-info/PKG-INFO
+../../build/ce_python/ce_python.egg-info/SOURCES.txt
+../../build/ce_python/ce_python.egg-info/dependency_links.txt
+../../build/ce_python/ce_python.egg-info/entry_points.txt
+../../build/ce_python/ce_python.egg-info/requires.txt
+../../build/ce_python/ce_python.egg-info/top_level.txt
+../../build/ce_python/ce_python.egg-info/zip-safe
+ce_python/__init__.py
+ce_python/angle_forwarder.py
+launch/angle_udp.launch.py
+resource/ce_python
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

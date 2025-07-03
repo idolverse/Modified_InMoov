@@ -1,0 +1,34 @@
+[0.384s] Invoking command in '/home/guyi/cececeCeESP/ros2_ws/src/ce_python': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/guyi/cececeCeESP/ros2_ws/build/ce_python/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/guyi/cececeCeESP/ros2_ws/install/ce_python/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ce_python build --build-base /home/guyi/cececeCeESP/ros2_ws/build/ce_python/build install --record /home/guyi/cececeCeESP/ros2_ws/build/ce_python/install.log --single-version-externally-managed install_data
+[0.508s] running egg_info
+[0.508s] creating ../../build/ce_python/ce_python.egg-info
+[0.508s] writing ../../build/ce_python/ce_python.egg-info/PKG-INFO
+[0.508s] writing dependency_links to ../../build/ce_python/ce_python.egg-info/dependency_links.txt
+[0.508s] writing entry points to ../../build/ce_python/ce_python.egg-info/entry_points.txt
+[0.508s] writing requirements to ../../build/ce_python/ce_python.egg-info/requires.txt
+[0.509s] writing top-level names to ../../build/ce_python/ce_python.egg-info/top_level.txt
+[0.509s] writing manifest file '../../build/ce_python/ce_python.egg-info/SOURCES.txt'
+[0.509s] reading manifest file '../../build/ce_python/ce_python.egg-info/SOURCES.txt'
+[0.509s] writing manifest file '../../build/ce_python/ce_python.egg-info/SOURCES.txt'
+[0.509s] running build
+[0.510s] running build_py
+[0.510s] creating /home/guyi/cececeCeESP/ros2_ws/build/ce_python/build
+[0.510s] creating /home/guyi/cececeCeESP/ros2_ws/build/ce_python/build/lib
+[0.510s] creating /home/guyi/cececeCeESP/ros2_ws/build/ce_python/build/lib/ce_python
+[0.510s] copying ce_python/__init__.py -> /home/guyi/cececeCeESP/ros2_ws/build/ce_python/build/lib/ce_python
+[0.510s] copying ce_python/angle_forwarder.py -> /home/guyi/cececeCeESP/ros2_ws/build/ce_python/build/lib/ce_python
+[0.510s] running install
+[0.510s] running install_lib
+[0.511s] creating /home/guyi/cececeCeESP/ros2_ws/install/ce_python/lib/python3.10/site-packages/ce_python
+[0.511s] copying /home/guyi/cececeCeESP/ros2_ws/build/ce_python/build/lib/ce_python/__init__.py -> /home/guyi/cececeCeESP/ros2_ws/install/ce_python/lib/python3.10/site-packages/ce_python
+[0.511s] copying /home/guyi/cececeCeESP/ros2_ws/build/ce_python/build/lib/ce_python/angle_forwarder.py -> /home/guyi/cececeCeESP/ros2_ws/install/ce_python/lib/python3.10/site-packages/ce_python
+[0.511s] byte-compiling /home/guyi/cececeCeESP/ros2_ws/install/ce_python/lib/python3.10/site-packages/ce_python/__init__.py to __init__.cpython-310.pyc
+[0.511s] byte-compiling /home/guyi/cececeCeESP/ros2_ws/install/ce_python/lib/python3.10/site-packages/ce_python/angle_forwarder.py to angle_forwarder.cpython-310.pyc
+[0.511s] running install_data
+[0.512s] creating /home/guyi/cececeCeESP/ros2_ws/install/ce_python/share/ce_python/launch
+[0.512s] copying launch/angle_udp.launch.py -> /home/guyi/cececeCeESP/ros2_ws/install/ce_python/share/ce_python/launch
+[0.512s] running install_egg_info
+[0.512s] Copying ../../build/ce_python/ce_python.egg-info to /home/guyi/cececeCeESP/ros2_ws/install/ce_python/lib/python3.10/site-packages/ce_python-0.0.0-py3.10.egg-info
+[0.513s] running install_scripts
+[0.524s] Installing angle_forwarder script to /home/guyi/cececeCeESP/ros2_ws/install/ce_python/lib/ce_python
+[0.524s] writing list of installed files to '/home/guyi/cececeCeESP/ros2_ws/build/ce_python/install.log'
+[0.543s] Invoked command in '/home/guyi/cececeCeESP/ros2_ws/src/ce_python' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/guyi/cececeCeESP/ros2_ws/build/ce_python/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/guyi/cececeCeESP/ros2_ws/install/ce_python/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ce_python build --build-base /home/guyi/cececeCeESP/ros2_ws/build/ce_python/build install --record /home/guyi/cececeCeESP/ros2_ws/build/ce_python/install.log --single-version-externally-managed install_data
