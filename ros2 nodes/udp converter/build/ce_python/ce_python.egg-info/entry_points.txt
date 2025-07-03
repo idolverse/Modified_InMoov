@@ -1,0 +1,3 @@
+[console_scripts]
+angle_forwarder = ce_python.angle_forwarder:main
+

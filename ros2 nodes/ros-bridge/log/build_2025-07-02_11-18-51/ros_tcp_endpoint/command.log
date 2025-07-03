@@ -1,0 +1,2 @@
+Invoking command in '/home/guyi/ros2_ws/build/ros_tcp_endpoint': CONDA_PROMPT_MODIFIER=(base) /usr/local/bin/cmake /home/guyi/ros2_ws/src/ROS-TCP-Endpoint -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/guyi/ros2_ws/install/ros_tcp_endpoint
+Invoked command in '/home/guyi/ros2_ws/build/ros_tcp_endpoint' returned '1': CONDA_PROMPT_MODIFIER=(base) /usr/local/bin/cmake /home/guyi/ros2_ws/src/ROS-TCP-Endpoint -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/guyi/ros2_ws/install/ros_tcp_endpoint

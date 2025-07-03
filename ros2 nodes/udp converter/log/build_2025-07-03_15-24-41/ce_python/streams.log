@@ -1,0 +1,11 @@
+[0.518s] Invoking command in '/home/guyi/cececeCeESP/ros2_ws/src/ce_python': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/guyi/cececeCeESP/ros2_ws/build/ce_python/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/guyi/cececeCeESP/ros2_ws/install/ce_python/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ce_python build --build-base /home/guyi/cececeCeESP/ros2_ws/build/ce_python/build install --record /home/guyi/cececeCeESP/ros2_ws/build/ce_python/install.log --single-version-externally-managed install_data
+[0.637s] running egg_info
+[0.637s] creating ../../build/ce_python/server_client.egg-info
+[0.637s] writing ../../build/ce_python/server_client.egg-info/PKG-INFO
+[0.637s] writing dependency_links to ../../build/ce_python/server_client.egg-info/dependency_links.txt
+[0.637s] writing entry points to ../../build/ce_python/server_client.egg-info/entry_points.txt
+[0.637s] writing requirements to ../../build/ce_python/server_client.egg-info/requires.txt
+[0.637s] writing top-level names to ../../build/ce_python/server_client.egg-info/top_level.txt
+[0.638s] writing manifest file '../../build/ce_python/server_client.egg-info/SOURCES.txt'
+[0.638s] error: package directory 'server_client' does not exist
+[0.653s] Invoked command in '/home/guyi/cececeCeESP/ros2_ws/src/ce_python' returned '1': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/guyi/cececeCeESP/ros2_ws/build/ce_python/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/guyi/cececeCeESP/ros2_ws/install/ce_python/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ce_python build --build-base /home/guyi/cececeCeESP/ros2_ws/build/ce_python/build install --record /home/guyi/cececeCeESP/ros2_ws/build/ce_python/install.log --single-version-externally-managed install_data

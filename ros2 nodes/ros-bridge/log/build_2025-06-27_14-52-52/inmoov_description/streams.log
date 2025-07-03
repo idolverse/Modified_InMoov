@@ -1,0 +1,183 @@
+[0.009s] Invoking command in '/home/guyi/ros2_ws/build/inmoov_description': CONDA_PROMPT_MODIFIER=(base) /usr/local/bin/cmake /home/guyi/ros2_ws/src/inmoov_description -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/guyi/ros2_ws/install/inmoov_description
+[0.056s] -- The C compiler identification is GNU 11.4.0
+[0.110s] -- The CXX compiler identification is GNU 11.4.0
+[0.117s] -- Detecting C compiler ABI info
+[0.166s] -- Detecting C compiler ABI info - done
+[0.173s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.173s] -- Detecting C compile features
+[0.174s] -- Detecting C compile features - done
+[0.176s] -- Detecting CXX compiler ABI info
+[0.223s] -- Detecting CXX compiler ABI info - done
+[0.228s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.228s] -- Detecting CXX compile features
+[0.228s] -- Detecting CXX compile features - done
+[0.231s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.429s] -- Found Python3: /home/guyi/anaconda3/bin/python3 (found version "3.12.7") found components: Interpreter 
+[0.508s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.540s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.544s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.550s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.558s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.569s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.600s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.601s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.665s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.686s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.719s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.727s] -- Looking for pthread.h
+[0.768s] -- Looking for pthread.h - found
+[0.769s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.810s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.811s] -- Found Threads: TRUE  
+[0.844s] -- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[0.855s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[0.856s] -- Checking for module 'bullet>=2.82'
+[0.866s] --   Found bullet, version 3.05
+[0.954s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[0.992s] -- Found assimp: /usr/include (found version "5.2.0") 
+[1.009s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[1.027s] -- Found Boost: /home/guyi/anaconda3/lib/cmake/Boost-1.82.0/BoostConfig.cmake (found suitable version "1.82.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[1.042s] [33mCMake Warning at /usr/local/share/cmake-3.22/Modules/FindProtobuf.cmake:524 (message):
+[1.042s]   Protobuf compiler version 25.3 doesn't match library version 3.12.4
+[1.042s] Call Stack (most recent call first):
+[1.042s]   /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:203 (find_package)
+[1.042s]   /opt/ros/humble/share/gazebo_dev/cmake/gazebo_dev-extras.cmake:3 (find_package)
+[1.042s]   /opt/ros/humble/share/gazebo_dev/cmake/gazebo_devConfig.cmake:41 (include)
+[1.042s]   /opt/ros/humble/share/gazebo_ros/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[1.042s]   /opt/ros/humble/share/gazebo_ros/cmake/gazebo_rosConfig.cmake:41 (include)
+[1.042s]   CMakeLists.txt:7 (find_package)
+[1.042s] 
+[1.042s] [0m
+[1.043s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[1.050s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.055s] -- Searching for dependencies of ignition-math6
+[1.056s] -- Looking for OGRE...
+[1.056s] -- OGRE_PREFIX_WATCH changed.
+[1.060s] -- Checking for module 'OGRE'
+[1.069s] --   Found OGRE, version 1.9.0
+[1.094s] -- Found Ogre Ghadamon (1.9.0)
+[1.099s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[1.105s] -- Looking for OGRE_Paging...
+[1.109s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[1.109s] -- Looking for OGRE_Terrain...
+[1.113s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[1.113s] -- Looking for OGRE_Property...
+[1.117s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[1.117s] -- Looking for OGRE_RTShaderSystem...
+[1.120s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[1.120s] -- Looking for OGRE_Volume...
+[1.124s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[1.124s] -- Looking for OGRE_Overlay...
+[1.127s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[1.209s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.212s] -- Looking for ignition-transport8 -- found version 8.2.1
+[1.213s] -- Searching for dependencies of ignition-transport8
+[1.229s] [33mCMake Warning at /usr/local/share/cmake-3.22/Modules/FindProtobuf.cmake:524 (message):
+[1.230s]   Protobuf compiler version 25.3 doesn't match library version 3.12.4
+[1.230s] Call Stack (most recent call first):
+[1.230s]   /usr/share/cmake/ignition-cmake2/cmake2/FindIgnProtobuf.cmake:34 (find_package)
+[1.230s]   /usr/lib/x86_64-linux-gnu/cmake/ignition-transport8/ignition-transport8-config.cmake:92 (find_package)
+[1.230s]   /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:235 (find_package)
+[1.230s]   /opt/ros/humble/share/gazebo_dev/cmake/gazebo_dev-extras.cmake:3 (find_package)
+[1.230s]   /opt/ros/humble/share/gazebo_dev/cmake/gazebo_devConfig.cmake:41 (include)
+[1.230s]   /opt/ros/humble/share/gazebo_ros/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[1.230s]   /opt/ros/humble/share/gazebo_ros/cmake/gazebo_rosConfig.cmake:41 (include)
+[1.230s]   CMakeLists.txt:7 (find_package)
+[1.230s] 
+[1.230s] [0m
+[1.230s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[1.237s] -- Checking for module 'uuid'
+[1.248s] --   Found uuid, version 2.37.2
+[1.273s] -- Found UUID: TRUE  
+[1.276s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.277s] -- Searching for dependencies of ignition-msgs5
+[1.296s] [33mCMake Warning at /usr/local/share/cmake-3.22/Modules/FindProtobuf.cmake:524 (message):
+[1.296s]   Protobuf compiler version 25.3 doesn't match library version 3.12.4
+[1.296s] Call Stack (most recent call first):
+[1.296s]   /usr/share/cmake/ignition-cmake2/cmake2/FindIgnProtobuf.cmake:34 (find_package)
+[1.296s]   /usr/lib/x86_64-linux-gnu/cmake/ignition-msgs5/ignition-msgs5-config.cmake:92 (find_package)
+[1.296s]   /usr/lib/x86_64-linux-gnu/cmake/ignition-transport8/ignition-transport8-config.cmake:96 (find_package)
+[1.296s]   /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:235 (find_package)
+[1.296s]   /opt/ros/humble/share/gazebo_dev/cmake/gazebo_dev-extras.cmake:3 (find_package)
+[1.296s]   /opt/ros/humble/share/gazebo_dev/cmake/gazebo_devConfig.cmake:41 (include)
+[1.296s]   /opt/ros/humble/share/gazebo_ros/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[1.297s]   /opt/ros/humble/share/gazebo_ros/cmake/gazebo_rosConfig.cmake:41 (include)
+[1.297s]   CMakeLists.txt:7 (find_package)
+[1.297s] 
+[1.297s] [0m
+[1.298s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.302s] -- Checking for module 'tinyxml2'
+[1.313s] --   Found tinyxml2, version 9.0.0
+[1.340s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.343s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.344s] -- Searching for dependencies of ignition-common3
+[1.344s] -- Looking for dlfcn.h - found
+[1.345s] -- Looking for libdl - found
+[1.346s] -- Found DL: TRUE  
+[1.356s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[1.356s] -- Searching for <ignition-common3> component [graphics]
+[1.359s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[1.359s] -- Searching for dependencies of ignition-common3-graphics
+[1.359s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.363s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[1.363s] -- Searching for dependencies of ignition-fuel_tools4
+[1.426s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[1.434s] -- Checking for module 'jsoncpp'
+[1.444s] --   Found jsoncpp, version 1.9.5
+[1.469s] -- Found JSONCPP: TRUE  
+[1.473s] -- Checking for module 'libzip'
+[1.481s] --   Found libzip, version 1.7.3
+[1.506s] -- Found ZIP: TRUE  
+[1.506s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.506s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.506s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.510s] -- Gazebo version: 11.10
+[1.510s] -- Checking for module 'tbb'
+[1.518s] --   Found tbb, version 2021.5.0
+[1.542s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.617s] -- Configuring done
+[1.621s] -- Generating done
+[1.622s] [33mCMake Warning:
+[1.622s]   Manually-specified variables were not used by the project:
+[1.622s] 
+[1.622s]     CATKIN_INSTALL_INTO_PREFIX_ROOT
+[1.622s] 
+[1.622s] [0m
+[1.623s] -- Build files have been written to: /home/guyi/ros2_ws/build/inmoov_description
+[1.631s] Invoked command in '/home/guyi/ros2_ws/build/inmoov_description' returned '0': CONDA_PROMPT_MODIFIER=(base) /usr/local/bin/cmake /home/guyi/ros2_ws/src/inmoov_description -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/guyi/ros2_ws/install/inmoov_description
+[1.632s] Invoking command in '/home/guyi/ros2_ws/build/inmoov_description': CONDA_PROMPT_MODIFIER=(base) /usr/local/bin/cmake --build /home/guyi/ros2_ws/build/inmoov_description -- -j16 -l16
+[1.648s] Invoked command in '/home/guyi/ros2_ws/build/inmoov_description' returned '0': CONDA_PROMPT_MODIFIER=(base) /usr/local/bin/cmake --build /home/guyi/ros2_ws/build/inmoov_description -- -j16 -l16
+[1.652s] Invoking command in '/home/guyi/ros2_ws/build/inmoov_description': CONDA_PROMPT_MODIFIER=(base) /usr/local/bin/cmake --install /home/guyi/ros2_ws/build/inmoov_description
+[1.653s] -- Install configuration: ""
+[1.653s] -- Installing: /home/guyi/ros2_ws/install/inmoov_description/share/inmoov_description/urdf/urdf
+[1.653s] -- Installing: /home/guyi/ros2_ws/install/inmoov_description/share/inmoov_description/urdf/urdf/config.joints.urdf.xacro
+[1.653s] -- Installing: /home/guyi/ros2_ws/install/inmoov_description/share/inmoov_description/urdf/urdf/asmHead.urdf.xacro
+[1.653s] -- Installing: /home/guyi/ros2_ws/install/inmoov_description/share/inmoov_description/urdf/urdf/materials.urdf.xacro
+[1.653s] -- Installing: /home/guyi/ros2_ws/install/inmoov_description/share/inmoov_description/urdf/urdf/asmArm.urdf.xacro
+[1.653s] -- Installing: /home/guyi/ros2_ws/install/inmoov_description/share/inmoov_description/urdf/urdf/asmBicepServo.urdf.xacro
+[1.653s] -- Installing: /home/guyi/ros2_ws/install/inmoov_description/share/inmoov_description/urdf/urdf/asmTorsoServo.urdf.xacro
+[1.653s] -- Installing: /home/guyi/ros2_ws/install/inmoov_description/share/inmoov_description/urdf/urdf/asmBase.urdf.xacro
+[1.654s] -- Installing: /home/guyi/ros2_ws/install/inmoov_description/share/inmoov_description/urdf/urdf/asmHand.urdf.xacro
+[1.654s] -- Installing: /home/guyi/ros2_ws/install/inmoov_description/share/inmoov_description/urdf/urdf/asmNeckSideServo.urdf.xacro
+[1.654s] -- Installing: /home/guyi/ros2_ws/install/inmoov_description/share/inmoov_description/urdf/urdf/config.inertial.urdf.xacro
+[1.654s] -- Installing: /home/guyi/ros2_ws/install/inmoov_description/share/inmoov_description/urdf/urdf/inmoov.gazebo
+[1.654s] -- Installing: /home/guyi/ros2_ws/install/inmoov_description/share/inmoov_description/urdf/urdf/asmTorso.urdf.xacro
+[1.654s] -- Installing: /home/guyi/ros2_ws/install/inmoov_description/share/inmoov_description/urdf/urdf/asmNeckFrontServo.urdf.xacro
+[1.654s] -- Installing: /home/guyi/ros2_ws/install/inmoov_description/share/inmoov_description/urdf/urdf/asmEye.urdf.xacro
+[1.654s] -- Installing: /home/guyi/ros2_ws/install/inmoov_description/share/inmoov_description/urdf/urdf/asmFace.urdf.xacro
+[1.654s] -- Installing: /home/guyi/ros2_ws/install/inmoov_description/share/ament_index/resource_index/package_run_dependencies/inmoov_description
+[1.654s] -- Installing: /home/guyi/ros2_ws/install/inmoov_description/share/ament_index/resource_index/parent_prefix_path/inmoov_description
+[1.654s] -- Installing: /home/guyi/ros2_ws/install/inmoov_description/share/inmoov_description/environment/ament_prefix_path.sh
+[1.654s] -- Installing: /home/guyi/ros2_ws/install/inmoov_description/share/inmoov_description/environment/ament_prefix_path.dsv
+[1.654s] -- Installing: /home/guyi/ros2_ws/install/inmoov_description/share/inmoov_description/environment/path.sh
+[1.655s] -- Installing: /home/guyi/ros2_ws/install/inmoov_description/share/inmoov_description/environment/path.dsv
+[1.655s] -- Installing: /home/guyi/ros2_ws/install/inmoov_description/share/inmoov_description/local_setup.bash
+[1.655s] -- Installing: /home/guyi/ros2_ws/install/inmoov_description/share/inmoov_description/local_setup.sh
+[1.655s] -- Installing: /home/guyi/ros2_ws/install/inmoov_description/share/inmoov_description/local_setup.zsh
+[1.655s] -- Installing: /home/guyi/ros2_ws/install/inmoov_description/share/inmoov_description/local_setup.dsv
+[1.655s] -- Installing: /home/guyi/ros2_ws/install/inmoov_description/share/inmoov_description/package.dsv
+[1.655s] -- Installing: /home/guyi/ros2_ws/install/inmoov_description/share/ament_index/resource_index/packages/inmoov_description
+[1.655s] -- Installing: /home/guyi/ros2_ws/install/inmoov_description/share/inmoov_description/cmake/inmoov_descriptionConfig.cmake
+[1.655s] -- Installing: /home/guyi/ros2_ws/install/inmoov_description/share/inmoov_description/cmake/inmoov_descriptionConfig-version.cmake
+[1.655s] -- Installing: /home/guyi/ros2_ws/install/inmoov_description/share/inmoov_description/package.xml
+[1.656s] Invoked command in '/home/guyi/ros2_ws/build/inmoov_description' returned '0': CONDA_PROMPT_MODIFIER=(base) /usr/local/bin/cmake --install /home/guyi/ros2_ws/build/inmoov_description

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "open_hand",
+    "joints": {
+      "l_thumb_joint": 0.5,
+      "l_index_joint": 0.5,
+      "l_middle_joint": 0.5,
+      "l_ring_joint": 0.5,
+      "l_pinky_joint": 0.5
+    }
+  },
+  {
+    "name": "close_hand",
+    "joints": {
+      "l_thumb_joint": 1.5,
+      "l_index_joint": 1.5,
+      "l_middle_joint": 1.5,
+      "l_ring_joint": 1.5,
+      "l_pinky_joint": 1.5
+    }
+  }
+]
