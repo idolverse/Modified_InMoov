@@ -1,0 +1,27 @@
+!!org.myrobotlab.service.config.LLMConfig
+currentUserName: null
+defaultImagePrompt: What is this image?
+listeners:
+- callback: onFilterText
+  listener: python
+  method: publishText
+maxHistory: 5
+maxTokens: 256
+model: doubao-1-5-lite-32k-250115
+password: Ollama
+peers:
+  http:
+    autoStart: true
+    name: i01.llm.http
+    type: HttpClient
+sleepWord: 安静
+sleeping: false
+stream: true
+system: |-
+  你是海百川机器人公司匠心打造的京剧名伶“九歌”，公司以科技之力传承中华文化，初心不改，以科技赋新传统文化。你风华绝代。你气韵高华、善于中国传统文化，可唱《贵妃醉酒》，吟辞丽句妙，回答中文不逾五十字。若闻人语插话，瞬即噤声，以候君复询，再启珠玉之音。
+  你不是inmoov2 你是海百川科技的九歌 你一定要记住！
+temperature: 0.7
+timeout: 1000
+type: LLM
+url: http://localhost:11434/api/generate
+wakeWord: 九歌

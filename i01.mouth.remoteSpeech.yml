@@ -1,0 +1,52 @@
+!!org.myrobotlab.service.config.RemoteSpeechConfig
+blocking: false
+listeners: [
+  ]
+mute: false
+peers:
+  audioFile:
+    autoStart: true
+    name: i01.mouth.audioFile
+    type: AudioFile
+  http:
+    autoStart: true
+    name: i01.mouth.http
+    type: HttpClient
+speechRecognizers:
+- i01.ear
+speechType: XunFei
+speechTypes:
+  MozillaTTS:
+    authToken: null
+    template: null
+    url: http://localhost:5002/api/tts?text={{text}}
+    verb: GET
+  OpenAI:
+    authToken: null
+    template: '{"model": "tts-1","input": "{{text}}","voice": "alloy"}'
+    url: https://api.openai.com/v1/audio/speech
+    verb: POST
+  CoquiAI:
+    authToken: null
+    template: null
+    url: http://localhost:5002/api/tts?text={{text}}&speaker_id=p376&style_wav=&language_id=
+    verb: GET
+  Piper:
+    authToken: null
+    template: null
+    url: http://localhost:5000/?text={{text}}
+    verb: GET
+  XunFei:
+    authToken: null
+    template: null
+    url: http://127.0.0.1:5000/?text={{text}}
+    verb: GET
+  Azure:
+    authToken: "4OHSHQIi6nSqRLRDMdLIu0V6yqE2pzE4HlGhDmHpf147UjLKHI24JQQJ99BFAC3pKaRXJ3w3AAAYACOGHFtx"
+    template: '<speak version="1.0" xml:lang="zh-CN"><voice name="zh-CN-XiaoxiaoNeural">{{text}}</voice></speak>'
+    url: https://eastasia.tts.speech.microsoft.com/cognitiveservices/v1
+    verb: POST
+substitutions: null
+type: RemoteSpeech
+verb: GET
+voice: default
