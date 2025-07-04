@@ -9,25 +9,22 @@
 
 #pragma comment(lib, "ws2_32.lib")
 
-#define ROS_IP "192.168.110.80"
-#define ROS_PORT 4210
-#define UE_PORT 4211
-
 class UdpBridge {
 public:
-    UdpBridge() {
+    // 默认构造：使用默认 IP 和端口
+    UdpBridge(const std::string& ip = "192.168.110.80", int port = 4210, int local_port = 4211) {
         WSAStartup(MAKEWORD(2, 2), &wsa);
 
         send_sock_ = socket(AF_INET, SOCK_DGRAM, IPPROTO_UDP);
         memset(&ros_addr_, 0, sizeof(ros_addr_));
         ros_addr_.sin_family = AF_INET;
-        ros_addr_.sin_port = htons(ROS_PORT);
-        ros_addr_.sin_addr.s_addr = inet_addr(ROS_IP);
+        ros_addr_.sin_port = htons(port);
+        ros_addr_.sin_addr.s_addr = inet_addr(ip.c_str());
 
         recv_sock_ = socket(AF_INET, SOCK_DGRAM, IPPROTO_UDP);
         memset(&ue_addr_, 0, sizeof(ue_addr_));
         ue_addr_.sin_family = AF_INET;
-        ue_addr_.sin_port = htons(UE_PORT);
+        ue_addr_.sin_port = htons(local_port);
         ue_addr_.sin_addr.s_addr = INADDR_ANY;
         bind(recv_sock_, (SOCKADDR*)&ue_addr_, sizeof(ue_addr_));
     }
