@@ -1,0 +1,10 @@
+[01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/src/udp_receiver_node.cpp:14:7:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kclass UdpReceiverNode[m[K’
+   14 | class [01;31m[KUdpReceiverNode[m[K : public rclcpp::Node {
+      |       [01;31m[K^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/src/udp_receiver_node.cpp:3[m[K:
+[01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/udp_receiver_node.hpp:9:7:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kclass UdpReceiverNode[m[K’
+    9 | class [01;36m[KUdpReceiverNode[m[K : public rclcpp::Node {
+      |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/combined_node.dir/build.make:104：CMakeFiles/combined_node.dir/src/udp_receiver_node.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/combined_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

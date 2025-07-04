@@ -1,0 +1,70 @@
+[0.011s] Invoking command in '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/servo_mediator_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/local/bin/cmake --build /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/servo_mediator_cpp -- -j16 -l16
+[0.036s] [35m[1mConsolidate compiler generated dependencies of target udp_receiver_node[0m
+[0.037s] [35m[1mConsolidate compiler generated dependencies of target combined_node[0m
+[0.045s] [ 12%] [32mBuilding CXX object CMakeFiles/servo_mediator_node.dir/src/servo_mediator_node.cpp.o[0m
+[0.047s] [ 25%] [32mBuilding CXX object CMakeFiles/udp_receiver_node.dir/src/udp_receiver_node.cpp.o[0m
+[0.047s] [ 37%] [32mBuilding CXX object CMakeFiles/combined_node.dir/src/servo_mediator_node.cpp.o[0m
+[0.049s] [ 50%] [32mBuilding CXX object CMakeFiles/combined_node.dir/src/udp_receiver_node.cpp.o[0m
+[0.050s] [ 62%] [32mBuilding CXX object CMakeFiles/combined_node.dir/src/main.cpp.o[0m
+[0.268s] [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/src/servo_mediator_node.cpp:8:10:[m[K [01;31m[Kfatal error: [m[Kunistd.h>: 没有那个文件或目录
+[0.268s]     8 | #include [01;31m[K<unistd.h>s[m[K
+[0.268s]       |          [01;31m[K^~~~~~~~~~~[m[K
+[0.268s] compilation terminated.
+[0.272s] [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/src/servo_mediator_node.cpp:8:10:[m[K [01;31m[Kfatal error: [m[Kunistd.h>: 没有那个文件或目录
+[0.272s]     8 | #include [01;31m[K<unistd.h>s[m[K
+[0.272s]       |          [01;31m[K^~~~~~~~~~~[m[K
+[0.272s] compilation terminated.
+[0.272s] gmake[2]: *** [CMakeFiles/servo_mediator_node.dir/build.make:76：CMakeFiles/servo_mediator_node.dir/src/servo_mediator_node.cpp.o] 错误 1
+[0.273s] gmake[1]: *** [CMakeFiles/Makefile2:141：CMakeFiles/servo_mediator_node.dir/all] 错误 2
+[0.273s] gmake[1]: *** 正在等待未完成的任务....
+[0.276s] gmake[2]: *** [CMakeFiles/combined_node.dir/build.make:76：CMakeFiles/combined_node.dir/src/servo_mediator_node.cpp.o] 错误 1
+[0.276s] gmake[2]: *** 正在等待未完成的任务....
+[1.563s] [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/src/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[1.563s] [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/src/main.cpp:17:22:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::executors::MultiThreadedExecutor::add_node(std::shared_ptr<UdpReceiverNode>&)[m[K’
+[1.563s]    17 |     [01;31m[Kexecutor.add_node(udp_node)[m[K;
+[1.563s]       |     [01;31m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[1.563s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.563s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.563s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.563s]                  from [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/src/main.cpp:1[m[K:
+[1.563s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:201:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvirtual void rclcpp::Executor::add_node(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr, bool)[m[K’
+[1.563s]   201 |   [01;36m[Kadd_node[m[K(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr node_ptr, bool notify = true);
+[1.563s]       |   [01;36m[K^~~~~~~~[m[K
+[1.563s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:201:66:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kshared_ptr<[01;32m[KUdpReceiverNode[m[K>[m[K’ to ‘[01m[Kshared_ptr<[01;32m[Krclcpp::node_interfaces::NodeBaseInterface[m[K>[m[K’
+[1.563s]   201 |   add_node([01;36m[Krclcpp::node_interfaces::NodeBaseInterface::SharedPtr node_ptr[m[K, bool notify = true);
+[1.563s]       |            [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[1.563s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:209:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvirtual void rclcpp::Executor::add_node(std::shared_ptr<rclcpp::Node>, bool)[m[K’
+[1.563s]   209 |   [01;36m[Kadd_node[m[K(std::shared_ptr<rclcpp::Node> node_ptr, bool notify = true);
+[1.563s]       |   [01;36m[K^~~~~~~~[m[K
+[1.564s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:209:42:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kshared_ptr<[01;32m[KUdpReceiverNode[m[K>[m[K’ to ‘[01m[Kshared_ptr<[01;32m[Krclcpp::Node[m[K>[m[K’
+[1.564s]   209 |   add_node([01;36m[Kstd::shared_ptr<rclcpp::Node> node_ptr[m[K, bool notify = true);
+[1.564s]       |            [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[1.564s] [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/src/main.cpp:18:22:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::executors::MultiThreadedExecutor::add_node(std::shared_ptr<ServoMediatorNode>&)[m[K’
+[1.564s]    18 |     [01;31m[Kexecutor.add_node(servo_node)[m[K;
+[1.564s]       |     [01;31m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[1.564s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.564s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.564s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.564s]                  from [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/src/main.cpp:1[m[K:
+[1.564s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:201:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvirtual void rclcpp::Executor::add_node(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr, bool)[m[K’
+[1.564s]   201 |   [01;36m[Kadd_node[m[K(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr node_ptr, bool notify = true);
+[1.564s]       |   [01;36m[K^~~~~~~~[m[K
+[1.564s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:201:66:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kshared_ptr<[01;32m[KServoMediatorNode[m[K>[m[K’ to ‘[01m[Kshared_ptr<[01;32m[Krclcpp::node_interfaces::NodeBaseInterface[m[K>[m[K’
+[1.564s]   201 |   add_node([01;36m[Krclcpp::node_interfaces::NodeBaseInterface::SharedPtr node_ptr[m[K, bool notify = true);
+[1.564s]       |            [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[1.564s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:209:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvirtual void rclcpp::Executor::add_node(std::shared_ptr<rclcpp::Node>, bool)[m[K’
+[1.564s]   209 |   [01;36m[Kadd_node[m[K(std::shared_ptr<rclcpp::Node> node_ptr, bool notify = true);
+[1.564s]       |   [01;36m[K^~~~~~~~[m[K
+[1.564s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:209:42:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kshared_ptr<[01;32m[KServoMediatorNode[m[K>[m[K’ to ‘[01m[Kshared_ptr<[01;32m[Krclcpp::Node[m[K>[m[K’
+[1.564s]   209 |   add_node([01;36m[Kstd::shared_ptr<rclcpp::Node> node_ptr[m[K, bool notify = true);
+[1.564s]       |            [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[1.821s] gmake[2]: *** [CMakeFiles/combined_node.dir/build.make:104：CMakeFiles/combined_node.dir/src/main.cpp.o] 错误 1
+[2.711s] [ 75%] [32m[1mLinking CXX executable udp_receiver_node[0m
+[2.711s] gmake[1]: *** [CMakeFiles/Makefile2:193：CMakeFiles/combined_node.dir/all] 错误 2
+[2.794s] /usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+[2.794s] (.text+0x1b): undefined reference to `main'
+[2.804s] collect2: error: ld returned 1 exit status
+[2.805s] gmake[2]: *** [CMakeFiles/udp_receiver_node.dir/build.make:159：udp_receiver_node] 错误 1
+[2.805s] gmake[1]: *** [CMakeFiles/Makefile2:167：CMakeFiles/udp_receiver_node.dir/all] 错误 2
+[2.806s] gmake: *** [Makefile:146：all] 错误 2
+[2.807s] Invoked command in '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/servo_mediator_cpp' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/local/bin/cmake --build /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/servo_mediator_cpp -- -j16 -l16

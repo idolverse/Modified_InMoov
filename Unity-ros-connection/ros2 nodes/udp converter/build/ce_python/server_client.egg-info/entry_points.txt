@@ -1,3 +1,0 @@
-[console_scripts]
-angle_forwarder = server_client.angle_forwarder:main
-

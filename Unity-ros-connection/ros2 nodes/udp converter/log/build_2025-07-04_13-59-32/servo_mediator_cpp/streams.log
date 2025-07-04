@@ -1,0 +1,39 @@
+[0.012s] Invoking command in '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/servo_mediator_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/local/bin/cmake --build /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/servo_mediator_cpp -- -j16 -l16
+[0.027s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.100s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.120s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.121s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.125s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.134s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.142s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.161s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.162s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.244s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.329s] -- Configuring done
+[0.340s] -- Generating done
+[0.344s] -- Build files have been written to: /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/servo_mediator_cpp
+[0.356s] [35m[1mConsolidate compiler generated dependencies of target udp_receiver_node[0m
+[0.356s] [35m[1mConsolidate compiler generated dependencies of target servo_mediator_node[0m
+[0.357s] [35m[1mConsolidate compiler generated dependencies of target combined_node[0m
+[0.362s] [ 12%] [32mBuilding CXX object CMakeFiles/udp_receiver_node.dir/src/udp_receiver_node.cpp.o[0m
+[0.363s] [ 25%] [32mBuilding CXX object CMakeFiles/servo_mediator_node.dir/src/servo_mediator_node.cpp.o[0m
+[0.366s] [ 37%] [32mBuilding CXX object CMakeFiles/combined_node.dir/src/main.cpp.o[0m
+[0.368s] [ 50%] [32mBuilding CXX object CMakeFiles/combined_node.dir/src/udp_receiver_node.cpp.o[0m
+[0.368s] [ 62%] [32mBuilding CXX object CMakeFiles/combined_node.dir/src/servo_mediator_node.cpp.o[0m
+[3.209s] [ 75%] [32m[1mLinking CXX executable udp_receiver_node[0m
+[3.301s] /usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+[3.301s] (.text+0x1b): undefined reference to `main'
+[3.313s] collect2: error: ld returned 1 exit status
+[3.314s] gmake[2]: *** [CMakeFiles/udp_receiver_node.dir/build.make:159：udp_receiver_node] 错误 1
+[3.314s] gmake[1]: *** [CMakeFiles/Makefile2:167：CMakeFiles/udp_receiver_node.dir/all] 错误 2
+[3.314s] gmake[1]: *** 正在等待未完成的任务....
+[6.313s] [ 87%] [32m[1mLinking CXX executable combined_node[0m
+[6.320s] [100%] [32m[1mLinking CXX executable servo_mediator_node[0m
+[6.510s] /usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+[6.510s] (.text+0x1b): undefined reference to `main'
+[6.542s] collect2: error: ld returned 1 exit status
+[6.543s] gmake[2]: *** [CMakeFiles/servo_mediator_node.dir/build.make:159：servo_mediator_node] 错误 1
+[6.544s] gmake[1]: *** [CMakeFiles/Makefile2:141：CMakeFiles/servo_mediator_node.dir/all] 错误 2
+[6.572s] [100%] Built target combined_node
+[6.572s] gmake: *** [Makefile:146：all] 错误 2
+[6.574s] Invoked command in '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/servo_mediator_cpp' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/local/bin/cmake --build /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/servo_mediator_cpp -- -j16 -l16
