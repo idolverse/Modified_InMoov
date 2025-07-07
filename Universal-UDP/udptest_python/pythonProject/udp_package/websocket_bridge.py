@@ -25,8 +25,10 @@ class WebSocketBridge:
         self.connected_event.wait()
         msg = {
             "topic": topic,
-            "data": json.dumps(data)
+            "data": data
         }
+        json_str = json.dumps(msg)
+        #print(f"Sending message: {json_str}")
         asyncio.run_coroutine_threadsafe(
             self.websocket.send(json.dumps(msg)),
             self.loop
