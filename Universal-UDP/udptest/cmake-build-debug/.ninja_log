@@ -1,7 +1,5 @@
 # ninja log v6
-3	584	7733250096920361	build.ninja	eb002b3c83448f91
+3	796	7735647569858177	build.ninja	24bbe3f440ea8315
 403	529	7733211404561514	C:/Desktop/udptest/cmake-build-debug/CMakeFiles/udptest.dir/CXXModules.json	e311bfca933c7ece
-5	939	7733215391571476	CMakeFiles/udptest.dir/main.cpp.obj	f242eafffb33b043
-940	2392	7733215400927171	udptest.exe	e5a3e3e9d74573fc
-3	796	7733250096920361	build.ninja	24bbe3f440ea8315
 9	1722	7733250098913346	CMakeFiles/udptest.dir/main.cpp.obj	90e5e6fd507bb82c
+940	2392	7733215400927171	udptest.exe	e5a3e3e9d74573fc
