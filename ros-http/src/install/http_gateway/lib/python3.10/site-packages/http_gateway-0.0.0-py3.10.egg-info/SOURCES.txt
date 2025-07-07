@@ -1,0 +1,17 @@
+package.xml
+setup.cfg
+setup.py
+../build/http_gateway/http_gateway.egg-info/PKG-INFO
+../build/http_gateway/http_gateway.egg-info/SOURCES.txt
+../build/http_gateway/http_gateway.egg-info/dependency_links.txt
+../build/http_gateway/http_gateway.egg-info/entry_points.txt
+../build/http_gateway/http_gateway.egg-info/requires.txt
+../build/http_gateway/http_gateway.egg-info/top_level.txt
+../build/http_gateway/http_gateway.egg-info/zip-safe
+http_gateway/__init__.py
+http_gateway/http_gateway.py
+launch/gateway.launch.py
+resource/http_gateway
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

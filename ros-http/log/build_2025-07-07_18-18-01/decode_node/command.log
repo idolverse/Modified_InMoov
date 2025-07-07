@@ -1,0 +1,2 @@
+Invoking command in '/home/guyi/github/Modified_InMoov/ros-http/build/decode_node': CONDA_PROMPT_MODIFIER=(base) /usr/local/bin/cmake /home/guyi/github/Modified_InMoov/ros-http/src/decode_node -DCMAKE_INSTALL_PREFIX=/home/guyi/github/Modified_InMoov/ros-http/install/decode_node
+Invoked command in '/home/guyi/github/Modified_InMoov/ros-http/build/decode_node' returned '1': CONDA_PROMPT_MODIFIER=(base) /usr/local/bin/cmake /home/guyi/github/Modified_InMoov/ros-http/src/decode_node -DCMAKE_INSTALL_PREFIX=/home/guyi/github/Modified_InMoov/ros-http/install/decode_node

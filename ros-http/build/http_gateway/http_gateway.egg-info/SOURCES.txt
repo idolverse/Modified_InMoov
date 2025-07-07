@@ -1,0 +1,14 @@
+package.xml
+setup.cfg
+setup.py
+http_gateway/__init__.py
+http_gateway/http_gateway.py
+http_gateway.egg-info/PKG-INFO
+http_gateway.egg-info/SOURCES.txt
+http_gateway.egg-info/dependency_links.txt
+http_gateway.egg-info/entry_points.txt
+http_gateway.egg-info/requires.txt
+http_gateway.egg-info/top_level.txt
+http_gateway.egg-info/zip-safe
+launch/gateway.launch.py
+resource/http_gateway

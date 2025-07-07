@@ -1,0 +1,11 @@
+[0.011s] Invoking command in '/home/guyi/github/Modified_InMoov/ros-http/build/decode_node': CMAKE_PREFIX_PATH=/home/guyi/github/Modified_InMoov/ros-http/install/http_gateway:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/ros_tcp_endpoint:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/ce_python:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python:/opt/ros/humble:${CMAKE_PREFIX_PATH} CONDA_PROMPT_MODIFIER=(base) /usr/local/bin/cmake --build /home/guyi/github/Modified_InMoov/ros-http/build/decode_node -- -j16 -l16
+[0.027s] [35m[1mConsolidate compiler generated dependencies of target image_decoder_node[0m
+[0.039s] [ 50%] [32mBuilding CXX object CMakeFiles/image_decoder_node.dir/src/image_decoder_node.cpp.o[0m
+[0.187s] [01m[K/home/guyi/github/Modified_InMoov/ros-http/src/decode_node/src/image_decoder_node.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Ksensor_msgs/msg/compressed_image.hpp: 没有那个文件或目录
+[0.187s]     2 | #include [01;31m[K"sensor_msgs/msg/compressed_image.hpp"[m[K
+[0.187s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.188s] compilation terminated.
+[0.191s] gmake[2]: *** [CMakeFiles/image_decoder_node.dir/build.make:76：CMakeFiles/image_decoder_node.dir/src/image_decoder_node.cpp.o] 错误 1
+[0.191s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/image_decoder_node.dir/all] 错误 2
+[0.191s] gmake: *** [Makefile:146：all] 错误 2
+[0.193s] Invoked command in '/home/guyi/github/Modified_InMoov/ros-http/build/decode_node' returned '2': CMAKE_PREFIX_PATH=/home/guyi/github/Modified_InMoov/ros-http/install/http_gateway:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/ros_tcp_endpoint:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/ce_python:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python:/opt/ros/humble:${CMAKE_PREFIX_PATH} CONDA_PROMPT_MODIFIER=(base) /usr/local/bin/cmake --build /home/guyi/github/Modified_InMoov/ros-http/build/decode_node -- -j16 -l16

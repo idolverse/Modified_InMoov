@@ -1,0 +1,15 @@
+running develop
+running egg_info
+writing http_gateway.egg-info/PKG-INFO
+writing dependency_links to http_gateway.egg-info/dependency_links.txt
+writing entry points to http_gateway.egg-info/entry_points.txt
+writing requirements to http_gateway.egg-info/requires.txt
+writing top-level names to http_gateway.egg-info/top_level.txt
+reading manifest file 'http_gateway.egg-info/SOURCES.txt'
+writing manifest file 'http_gateway.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/guyi/github/Modified_InMoov/ros-http/install/http_gateway/lib/python3.10/site-packages/http-gateway.egg-link (link to .)
+Installing http_gateway script to /home/guyi/github/Modified_InMoov/ros-http/install/http_gateway/lib/http_gateway
+
+Installed /home/guyi/github/Modified_InMoov/ros-http/build/http_gateway
+running symlink_data

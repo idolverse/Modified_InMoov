@@ -1,0 +1,24 @@
+[0.011s] Invoking command in '/home/guyi/github/Modified_InMoov/ros-http/build/decode_node': CMAKE_PREFIX_PATH=/home/guyi/github/Modified_InMoov/ros-http/install/http_gateway:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/ros_tcp_endpoint:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/ce_python:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python:/opt/ros/humble:${CMAKE_PREFIX_PATH} CONDA_PROMPT_MODIFIER=(base) /usr/local/bin/cmake --build /home/guyi/github/Modified_InMoov/ros-http/build/decode_node -- -j16 -l16
+[0.026s] [35m[1mConsolidate compiler generated dependencies of target image_decoder_node[0m
+[0.036s] [ 50%] [32mBuilding CXX object CMakeFiles/image_decoder_node.dir/src/image_decoder_node.cpp.o[0m
+[1.796s] [01m[K/home/guyi/github/Modified_InMoov/ros-http/src/decode_node/src/image_decoder_node.cpp:[m[K In member function ‘[01m[Kvoid ImageDecoderNode::callback(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.796s] [01m[K/home/guyi/github/Modified_InMoov/ros-http/src/decode_node/src/image_decoder_node.cpp:26:35:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kimdecode(std_msgs::msg::String_<std::allocator<void> >::_data_type&, cv::ImreadModes)[m[K’
+[1.796s]    26 |         cv::Mat img = [01;31m[Kcv::imdecode(msg->data, cv::IMREAD_COLOR)[m[K;
+[1.796s]       |                       [01;31m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.796s] In file included from [01m[K/usr/include/opencv4/opencv2/highgui.hpp:48[m[K,
+[1.796s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:68[m[K,
+[1.796s]                  from [01m[K/home/guyi/github/Modified_InMoov/ros-http/src/decode_node/src/image_decoder_node.cpp:3[m[K:
+[1.796s] [01m[K/usr/include/opencv4/opencv2/imgcodecs.hpp:289:18:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat cv::imdecode(cv::InputArray, int)[m[K’
+[1.796s]   289 | CV_EXPORTS_W Mat [01;36m[Kimdecode[m[K( InputArray buf, int flags );
+[1.796s]       |                  [01;36m[K^~~~~~~~[m[K
+[1.796s] [01m[K/usr/include/opencv4/opencv2/imgcodecs.hpp:289:39:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} to ‘[01m[Kcv::InputArray[m[K’ {aka ‘[01m[Kconst cv::_InputArray&[m[K’}
+[1.797s]   289 | CV_EXPORTS_W Mat imdecode( [01;36m[KInputArray buf[m[K, int flags );
+[1.797s]       |                            [01;36m[K~~~~~~~~~~~^~~[m[K
+[1.797s] [01m[K/usr/include/opencv4/opencv2/imgcodecs.hpp:297:16:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat cv::imdecode(cv::InputArray, int, cv::Mat*)[m[K’
+[1.797s]   297 | CV_EXPORTS Mat [01;36m[Kimdecode[m[K( InputArray buf, int flags, Mat* dst);
+[1.797s]       |                [01;36m[K^~~~~~~~[m[K
+[1.802s] [01m[K/usr/include/opencv4/opencv2/imgcodecs.hpp:297:16:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 2 provided
+[3.441s] gmake[2]: *** [CMakeFiles/image_decoder_node.dir/build.make:76：CMakeFiles/image_decoder_node.dir/src/image_decoder_node.cpp.o] 错误 1
+[3.441s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/image_decoder_node.dir/all] 错误 2
+[3.441s] gmake: *** [Makefile:146：all] 错误 2
+[3.443s] Invoked command in '/home/guyi/github/Modified_InMoov/ros-http/build/decode_node' returned '2': CMAKE_PREFIX_PATH=/home/guyi/github/Modified_InMoov/ros-http/install/http_gateway:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/ros_tcp_endpoint:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/ce_python:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python:/opt/ros/humble:${CMAKE_PREFIX_PATH} CONDA_PROMPT_MODIFIER=(base) /usr/local/bin/cmake --build /home/guyi/github/Modified_InMoov/ros-http/build/decode_node -- -j16 -l16

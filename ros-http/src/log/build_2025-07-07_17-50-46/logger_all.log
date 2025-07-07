@@ -1,0 +1,147 @@
+[0.054s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'decode_node', '--symlink-install']
+[0.054s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['decode_node'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x79779e843460>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x79779e842f50>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x79779e842f50>>)
+[0.140s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.140s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.140s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.140s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.140s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.140s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.140s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/guyi/github/Modified_InMoov/ros-http/src'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(decode_node) by extensions ['ignore', 'ignore_ament_install']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(decode_node) by extension 'ignore'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(decode_node) by extension 'ignore_ament_install'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(decode_node) by extensions ['colcon_pkg']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(decode_node) by extension 'colcon_pkg'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(decode_node) by extensions ['colcon_meta']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(decode_node) by extension 'colcon_meta'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(decode_node) by extensions ['ros']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(decode_node) by extension 'ros'
+[0.148s] DEBUG:colcon.colcon_core.package_identification:Package 'decode_node' with type 'ros.ament_cmake' and name 'decode_node'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(http_gateway) by extensions ['ignore', 'ignore_ament_install']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(http_gateway) by extension 'ignore'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(http_gateway) by extension 'ignore_ament_install'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(http_gateway) by extensions ['colcon_pkg']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(http_gateway) by extension 'colcon_pkg'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(http_gateway) by extensions ['colcon_meta']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(http_gateway) by extension 'colcon_meta'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(http_gateway) by extensions ['ros']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(http_gateway) by extension 'ros'
+[0.148s] DEBUG:colcon.colcon_core.package_identification:Package 'http_gateway' with type 'ros.ament_python' and name 'http_gateway'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.149s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.149s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.149s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.149s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.149s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.166s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'http_gateway' in 'http_gateway'
+[0.166s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.166s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.167s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/guyi/github/Modified_InMoov/ros-http/src/install/http_gateway' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.167s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/guyi/github/Modified_InMoov/ros-http/src/install/decode_node' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.167s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/guyi/github/Modified_InMoov/ros-http/src/install/decode_node' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.168s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/guyi/github/Modified_InMoov/ros-http/src/install
+[0.168s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/guyi/github/Modified_InMoov/ros-http/install
+[0.168s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install
+[0.168s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install
+[0.169s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 6 installed packages in /home/guyi/inmoov_ros2/install
+[0.170s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 360 installed packages in /opt/ros/humble
+[0.171s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'decode_node' build argument 'cmake_args' from command line to 'None'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'decode_node' build argument 'cmake_target' from command line to 'None'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'decode_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'decode_node' build argument 'cmake_clean_cache' from command line to 'False'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'decode_node' build argument 'cmake_clean_first' from command line to 'False'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'decode_node' build argument 'cmake_force_configure' from command line to 'False'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'decode_node' build argument 'ament_cmake_args' from command line to 'None'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'decode_node' build argument 'catkin_cmake_args' from command line to 'None'
+[0.194s] Level 5:colcon.colcon_core.verb:set package 'decode_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.194s] DEBUG:colcon.colcon_core.verb:Building package 'decode_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/guyi/github/Modified_InMoov/ros-http/src/build/decode_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/guyi/github/Modified_InMoov/ros-http/src/install/decode_node', 'merge_install': False, 'path': '/home/guyi/github/Modified_InMoov/ros-http/src/decode_node', 'symlink_install': True, 'test_result_base': None}
+[0.194s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.195s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.195s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/guyi/github/Modified_InMoov/ros-http/src/decode_node' with build type 'ament_cmake'
+[0.195s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/guyi/github/Modified_InMoov/ros-http/src/decode_node'
+[0.196s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.197s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.197s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.206s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/guyi/github/Modified_InMoov/ros-http/src/build/decode_node': CMAKE_PREFIX_PATH=/home/guyi/github/Modified_InMoov/ros-http/src/install/decode_node:/home/guyi/github/Modified_InMoov/ros-http/src/install/http_gateway:/home/guyi/github/Modified_InMoov/ros-http/install/http_gateway:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/ros_tcp_endpoint:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/ce_python:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python:/opt/ros/humble:/home/guyi/github/Modified_InMoov/ros-http/install/decode_node:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/servo_mediator_cpp:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/inmoov_description:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp:/home/guyi/inmoov_ros2/install/inmoov_tools:/home/guyi/inmoov_ros2/install/inmoov_bringup:/home/guyi/inmoov_ros2/install/inmoov_msgs:/home/guyi/inmoov_ros2/install/inmoov_meshes:/home/guyi/inmoov_ros2/install/inmoov_config_test:/home/guyi/inmoov_ros2/install/inmoov_description /usr/local/bin/cmake /home/guyi/github/Modified_InMoov/ros-http/src/decode_node -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/guyi/github/Modified_InMoov/ros-http/src/install/decode_node
+[0.975s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/guyi/github/Modified_InMoov/ros-http/src/build/decode_node' returned '0': CMAKE_PREFIX_PATH=/home/guyi/github/Modified_InMoov/ros-http/src/install/decode_node:/home/guyi/github/Modified_InMoov/ros-http/src/install/http_gateway:/home/guyi/github/Modified_InMoov/ros-http/install/http_gateway:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/ros_tcp_endpoint:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/ce_python:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python:/opt/ros/humble:/home/guyi/github/Modified_InMoov/ros-http/install/decode_node:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/servo_mediator_cpp:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/inmoov_description:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp:/home/guyi/inmoov_ros2/install/inmoov_tools:/home/guyi/inmoov_ros2/install/inmoov_bringup:/home/guyi/inmoov_ros2/install/inmoov_msgs:/home/guyi/inmoov_ros2/install/inmoov_meshes:/home/guyi/inmoov_ros2/install/inmoov_config_test:/home/guyi/inmoov_ros2/install/inmoov_description /usr/local/bin/cmake /home/guyi/github/Modified_InMoov/ros-http/src/decode_node -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/guyi/github/Modified_InMoov/ros-http/src/install/decode_node
+[0.975s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/guyi/github/Modified_InMoov/ros-http/src/build/decode_node': CMAKE_PREFIX_PATH=/home/guyi/github/Modified_InMoov/ros-http/src/install/decode_node:/home/guyi/github/Modified_InMoov/ros-http/src/install/http_gateway:/home/guyi/github/Modified_InMoov/ros-http/install/http_gateway:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/ros_tcp_endpoint:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/ce_python:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python:/opt/ros/humble:/home/guyi/github/Modified_InMoov/ros-http/install/decode_node:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/servo_mediator_cpp:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/inmoov_description:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp:/home/guyi/inmoov_ros2/install/inmoov_tools:/home/guyi/inmoov_ros2/install/inmoov_bringup:/home/guyi/inmoov_ros2/install/inmoov_msgs:/home/guyi/inmoov_ros2/install/inmoov_meshes:/home/guyi/inmoov_ros2/install/inmoov_config_test:/home/guyi/inmoov_ros2/install/inmoov_description /usr/local/bin/cmake --build /home/guyi/github/Modified_InMoov/ros-http/src/build/decode_node -- -j16 -l16
+[6.594s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/guyi/github/Modified_InMoov/ros-http/src/build/decode_node' returned '0': CMAKE_PREFIX_PATH=/home/guyi/github/Modified_InMoov/ros-http/src/install/decode_node:/home/guyi/github/Modified_InMoov/ros-http/src/install/http_gateway:/home/guyi/github/Modified_InMoov/ros-http/install/http_gateway:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/ros_tcp_endpoint:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/ce_python:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python:/opt/ros/humble:/home/guyi/github/Modified_InMoov/ros-http/install/decode_node:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/servo_mediator_cpp:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/inmoov_description:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp:/home/guyi/inmoov_ros2/install/inmoov_tools:/home/guyi/inmoov_ros2/install/inmoov_bringup:/home/guyi/inmoov_ros2/install/inmoov_msgs:/home/guyi/inmoov_ros2/install/inmoov_meshes:/home/guyi/inmoov_ros2/install/inmoov_config_test:/home/guyi/inmoov_ros2/install/inmoov_description /usr/local/bin/cmake --build /home/guyi/github/Modified_InMoov/ros-http/src/build/decode_node -- -j16 -l16
+[6.598s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/guyi/github/Modified_InMoov/ros-http/src/build/decode_node': CMAKE_PREFIX_PATH=/home/guyi/github/Modified_InMoov/ros-http/src/install/decode_node:/home/guyi/github/Modified_InMoov/ros-http/src/install/http_gateway:/home/guyi/github/Modified_InMoov/ros-http/install/http_gateway:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/ros_tcp_endpoint:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/ce_python:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python:/opt/ros/humble:/home/guyi/github/Modified_InMoov/ros-http/install/decode_node:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/servo_mediator_cpp:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/inmoov_description:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp:/home/guyi/inmoov_ros2/install/inmoov_tools:/home/guyi/inmoov_ros2/install/inmoov_bringup:/home/guyi/inmoov_ros2/install/inmoov_msgs:/home/guyi/inmoov_ros2/install/inmoov_meshes:/home/guyi/inmoov_ros2/install/inmoov_config_test:/home/guyi/inmoov_ros2/install/inmoov_description /usr/local/bin/cmake --install /home/guyi/github/Modified_InMoov/ros-http/src/build/decode_node
+[6.631s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(decode_node)
+[6.631s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/guyi/github/Modified_InMoov/ros-http/src/build/decode_node' returned '0': CMAKE_PREFIX_PATH=/home/guyi/github/Modified_InMoov/ros-http/src/install/decode_node:/home/guyi/github/Modified_InMoov/ros-http/src/install/http_gateway:/home/guyi/github/Modified_InMoov/ros-http/install/http_gateway:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/ros_tcp_endpoint:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/ce_python:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python:/opt/ros/humble:/home/guyi/github/Modified_InMoov/ros-http/install/decode_node:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/servo_mediator_cpp:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/inmoov_description:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp:/home/guyi/inmoov_ros2/install/inmoov_tools:/home/guyi/inmoov_ros2/install/inmoov_bringup:/home/guyi/inmoov_ros2/install/inmoov_msgs:/home/guyi/inmoov_ros2/install/inmoov_meshes:/home/guyi/inmoov_ros2/install/inmoov_config_test:/home/guyi/inmoov_ros2/install/inmoov_description /usr/local/bin/cmake --install /home/guyi/github/Modified_InMoov/ros-http/src/build/decode_node
+[6.632s] Level 1:colcon.colcon_core.environment:checking '/home/guyi/github/Modified_InMoov/ros-http/src/install/decode_node' for CMake module files
+[6.633s] Level 1:colcon.colcon_core.environment:checking '/home/guyi/github/Modified_InMoov/ros-http/src/install/decode_node' for CMake config files
+[6.633s] Level 1:colcon.colcon_core.shell:create_environment_hook('decode_node', 'cmake_prefix_path')
+[6.633s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/guyi/github/Modified_InMoov/ros-http/src/install/decode_node/share/decode_node/hook/cmake_prefix_path.ps1'
+[6.633s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/guyi/github/Modified_InMoov/ros-http/src/install/decode_node/share/decode_node/hook/cmake_prefix_path.dsv'
+[6.634s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/guyi/github/Modified_InMoov/ros-http/src/install/decode_node/share/decode_node/hook/cmake_prefix_path.sh'
+[6.634s] Level 1:colcon.colcon_core.environment:checking '/home/guyi/github/Modified_InMoov/ros-http/src/install/decode_node/lib'
+[6.634s] Level 1:colcon.colcon_core.environment:checking '/home/guyi/github/Modified_InMoov/ros-http/src/install/decode_node/bin'
+[6.634s] Level 1:colcon.colcon_core.environment:checking '/home/guyi/github/Modified_InMoov/ros-http/src/install/decode_node/lib/pkgconfig/decode_node.pc'
+[6.634s] Level 1:colcon.colcon_core.environment:checking '/home/guyi/github/Modified_InMoov/ros-http/src/install/decode_node/lib/python3.10/site-packages'
+[6.634s] Level 1:colcon.colcon_core.environment:checking '/home/guyi/github/Modified_InMoov/ros-http/src/install/decode_node/bin'
+[6.634s] INFO:colcon.colcon_core.shell:Creating package script '/home/guyi/github/Modified_InMoov/ros-http/src/install/decode_node/share/decode_node/package.ps1'
+[6.635s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/guyi/github/Modified_InMoov/ros-http/src/install/decode_node/share/decode_node/package.dsv'
+[6.635s] INFO:colcon.colcon_core.shell:Creating package script '/home/guyi/github/Modified_InMoov/ros-http/src/install/decode_node/share/decode_node/package.sh'
+[6.636s] INFO:colcon.colcon_core.shell:Creating package script '/home/guyi/github/Modified_InMoov/ros-http/src/install/decode_node/share/decode_node/package.bash'
+[6.636s] INFO:colcon.colcon_core.shell:Creating package script '/home/guyi/github/Modified_InMoov/ros-http/src/install/decode_node/share/decode_node/package.zsh'
+[6.636s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/guyi/github/Modified_InMoov/ros-http/src/install/decode_node/share/colcon-core/packages/decode_node)
+[6.637s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(decode_node)
+[6.637s] Level 1:colcon.colcon_core.environment:checking '/home/guyi/github/Modified_InMoov/ros-http/src/install/decode_node' for CMake module files
+[6.637s] Level 1:colcon.colcon_core.environment:checking '/home/guyi/github/Modified_InMoov/ros-http/src/install/decode_node' for CMake config files
+[6.637s] Level 1:colcon.colcon_core.shell:create_environment_hook('decode_node', 'cmake_prefix_path')
+[6.637s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/guyi/github/Modified_InMoov/ros-http/src/install/decode_node/share/decode_node/hook/cmake_prefix_path.ps1'
+[6.637s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/guyi/github/Modified_InMoov/ros-http/src/install/decode_node/share/decode_node/hook/cmake_prefix_path.dsv'
+[6.638s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/guyi/github/Modified_InMoov/ros-http/src/install/decode_node/share/decode_node/hook/cmake_prefix_path.sh'
+[6.638s] Level 1:colcon.colcon_core.environment:checking '/home/guyi/github/Modified_InMoov/ros-http/src/install/decode_node/lib'
+[6.638s] Level 1:colcon.colcon_core.environment:checking '/home/guyi/github/Modified_InMoov/ros-http/src/install/decode_node/bin'
+[6.638s] Level 1:colcon.colcon_core.environment:checking '/home/guyi/github/Modified_InMoov/ros-http/src/install/decode_node/lib/pkgconfig/decode_node.pc'
+[6.638s] Level 1:colcon.colcon_core.environment:checking '/home/guyi/github/Modified_InMoov/ros-http/src/install/decode_node/lib/python3.10/site-packages'
+[6.638s] Level 1:colcon.colcon_core.environment:checking '/home/guyi/github/Modified_InMoov/ros-http/src/install/decode_node/bin'
+[6.638s] INFO:colcon.colcon_core.shell:Creating package script '/home/guyi/github/Modified_InMoov/ros-http/src/install/decode_node/share/decode_node/package.ps1'
+[6.639s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/guyi/github/Modified_InMoov/ros-http/src/install/decode_node/share/decode_node/package.dsv'
+[6.639s] INFO:colcon.colcon_core.shell:Creating package script '/home/guyi/github/Modified_InMoov/ros-http/src/install/decode_node/share/decode_node/package.sh'
+[6.639s] INFO:colcon.colcon_core.shell:Creating package script '/home/guyi/github/Modified_InMoov/ros-http/src/install/decode_node/share/decode_node/package.bash'
+[6.639s] INFO:colcon.colcon_core.shell:Creating package script '/home/guyi/github/Modified_InMoov/ros-http/src/install/decode_node/share/decode_node/package.zsh'
+[6.640s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/guyi/github/Modified_InMoov/ros-http/src/install/decode_node/share/colcon-core/packages/decode_node)
+[6.640s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[6.640s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[6.640s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[6.640s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[6.643s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[6.643s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[6.643s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[6.650s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[6.650s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/guyi/github/Modified_InMoov/ros-http/src/install/local_setup.ps1'
+[6.651s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/guyi/github/Modified_InMoov/ros-http/src/install/_local_setup_util_ps1.py'
+[6.652s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/guyi/github/Modified_InMoov/ros-http/src/install/setup.ps1'
+[6.652s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/guyi/github/Modified_InMoov/ros-http/src/install/local_setup.sh'
+[6.653s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/guyi/github/Modified_InMoov/ros-http/src/install/_local_setup_util_sh.py'
+[6.653s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/guyi/github/Modified_InMoov/ros-http/src/install/setup.sh'
+[6.654s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/guyi/github/Modified_InMoov/ros-http/src/install/local_setup.bash'
+[6.656s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/guyi/github/Modified_InMoov/ros-http/src/install/setup.bash'
+[6.657s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/guyi/github/Modified_InMoov/ros-http/src/install/local_setup.zsh'
+[6.658s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/guyi/github/Modified_InMoov/ros-http/src/install/setup.zsh'

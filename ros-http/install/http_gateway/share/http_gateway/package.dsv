@@ -1,0 +1,9 @@
+source;share/http_gateway/hook/pythonpath.ps1
+source;share/http_gateway/hook/pythonpath.dsv
+source;share/http_gateway/hook/pythonpath.sh
+source;share/http_gateway/hook/ament_prefix_path.ps1
+source;share/http_gateway/hook/ament_prefix_path.dsv
+source;share/http_gateway/hook/ament_prefix_path.sh
+source;../../build/http_gateway/share/http_gateway/hook/pythonpath_develop.ps1
+source;../../build/http_gateway/share/http_gateway/hook/pythonpath_develop.dsv
+source;../../build/http_gateway/share/http_gateway/hook/pythonpath_develop.sh

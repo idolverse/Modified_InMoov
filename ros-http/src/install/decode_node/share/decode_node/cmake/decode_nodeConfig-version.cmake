@@ -1,0 +1,1 @@
+/home/guyi/github/Modified_InMoov/ros-http/src/build/decode_node/ament_cmake_core/decode_nodeConfig-version.cmake

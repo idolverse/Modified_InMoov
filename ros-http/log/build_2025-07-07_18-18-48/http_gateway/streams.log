@@ -1,0 +1,17 @@
+[0.372s] Invoking command in '/home/guyi/github/Modified_InMoov/ros-http/build/http_gateway': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/guyi/github/Modified_InMoov/ros-http/build/http_gateway/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/guyi/github/Modified_InMoov/ros-http/install/http_gateway/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/guyi/github/Modified_InMoov/ros-http/build/http_gateway/build --no-deps symlink_data
+[0.521s] running develop
+[0.606s] running egg_info
+[0.606s] writing http_gateway.egg-info/PKG-INFO
+[0.606s] writing dependency_links to http_gateway.egg-info/dependency_links.txt
+[0.606s] writing entry points to http_gateway.egg-info/entry_points.txt
+[0.606s] writing requirements to http_gateway.egg-info/requires.txt
+[0.606s] writing top-level names to http_gateway.egg-info/top_level.txt
+[0.607s] reading manifest file 'http_gateway.egg-info/SOURCES.txt'
+[0.608s] writing manifest file 'http_gateway.egg-info/SOURCES.txt'
+[0.608s] running build_ext
+[0.608s] Creating /home/guyi/github/Modified_InMoov/ros-http/install/http_gateway/lib/python3.10/site-packages/http-gateway.egg-link (link to .)
+[0.609s] Installing http_gateway script to /home/guyi/github/Modified_InMoov/ros-http/install/http_gateway/lib/http_gateway
+[0.609s] 
+[0.609s] Installed /home/guyi/github/Modified_InMoov/ros-http/build/http_gateway
+[0.609s] running symlink_data
+[0.628s] Invoked command in '/home/guyi/github/Modified_InMoov/ros-http/build/http_gateway' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/guyi/github/Modified_InMoov/ros-http/build/http_gateway/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/guyi/github/Modified_InMoov/ros-http/install/http_gateway/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/guyi/github/Modified_InMoov/ros-http/build/http_gateway/build --no-deps symlink_data

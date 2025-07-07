@@ -1,0 +1,26 @@
+[0.371s] Invoking command in '/home/guyi/github/Modified_InMoov/ros-http/build/http_gateway': PYTHONPATH=/home/guyi/github/Modified_InMoov/ros-http/build/http_gateway/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/guyi/github/Modified_InMoov/ros-http/install/http_gateway/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/guyi/github/Modified_InMoov/ros-http/build/http_gateway/build --no-deps symlink_data
+[0.519s] running develop
+[0.606s] running egg_info
+[0.606s] creating http_gateway.egg-info
+[0.607s] writing http_gateway.egg-info/PKG-INFO
+[0.607s] writing dependency_links to http_gateway.egg-info/dependency_links.txt
+[0.607s] writing entry points to http_gateway.egg-info/entry_points.txt
+[0.607s] writing requirements to http_gateway.egg-info/requires.txt
+[0.607s] writing top-level names to http_gateway.egg-info/top_level.txt
+[0.607s] writing manifest file 'http_gateway.egg-info/SOURCES.txt'
+[0.608s] reading manifest file 'http_gateway.egg-info/SOURCES.txt'
+[0.608s] writing manifest file 'http_gateway.egg-info/SOURCES.txt'
+[0.609s] running build_ext
+[0.609s] Creating /home/guyi/github/Modified_InMoov/ros-http/install/http_gateway/lib/python3.10/site-packages/http-gateway.egg-link (link to .)
+[0.610s] Installing http_gateway script to /home/guyi/github/Modified_InMoov/ros-http/install/http_gateway/lib/http_gateway
+[0.610s] 
+[0.610s] Installed /home/guyi/github/Modified_InMoov/ros-http/build/http_gateway
+[0.610s] running symlink_data
+[0.610s] creating /home/guyi/github/Modified_InMoov/ros-http/install/http_gateway/share/ament_index
+[0.610s] creating /home/guyi/github/Modified_InMoov/ros-http/install/http_gateway/share/ament_index/resource_index
+[0.610s] creating /home/guyi/github/Modified_InMoov/ros-http/install/http_gateway/share/ament_index/resource_index/packages
+[0.610s] symbolically linking /home/guyi/github/Modified_InMoov/ros-http/build/http_gateway/resource/http_gateway -> /home/guyi/github/Modified_InMoov/ros-http/install/http_gateway/share/ament_index/resource_index/packages
+[0.610s] symbolically linking /home/guyi/github/Modified_InMoov/ros-http/build/http_gateway/package.xml -> /home/guyi/github/Modified_InMoov/ros-http/install/http_gateway/share/http_gateway
+[0.610s] creating /home/guyi/github/Modified_InMoov/ros-http/install/http_gateway/share/http_gateway/launch
+[0.610s] symbolically linking /home/guyi/github/Modified_InMoov/ros-http/build/http_gateway/launch/gateway.launch.py -> /home/guyi/github/Modified_InMoov/ros-http/install/http_gateway/share/http_gateway/launch
+[0.631s] Invoked command in '/home/guyi/github/Modified_InMoov/ros-http/build/http_gateway' returned '0': PYTHONPATH=/home/guyi/github/Modified_InMoov/ros-http/build/http_gateway/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/guyi/github/Modified_InMoov/ros-http/install/http_gateway/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/guyi/github/Modified_InMoov/ros-http/build/http_gateway/build --no-deps symlink_data

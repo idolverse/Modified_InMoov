@@ -1,0 +1,4 @@
+source;share/decode_node/local_setup.bash
+source;share/decode_node/local_setup.dsv
+source;share/decode_node/local_setup.sh
+source;share/decode_node/local_setup.zsh

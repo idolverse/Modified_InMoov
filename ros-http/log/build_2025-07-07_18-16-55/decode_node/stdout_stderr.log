@@ -1,0 +1,9 @@
+[35m[1mConsolidate compiler generated dependencies of target image_decoder_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/image_decoder_node.dir/src/image_decoder_node.cpp.o[0m
+[01m[K/home/guyi/github/Modified_InMoov/ros-http/src/decode_node/src/image_decoder_node.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Ksensor_msgs/msg/compressed_image.hpp: 没有那个文件或目录
+    2 | #include [01;31m[K"sensor_msgs/msg/compressed_image.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/image_decoder_node.dir/build.make:76：CMakeFiles/image_decoder_node.dir/src/image_decoder_node.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/image_decoder_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

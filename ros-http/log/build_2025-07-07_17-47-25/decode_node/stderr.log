@@ -1,0 +1,13 @@
+[33mCMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CATKIN_INSTALL_INTO_PREFIX_ROOT
+    CATKIN_SYMLINK_INSTALL
+
+[0m
+/usr/bin/ld: CMakeFiles/image_decoder_node.dir/src/image_decoder_node.cpp.o: undefined reference to symbol 'BIO_read@@OPENSSL_3.0.0'
+/usr/bin/ld: /lib/x86_64-linux-gnu/libcrypto.so.3: error adding symbols: DSO missing from command line
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/image_decoder_node.dir/build.make:230：image_decoder_node] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/image_decoder_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2
