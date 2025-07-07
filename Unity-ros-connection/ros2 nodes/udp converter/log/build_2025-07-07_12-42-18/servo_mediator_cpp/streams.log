@@ -1,0 +1,40 @@
+[0.143s] Invoking command in '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/servo_mediator_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/local/bin/cmake --build /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/servo_mediator_cpp -- -j16 -l16
+[0.153s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.217s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.239s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.241s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.244s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.250s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.258s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.277s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.278s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.364s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.454s] -- Configuring done
+[0.462s] -- Generating done
+[0.464s] -- Build files have been written to: /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/servo_mediator_cpp
+[0.478s] [35m[1mConsolidate compiler generated dependencies of target combined_node[0m
+[0.493s] [ 16%] [32mBuilding CXX object CMakeFiles/combined_node.dir/src/main.cpp.o[0m
+[0.494s] [ 33%] [32mBuilding CXX object CMakeFiles/combined_node.dir/src/websocket_receiver_node.cpp.o[0m
+[7.874s] [ 50%] [32m[1mLinking CXX executable combined_node[0m
+[8.336s] [100%] Built target combined_node
+[8.346s] Invoked command in '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/servo_mediator_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/local/bin/cmake --build /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/servo_mediator_cpp -- -j16 -l16
+[8.350s] Invoking command in '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/servo_mediator_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/local/bin/cmake --install /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/servo_mediator_cpp
+[8.351s] -- Install configuration: ""
+[8.352s] -- Installing: /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/lib/servo_mediator_cpp/combined_node
+[8.357s] -- Set runtime path of "/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/lib/servo_mediator_cpp/combined_node" to ""
+[8.357s] -- Up-to-date: /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/share/ament_index/resource_index/package_run_dependencies/servo_mediator_cpp
+[8.357s] -- Up-to-date: /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/share/ament_index/resource_index/parent_prefix_path/servo_mediator_cpp
+[8.357s] -- Up-to-date: /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/share/servo_mediator_cpp/environment/ament_prefix_path.sh
+[8.358s] -- Installing: /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/share/servo_mediator_cpp/environment/ament_prefix_path.dsv
+[8.358s] -- Up-to-date: /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/share/servo_mediator_cpp/environment/path.sh
+[8.358s] -- Installing: /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/share/servo_mediator_cpp/environment/path.dsv
+[8.358s] -- Up-to-date: /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/share/servo_mediator_cpp/local_setup.bash
+[8.358s] -- Up-to-date: /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/share/servo_mediator_cpp/local_setup.sh
+[8.358s] -- Up-to-date: /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/share/servo_mediator_cpp/local_setup.zsh
+[8.358s] -- Installing: /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/share/servo_mediator_cpp/local_setup.dsv
+[8.358s] -- Installing: /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/share/servo_mediator_cpp/package.dsv
+[8.358s] -- Up-to-date: /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/share/ament_index/resource_index/packages/servo_mediator_cpp
+[8.358s] -- Up-to-date: /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/share/servo_mediator_cpp/cmake/servo_mediator_cppConfig.cmake
+[8.358s] -- Up-to-date: /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/share/servo_mediator_cpp/cmake/servo_mediator_cppConfig-version.cmake
+[8.358s] -- Up-to-date: /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/share/servo_mediator_cpp/package.xml
+[8.359s] Invoked command in '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/servo_mediator_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/local/bin/cmake --install /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/servo_mediator_cpp

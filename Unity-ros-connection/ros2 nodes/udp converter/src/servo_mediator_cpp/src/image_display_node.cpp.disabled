@@ -1,0 +1,61 @@
+#include <rclcpp/rclcpp.hpp>
+#include <std_msgs/msg/string.hpp>
+#include <opencv2/opencv.hpp>
+#include <nlohmann/json.hpp>
+#include <vector>
+#include <string>
+
+using std::placeholders::_1;
+using json = nlohmann::json;
+
+class ImageDisplayNode : public rclcpp::Node {
+public:
+    ImageDisplayNode() : Node("image_display_node") {
+        sub_ = this->create_subscription<std_msgs::msg::String>(
+            "/image_raw", 10, std::bind(&ImageDisplayNode::image_callback, this, _1));
+        RCLCPP_INFO(this->get_logger(), "🖼️ ImageDisplayNode started");
+    }
+
+private:
+    rclcpp::Subscription<std_msgs::msg::String>::SharedPtr sub_;
+
+    void image_callback(const std_msgs::msg::String::SharedPtr msg) {
+        try {
+            json j = json::parse(msg->data);
+            std::string b64_str = j.at("img");
+
+            std::string raw = base64_decode(b64_str);
+            std::vector<uchar> buf(raw.begin(), raw.end());
+            cv::Mat img = cv::imdecode(buf, cv::IMREAD_COLOR);
+
+            if (img.empty()) {
+                RCLCPP_WARN(this->get_logger(), "❌ Failed to decode image");
+                return;
+            }
+
+            cv::imshow("Received Image", img);
+            cv::waitKey(1);
+        } catch (const std::exception &e) {
+            RCLCPP_WARN(this->get_logger(), "Error parsing or displaying image: %s", e.what());
+        }
+    }
+
+    std::string base64_decode(const std::string &in) {
+        std::string out;
+        std::vector<int> T(256, -1);
+        for (int i = 0; i < 64; i++)
+            T["ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"[i]] = i;
+
+        int val = 0, valb = -8;
+        for (uchar c : in) {
+            if (T[c] == -1) break;
+            val = (val << 6) + T[c];
+            valb += 6;
+            if (valb >= 0) {
+                out.push_back(char((val >> valb) & 0xFF));
+                valb -= 8;
+            }
+        }
+        return out;
+    }
+};

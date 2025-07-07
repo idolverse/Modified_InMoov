@@ -1,0 +1,6 @@
+[31mCMake Error at CMakeLists.txt:17 (target_link_libraries):
+  Cannot specify link libraries for target "combined_node" which is not built
+  by this project.
+
+[0m
+gmake: *** [Makefile:348：cmake_check_build_system] 错误 1

@@ -1,0 +1,159 @@
+[0.000000] (-) TimerEvent: {}
+[0.000222] (ce_python) JobQueued: {'identifier': 'ce_python', 'dependencies': OrderedDict()}
+[0.000246] (servo_mediator_cpp) JobQueued: {'identifier': 'servo_mediator_cpp', 'dependencies': OrderedDict()}
+[0.000258] (ce_python) JobStarted: {'identifier': 'ce_python'}
+[0.004879] (servo_mediator_cpp) JobStarted: {'identifier': 'servo_mediator_cpp'}
+[0.099545] (-) TimerEvent: {}
+[0.142928] (servo_mediator_cpp) JobProgress: {'identifier': 'servo_mediator_cpp', 'progress': 'cmake'}
+[0.143705] (servo_mediator_cpp) JobProgress: {'identifier': 'servo_mediator_cpp', 'progress': 'build'}
+[0.143761] (servo_mediator_cpp) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/servo_mediator_cpp', '--', '-j16', '-l16'], 'cwd': '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/servo_mediator_cpp', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('HTTPS_PROXY', 'http://127.0.0.1:10808/'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'guyi'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks://127.0.0.1:10808/'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/guyi/inmoov_ros2/install/inmoov_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/guyi'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('NVM_BIN', '/home/guyi/.nvm/versions/node/v18.20.8/bin'), ('NVM_INC', '/home/guyi/.nvm/versions/node/v18.20.8/include/node'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '2157'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('NVM_DIR', '/home/guyi/.nvm'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:10808/'), ('COLCON_PREFIX_PATH', '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install:/home/guyi/inmoov_ros2/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'guyi'), ('ALL_PROXY', 'socks://127.0.0.1:10808/'), ('http_proxy', 'http://127.0.0.1:10808/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'guyi'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/guyi/.local/bin:/home/guyi/.nvm/versions/node/v18.20.8/bin:/opt/ros/humble/bin:/home/guyi/anaconda3/bin:/home/guyi/anaconda3/condabin:/home/guyi/.local/bin:/home/guyi/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/guyi-GTR:@/tmp/.ICE-unix/2129,unix/guyi-GTR:/tmp/.ICE-unix/2129'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('ftp_proxy', 'http://127.0.0.1:10808/'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/dd41c282_fcc2_4b01_817e_e464f8b5ccee'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.WQKW82'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.250'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/guyi/anaconda3/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python:/home/guyi/inmoov_ros2/install/inmoov_config_test:/home/guyi/inmoov_ros2/install/inmoov_tools:/home/guyi/inmoov_ros2/install/inmoov_bringup:/home/guyi/inmoov_ros2/install/inmoov_meshes:/home/guyi/inmoov_ros2/install/inmoov_msgs:/home/guyi/inmoov_ros2/install/inmoov_description:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/guyi/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/servo_mediator_cpp'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/guyi/anaconda3/bin/conda'), ('CLUTTER_IM_MODULE', 'xim'), ('FTP_PROXY', 'http://127.0.0.1:10808/'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python/lib/python3.10/site-packages:/home/guyi/inmoov_ros2/install/inmoov_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:10808/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('CONDA_PREFIX', '/home/guyi/anaconda3'), ('GSETTINGS_SCHEMA_DIR_CONDA_BACKUP', ''), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp:/home/guyi/inmoov_ros2/install/inmoov_tools:/home/guyi/inmoov_ros2/install/inmoov_bringup:/home/guyi/inmoov_ros2/install/inmoov_msgs:/home/guyi/inmoov_ros2/install/inmoov_meshes:/home/guyi/inmoov_ros2/install/inmoov_config_test:/home/guyi/inmoov_ros2/install/inmoov_description:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python:/opt/ros/humble')]), 'shell': False}
+[0.178599] (servo_mediator_cpp) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/combined_node.dir/src/main.cpp.o\x1b[0m\n'}
+[0.179424] (servo_mediator_cpp) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/combined_node.dir/src/websocket_receiver_node.cpp.o\x1b[0m\n'}
+[0.199663] (-) TimerEvent: {}
+[0.299950] (-) TimerEvent: {}
+[0.352086] (ce_python) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/ce_python', 'build', '--build-base', '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/ce_python/build', 'install', '--record', '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/ce_python/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/ce_python', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'CONDA_PROMPT_MODIFIER': '(base)', 'HTTPS_PROXY': 'http://127.0.0.1:10808/', 'no_proxy': 'localhost,127.0.0.0/8,::1', 'LANGUAGE': 'zh_CN:en', 'USER': 'guyi', 'LC_TIME': 'zh_CN.UTF-8', 'all_proxy': 'socks://127.0.0.1:10808/', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/guyi/inmoov_ros2/install/inmoov_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/guyi', 'CONDA_SHLVL': '1', 'OLDPWD': '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes', 'DESKTOP_SESSION': 'ubuntu', 'NO_PROXY': 'localhost,127.0.0.0/8,::1', 'NVM_BIN': '/home/guyi/.nvm/versions/node/v18.20.8/bin', 'NVM_INC': '/home/guyi/.nvm/versions/node/v18.20.8/include/node', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'zh_CN.UTF-8', 'SYSTEMD_EXEC_PID': '2157', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'NVM_DIR': '/home/guyi/.nvm', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'https_proxy': 'http://127.0.0.1:10808/', 'COLCON_PREFIX_PATH': '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install:/home/guyi/inmoov_ros2/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'fcitx', 'LOGNAME': 'guyi', 'ALL_PROXY': 'socks://127.0.0.1:10808/', 'http_proxy': 'http://127.0.0.1:10808/', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'guyi', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/guyi/.local/bin:/home/guyi/.nvm/versions/node/v18.20.8/bin:/opt/ros/humble/bin:/home/guyi/anaconda3/bin:/home/guyi/anaconda3/condabin:/home/guyi/.local/bin:/home/guyi/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/guyi-GTR:@/tmp/.ICE-unix/2129,unix/guyi-GTR:/tmp/.ICE-unix/2129', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'zh_CN.UTF-8', 'ftp_proxy': 'http://127.0.0.1:10808/', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/dd41c282_fcc2_4b01_817e_e464f8b5ccee', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'zh_CN.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'zh_CN.UTF-8', 'XMODIFIERS': '@im=fcitx', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.WQKW82', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.250', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/guyi/anaconda3/share/glib-2.0/schemas', 'AMENT_PREFIX_PATH': '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python:/home/guyi/inmoov_ros2/install/inmoov_config_test:/home/guyi/inmoov_ros2/install/inmoov_tools:/home/guyi/inmoov_ros2/install/inmoov_bringup:/home/guyi/inmoov_ros2/install/inmoov_meshes:/home/guyi/inmoov_ros2/install/inmoov_msgs:/home/guyi/inmoov_ros2/install/inmoov_description:/opt/ros/humble', 'CONDA_PYTHON_EXE': '/home/guyi/anaconda3/bin/python', 'SHELL': '/bin/bash', 'LC_NAME': 'zh_CN.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CONDA_DEFAULT_ENV': 'base', 'LC_MEASUREMENT': 'zh_CN.UTF-8', 'LC_IDENTIFICATION': 'zh_CN.UTF-8', 'QT_IM_MODULE': 'fcitx', 'PWD': '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/ce_python', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/guyi/anaconda3/bin/conda', 'CLUTTER_IM_MODULE': 'xim', 'FTP_PROXY': 'http://127.0.0.1:10808/', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/ce_python/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python/lib/python3.10/site-packages:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python/lib/python3.10/site-packages:/home/guyi/inmoov_ros2/install/inmoov_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'HTTP_PROXY': 'http://127.0.0.1:10808/', 'LC_NUMERIC': 'zh_CN.UTF-8', 'CONDA_PREFIX': '/home/guyi/anaconda3', 'GSETTINGS_SCHEMA_DIR_CONDA_BACKUP': '', 'LC_PAPER': 'zh_CN.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp:/home/guyi/inmoov_ros2/install/inmoov_tools:/home/guyi/inmoov_ros2/install/inmoov_bringup:/home/guyi/inmoov_ros2/install/inmoov_msgs:/home/guyi/inmoov_ros2/install/inmoov_meshes:/home/guyi/inmoov_ros2/install/inmoov_config_test:/home/guyi/inmoov_ros2/install/inmoov_description'}, 'shell': False}
+[0.400071] (-) TimerEvent: {}
+[0.481656] (ce_python) StdoutLine: {'line': b'running egg_info\n'}
+[0.481909] (ce_python) StdoutLine: {'line': b'writing ../../build/ce_python/ce_python.egg-info/PKG-INFO\n'}
+[0.482059] (ce_python) StdoutLine: {'line': b'writing dependency_links to ../../build/ce_python/ce_python.egg-info/dependency_links.txt\n'}
+[0.482171] (ce_python) StdoutLine: {'line': b'writing entry points to ../../build/ce_python/ce_python.egg-info/entry_points.txt\n'}
+[0.482307] (ce_python) StdoutLine: {'line': b'writing requirements to ../../build/ce_python/ce_python.egg-info/requires.txt\n'}
+[0.482373] (ce_python) StdoutLine: {'line': b'writing top-level names to ../../build/ce_python/ce_python.egg-info/top_level.txt\n'}
+[0.483175] (ce_python) StdoutLine: {'line': b"reading manifest file '../../build/ce_python/ce_python.egg-info/SOURCES.txt'\n"}
+[0.484271] (ce_python) StdoutLine: {'line': b"writing manifest file '../../build/ce_python/ce_python.egg-info/SOURCES.txt'\n"}
+[0.484408] (ce_python) StdoutLine: {'line': b'running build\n'}
+[0.484490] (ce_python) StdoutLine: {'line': b'running build_py\n'}
+[0.484571] (ce_python) StdoutLine: {'line': b'running install\n'}
+[0.484750] (ce_python) StdoutLine: {'line': b'running install_lib\n'}
+[0.485365] (ce_python) StdoutLine: {'line': b'running install_data\n'}
+[0.485455] (ce_python) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.486376] (ce_python) StdoutLine: {'line': b"removing '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python/lib/python3.10/site-packages/ce_python-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[0.486599] (ce_python) StdoutLine: {'line': b'Copying ../../build/ce_python/ce_python.egg-info to /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python/lib/python3.10/site-packages/ce_python-0.0.0-py3.10.egg-info\n'}
+[0.487090] (ce_python) StdoutLine: {'line': b'running install_scripts\n'}
+[0.498489] (ce_python) StdoutLine: {'line': b'Installing angle_forwarder script to /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python/lib/ce_python\n'}
+[0.498697] (ce_python) StdoutLine: {'line': b'Installing image_publish_node script to /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python/lib/ce_python\n'}
+[0.498818] (ce_python) StdoutLine: {'line': b"writing list of installed files to '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/ce_python/install.log'\n"}
+[0.500148] (-) TimerEvent: {}
+[0.514446] (ce_python) CommandEnded: {'returncode': 0}
+[0.520165] (ce_python) JobEnded: {'identifier': 'ce_python', 'rc': 0}
+[0.600256] (-) TimerEvent: {}
+[0.700497] (-) TimerEvent: {}
+[0.800765] (-) TimerEvent: {}
+[0.901065] (-) TimerEvent: {}
+[1.001405] (-) TimerEvent: {}
+[1.101727] (-) TimerEvent: {}
+[1.202045] (-) TimerEvent: {}
+[1.302355] (-) TimerEvent: {}
+[1.402670] (-) TimerEvent: {}
+[1.503001] (-) TimerEvent: {}
+[1.603333] (-) TimerEvent: {}
+[1.703652] (-) TimerEvent: {}
+[1.803968] (-) TimerEvent: {}
+[1.904283] (-) TimerEvent: {}
+[2.004604] (-) TimerEvent: {}
+[2.104918] (-) TimerEvent: {}
+[2.205248] (-) TimerEvent: {}
+[2.305552] (-) TimerEvent: {}
+[2.405875] (-) TimerEvent: {}
+[2.506653] (-) TimerEvent: {}
+[2.606951] (-) TimerEvent: {}
+[2.707270] (-) TimerEvent: {}
+[2.807527] (-) TimerEvent: {}
+[2.907829] (-) TimerEvent: {}
+[3.008138] (-) TimerEvent: {}
+[3.108447] (-) TimerEvent: {}
+[3.208710] (-) TimerEvent: {}
+[3.309008] (-) TimerEvent: {}
+[3.409338] (-) TimerEvent: {}
+[3.509633] (-) TimerEvent: {}
+[3.609954] (-) TimerEvent: {}
+[3.710266] (-) TimerEvent: {}
+[3.810565] (-) TimerEvent: {}
+[3.910862] (-) TimerEvent: {}
+[4.011162] (-) TimerEvent: {}
+[4.111506] (-) TimerEvent: {}
+[4.211839] (-) TimerEvent: {}
+[4.312168] (-) TimerEvent: {}
+[4.412509] (-) TimerEvent: {}
+[4.512838] (-) TimerEvent: {}
+[4.613144] (-) TimerEvent: {}
+[4.713470] (-) TimerEvent: {}
+[4.813770] (-) TimerEvent: {}
+[4.914820] (-) TimerEvent: {}
+[5.015123] (-) TimerEvent: {}
+[5.115441] (-) TimerEvent: {}
+[5.215761] (-) TimerEvent: {}
+[5.316082] (-) TimerEvent: {}
+[5.416408] (-) TimerEvent: {}
+[5.516710] (-) TimerEvent: {}
+[5.617010] (-) TimerEvent: {}
+[5.717324] (-) TimerEvent: {}
+[5.817633] (-) TimerEvent: {}
+[5.917943] (-) TimerEvent: {}
+[6.018250] (-) TimerEvent: {}
+[6.118816] (-) TimerEvent: {}
+[6.219098] (-) TimerEvent: {}
+[6.319389] (-) TimerEvent: {}
+[6.419709] (-) TimerEvent: {}
+[6.519985] (-) TimerEvent: {}
+[6.620300] (-) TimerEvent: {}
+[6.720614] (-) TimerEvent: {}
+[6.820891] (-) TimerEvent: {}
+[6.921170] (-) TimerEvent: {}
+[7.021482] (-) TimerEvent: {}
+[7.122103] (-) TimerEvent: {}
+[7.222405] (-) TimerEvent: {}
+[7.322729] (-) TimerEvent: {}
+[7.423016] (-) TimerEvent: {}
+[7.496014] (servo_mediator_cpp) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX executable combined_node\x1b[0m\n'}
+[7.523151] (-) TimerEvent: {}
+[7.623491] (-) TimerEvent: {}
+[7.723814] (-) TimerEvent: {}
+[7.824129] (-) TimerEvent: {}
+[7.924457] (-) TimerEvent: {}
+[8.024777] (-) TimerEvent: {}
+[8.090065] (servo_mediator_cpp) StderrLine: {'line': b"/usr/bin/ld: /lib/libgdal.so.30: undefined reference to `curl_easy_getinfo@CURL_OPENSSL_4'\n"}
+[8.090381] (servo_mediator_cpp) StderrLine: {'line': b"/usr/bin/ld: /lib/libgdal.so.30: undefined reference to `curl_multi_perform@CURL_OPENSSL_4'\n"}
+[8.090615] (servo_mediator_cpp) StderrLine: {'line': b"/usr/bin/ld: /lib/libgdal.so.30: undefined reference to `curl_multi_cleanup@CURL_OPENSSL_4'\n"}
+[8.090982] (servo_mediator_cpp) StderrLine: {'line': b"/usr/bin/ld: /lib/x86_64-linux-gnu/libnetcdf.so.19: undefined reference to `curl_global_init@CURL_OPENSSL_4'\n"}
+[8.091444] (servo_mediator_cpp) StderrLine: {'line': b"/usr/bin/ld: /lib/libgdal.so.30: undefined reference to `curl_mime_init@CURL_OPENSSL_4'\n"}
+[8.091946] (servo_mediator_cpp) StderrLine: {'line': b"/usr/bin/ld: /lib/libgdal.so.30: undefined reference to `TIFFReadFromUserBuffer@LIBTIFF_4.0'\n"}
+[8.093502] (servo_mediator_cpp) StderrLine: {'line': b"/usr/bin/ld: /lib/libgdal.so.30: undefined reference to `TIFFGetStrileOffsetWithErr@LIBTIFF_4.0'\n"}
+[8.093919] (servo_mediator_cpp) StderrLine: {'line': b"/usr/bin/ld: /lib/libgdal.so.30: undefined reference to `curl_multi_remove_handle@CURL_OPENSSL_4'\n"}
+[8.094774] (servo_mediator_cpp) StderrLine: {'line': b"/usr/bin/ld: /lib/libgdal.so.30: undefined reference to `curl_mime_addpart@CURL_OPENSSL_4'\n"}
+[8.095232] (servo_mediator_cpp) StderrLine: {'line': b"/usr/bin/ld: /lib/libgdal.so.30: undefined reference to `curl_version_info@CURL_OPENSSL_4'\n"}
+[8.095852] (servo_mediator_cpp) StderrLine: {'line': b"/usr/bin/ld: /lib/libgdal.so.30: undefined reference to `curl_mime_name@CURL_OPENSSL_4'\n"}
+[8.096576] (servo_mediator_cpp) StderrLine: {'line': b"/usr/bin/ld: /lib/libgdal.so.30: undefined reference to `curl_mime_filename@CURL_OPENSSL_4'\n"}
+[8.096892] (servo_mediator_cpp) StderrLine: {'line': b"/usr/bin/ld: /lib/libgdal.so.30: undefined reference to `curl_multi_info_read@CURL_OPENSSL_4'\n"}
+[8.097842] (servo_mediator_cpp) StderrLine: {'line': b"/usr/bin/ld: /lib/libgdal.so.30: undefined reference to `curl_easy_setopt@CURL_OPENSSL_4'\n"}
+[8.098357] (servo_mediator_cpp) StderrLine: {'line': b"/usr/bin/ld: /lib/libgdal.so.30: undefined reference to `TIFFDeferStrileArrayWriting@LIBTIFF_4.0'\n"}
+[8.098821] (servo_mediator_cpp) StderrLine: {'line': b"/usr/bin/ld: /lib/libgdal.so.30: undefined reference to `TIFFForceStrileArrayWriting@LIBTIFF_4.0'\n"}
+[8.099139] (servo_mediator_cpp) StderrLine: {'line': b"/usr/bin/ld: /lib/libgdal.so.30: undefined reference to `TIFFReadRGBATileExt@LIBTIFF_4.0'\n"}
+[8.100487] (servo_mediator_cpp) StderrLine: {'line': b"/usr/bin/ld: /lib/libgdal.so.30: undefined reference to `curl_mime_free@CURL_OPENSSL_4'\n"}
+[8.100727] (servo_mediator_cpp) StderrLine: {'line': b"/usr/bin/ld: /lib/libgdal.so.30: undefined reference to `curl_easy_cleanup@CURL_OPENSSL_4'\n"}
+[8.101390] (servo_mediator_cpp) StderrLine: {'line': b"/usr/bin/ld: /lib/libgdal.so.30: undefined reference to `curl_mime_data_cb@CURL_OPENSSL_4'\n"}
+[8.102724] (servo_mediator_cpp) StderrLine: {'line': b"/usr/bin/ld: /lib/libgdal.so.30: undefined reference to `TIFFReadRGBAStripExt@LIBTIFF_4.0'\n"}
+[8.103019] (servo_mediator_cpp) StderrLine: {'line': b"/usr/bin/ld: /lib/libgdal.so.30: undefined reference to `curl_easy_perform@CURL_OPENSSL_4'\n"}
+[8.103901] (servo_mediator_cpp) StderrLine: {'line': b"/usr/bin/ld: /lib/libgdal.so.30: undefined reference to `curl_easy_init@CURL_OPENSSL_4'\n"}
+[8.105237] (servo_mediator_cpp) StderrLine: {'line': b"/usr/bin/ld: /lib/libgdal.so.30: undefined reference to `curl_multi_add_handle@CURL_OPENSSL_4'\n"}
+[8.107314] (servo_mediator_cpp) StderrLine: {'line': b"/usr/bin/ld: /lib/libgdal.so.30: undefined reference to `TIFFGetStrileOffset@LIBTIFF_4.0'\n"}
+[8.107730] (servo_mediator_cpp) StderrLine: {'line': b"/usr/bin/ld: /lib/libgdal.so.30: undefined reference to `TIFFGetStrileByteCount@LIBTIFF_4.0'\n"}
+[8.108635] (servo_mediator_cpp) StderrLine: {'line': b"/usr/bin/ld: /lib/libgdal.so.30: undefined reference to `curl_slist_free_all@CURL_OPENSSL_4'\n"}
+[8.108936] (servo_mediator_cpp) StderrLine: {'line': b"/usr/bin/ld: /lib/x86_64-linux-gnu/libnetcdf.so.19: undefined reference to `curl_easy_strerror@CURL_OPENSSL_4'\n"}
+[8.109779] (servo_mediator_cpp) StderrLine: {'line': b"/usr/bin/ld: /lib/libgdal.so.30: undefined reference to `TIFFGetStrileByteCountWithErr@LIBTIFF_4.0'\n"}
+[8.110238] (servo_mediator_cpp) StderrLine: {'line': b"/usr/bin/ld: /lib/libgdal.so.30: undefined reference to `curl_slist_append@CURL_OPENSSL_4'\n"}
+[8.110892] (servo_mediator_cpp) StderrLine: {'line': b"/usr/bin/ld: /lib/libgdal.so.30: undefined reference to `curl_multi_poll@CURL_OPENSSL_4'\n"}
+[8.111266] (servo_mediator_cpp) StderrLine: {'line': b"/usr/bin/ld: /lib/libgdal.so.30: undefined reference to `curl_version@CURL_OPENSSL_4'\n"}
+[8.111779] (servo_mediator_cpp) StderrLine: {'line': b"/usr/bin/ld: /lib/libgdal.so.30: undefined reference to `curl_multi_setopt@CURL_OPENSSL_4'\n"}
+[8.112089] (servo_mediator_cpp) StderrLine: {'line': b"/usr/bin/ld: /lib/libgdal.so.30: undefined reference to `curl_mime_data@CURL_OPENSSL_4'\n"}
+[8.112641] (servo_mediator_cpp) StderrLine: {'line': b"/usr/bin/ld: /lib/libgdal.so.30: undefined reference to `curl_multi_init@CURL_OPENSSL_4'\n"}
+[8.113413] (servo_mediator_cpp) StderrLine: {'line': b"/usr/bin/ld: /lib/libgdal.so.30: undefined reference to `curl_multi_wait@CURL_OPENSSL_4'\n"}
+[8.114019] (servo_mediator_cpp) StderrLine: {'line': b"/usr/bin/ld: /lib/x86_64-linux-gnu/libnetcdf.so.19: undefined reference to `curl_global_cleanup@CURL_OPENSSL_4'\n"}
+[8.124880] (-) TimerEvent: {}
+[8.137905] (servo_mediator_cpp) StderrLine: {'line': b'collect2: error: ld returned 1 exit status\n'}
+[8.138849] (servo_mediator_cpp) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/combined_node.dir/build.make:277\xef\xbc\x9acombined_node] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[8.139270] (servo_mediator_cpp) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137\xef\xbc\x9aCMakeFiles/combined_node.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[8.139458] (servo_mediator_cpp) StderrLine: {'line': b'gmake: *** [Makefile:146\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[8.140931] (servo_mediator_cpp) CommandEnded: {'returncode': 2}
+[8.144449] (servo_mediator_cpp) JobEnded: {'identifier': 'servo_mediator_cpp', 'rc': 2}
+[8.154794] (-) EventReactorShutdown: {}

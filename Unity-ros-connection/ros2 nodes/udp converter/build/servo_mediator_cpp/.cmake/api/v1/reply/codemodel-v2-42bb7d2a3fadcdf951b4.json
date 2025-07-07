@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-57d22318f9884a33cbfa.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "servo_mediator_cpp",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "combined_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-combined_node-361ecb92a4f770c78111.json",
+					"name" : "combined_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "servo_mediator_cpp_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-servo_mediator_cpp_uninstall-78529d33e66e25ed8c5c.json",
+					"name" : "servo_mediator_cpp_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-1cf185e573bfa6721374.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/servo_mediator_cpp",
+		"source" : "/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

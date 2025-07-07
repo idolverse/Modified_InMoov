@@ -1,0 +1,12 @@
+[0.143s] Invoking command in '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/servo_mediator_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/local/bin/cmake --build /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/servo_mediator_cpp -- -j16 -l16
+[0.182s] [ 16%] [32mBuilding CXX object CMakeFiles/combined_node.dir/src/main.cpp.o[0m
+[0.183s] [ 33%] [32mBuilding CXX object CMakeFiles/combined_node.dir/src/websocket_receiver_node.cpp.o[0m
+[0.354s] [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/src/websocket_receiver_node.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Kopencv2/opencv.hpp: 没有那个文件或目录
+[0.354s]     3 | #include [01;31m[K<opencv2/opencv.hpp>[m[K
+[0.354s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[0.354s] compilation terminated.
+[0.364s] gmake[2]: *** [CMakeFiles/combined_node.dir/build.make:132：CMakeFiles/combined_node.dir/src/websocket_receiver_node.cpp.o] 错误 1
+[0.364s] gmake[2]: *** 正在等待未完成的任务....
+[5.043s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/combined_node.dir/all] 错误 2
+[5.043s] gmake: *** [Makefile:146：all] 错误 2
+[5.045s] Invoked command in '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/servo_mediator_cpp' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/local/bin/cmake --build /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/servo_mediator_cpp -- -j16 -l16

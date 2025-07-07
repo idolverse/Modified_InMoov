@@ -10,7 +10,8 @@ setup.py
 ../../build/ce_python/ce_python.egg-info/zip-safe
 ce_python/__init__.py
 ce_python/angle_forwarder.py
-launch/angle_udp.launch.py
+ce_python/image_publish_node.py
+launch/all_nodes.launch.py
 resource/ce_python
 test/test_copyright.py
 test/test_flake8.py

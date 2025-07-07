@@ -1,0 +1,18 @@
+[01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/src/websocket_receiver_node.cpp:8:1:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[KWebSocketReceiverNode::WebSocketReceiverNode()[m[K’
+    8 | [01;31m[KWebSocketReceiverNode[m[K::WebSocketReceiverNode()
+      | [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/src/websocket_receiver_node.cpp:1[m[K:
+[01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:11:5:[m[K [01;36m[Knote: [m[K‘[01m[KWebSocketReceiverNode::WebSocketReceiverNode()[m[K’ previously defined here
+   11 |     [01;36m[KWebSocketReceiverNode[m[K()
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/src/websocket_receiver_node.cpp:19:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid WebSocketReceiverNode::handle_message(const string&)[m[K’
+   19 | void [01;31m[KWebSocketReceiverNode[m[K::handle_message(const std::string& message)
+      |      [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/src/websocket_receiver_node.cpp:19:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid WebSocketReceiverNode::handle_message(const string&)[m[K’
+In file included from [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/src/websocket_receiver_node.cpp:1[m[K:
+[01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:8:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass WebSocketReceiverNode[m[K’ defined here
+    8 | class [01;36m[KWebSocketReceiverNode[m[K : public rclcpp::Node
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/combined_node.dir/build.make:132：CMakeFiles/combined_node.dir/src/websocket_receiver_node.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/combined_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

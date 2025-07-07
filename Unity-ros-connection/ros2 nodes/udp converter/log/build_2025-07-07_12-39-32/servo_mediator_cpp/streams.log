@@ -1,0 +1,20 @@
+[0.142s] Invoking command in '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/servo_mediator_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/local/bin/cmake --build /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/servo_mediator_cpp -- -j16 -l16
+[0.160s] [35m[1mConsolidate compiler generated dependencies of target combined_node[0m
+[0.174s] [ 16%] [32mBuilding CXX object CMakeFiles/combined_node.dir/src/main.cpp.o[0m
+[0.175s] [ 33%] [32mBuilding CXX object CMakeFiles/combined_node.dir/src/websocket_receiver_node.cpp.o[0m
+[0.323s] In file included from [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/src/websocket_receiver_node.cpp:1[m[K:
+[0.323s] [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:6:10:[m[K [01;31m[Kfatal error: [m[Kservo_mediator_cpp/websocket_bridge.hpp: 没有那个文件或目录
+[0.324s]     6 | #include [01;31m[K"servo_mediator_cpp/websocket_bridge.hpp"[m[K  // 保证此文件存在并定义类 WebSocketBridge
+[0.324s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.324s] compilation terminated.
+[0.333s] gmake[2]: *** [CMakeFiles/combined_node.dir/build.make:132：CMakeFiles/combined_node.dir/src/websocket_receiver_node.cpp.o] 错误 1
+[0.333s] gmake[2]: *** 正在等待未完成的任务....
+[0.350s] In file included from [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/src/main.cpp:5[m[K:
+[0.350s] [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:6:10:[m[K [01;31m[Kfatal error: [m[Kservo_mediator_cpp/websocket_bridge.hpp: 没有那个文件或目录
+[0.350s]     6 | #include [01;31m[K"servo_mediator_cpp/websocket_bridge.hpp"[m[K  // 保证此文件存在并定义类 WebSocketBridge
+[0.350s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.350s] compilation terminated.
+[0.353s] gmake[2]: *** [CMakeFiles/combined_node.dir/build.make:76：CMakeFiles/combined_node.dir/src/main.cpp.o] 错误 1
+[0.354s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/combined_node.dir/all] 错误 2
+[0.354s] gmake: *** [Makefile:146：all] 错误 2
+[0.355s] Invoked command in '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/servo_mediator_cpp' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/local/bin/cmake --build /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/servo_mediator_cpp -- -j16 -l16

@@ -1,0 +1,16 @@
+[0.142s] Invoking command in '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/servo_mediator_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/local/bin/cmake --build /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/servo_mediator_cpp -- -j16 -l16
+[0.162s] [35m[1mConsolidate compiler generated dependencies of target combined_node[0m
+[0.175s] [ 20%] [32mBuilding CXX object CMakeFiles/combined_node.dir/src/main.cpp.o[0m
+[6.363s] [ 40%] [32m[1mLinking CXX executable combined_node[0m
+[6.701s] /usr/bin/ld: CMakeFiles/combined_node.dir/src/main.cpp.o: in function `ImageDisplayNode::image_callback(std::shared_ptr<std_msgs::msg::String_<std::allocator<void> > >)':
+[6.701s] main.cpp:(.text._ZN16ImageDisplayNode14image_callbackESt10shared_ptrIN8std_msgs3msg7String_ISaIvEEEE[_ZN16ImageDisplayNode14image_callbackESt10shared_ptrIN8std_msgs3msg7String_ISaIvEEEE]+0x1b1): undefined reference to `cv::imdecode(cv::_InputArray const&, int)'
+[6.701s] /usr/bin/ld: main.cpp:(.text._ZN16ImageDisplayNode14image_callbackESt10shared_ptrIN8std_msgs3msg7String_ISaIvEEEE[_ZN16ImageDisplayNode14image_callbackESt10shared_ptrIN8std_msgs3msg7String_ISaIvEEEE]+0x1cf): undefined reference to `cv::Mat::empty() const'
+[6.701s] /usr/bin/ld: main.cpp:(.text._ZN16ImageDisplayNode14image_callbackESt10shared_ptrIN8std_msgs3msg7String_ISaIvEEEE[_ZN16ImageDisplayNode14image_callbackESt10shared_ptrIN8std_msgs3msg7String_ISaIvEEEE]+0x3ad): undefined reference to `cv::imshow(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, cv::_InputArray const&)'
+[6.701s] /usr/bin/ld: main.cpp:(.text._ZN16ImageDisplayNode14image_callbackESt10shared_ptrIN8std_msgs3msg7String_ISaIvEEEE[_ZN16ImageDisplayNode14image_callbackESt10shared_ptrIN8std_msgs3msg7String_ISaIvEEEE]+0x3e4): undefined reference to `cv::waitKey(int)'
+[6.701s] /usr/bin/ld: main.cpp:(.text._ZN16ImageDisplayNode14image_callbackESt10shared_ptrIN8std_msgs3msg7String_ISaIvEEEE[_ZN16ImageDisplayNode14image_callbackESt10shared_ptrIN8std_msgs3msg7String_ISaIvEEEE]+0x3f8): undefined reference to `cv::Mat::~Mat()'
+[6.702s] /usr/bin/ld: main.cpp:(.text._ZN16ImageDisplayNode14image_callbackESt10shared_ptrIN8std_msgs3msg7String_ISaIvEEEE[_ZN16ImageDisplayNode14image_callbackESt10shared_ptrIN8std_msgs3msg7String_ISaIvEEEE]+0x5ad): undefined reference to `cv::Mat::~Mat()'
+[6.734s] collect2: error: ld returned 1 exit status
+[6.735s] gmake[2]: *** [CMakeFiles/combined_node.dir/build.make:207：combined_node] 错误 1
+[6.736s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/combined_node.dir/all] 错误 2
+[6.736s] gmake: *** [Makefile:146：all] 错误 2
+[6.737s] Invoked command in '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/servo_mediator_cpp' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/local/bin/cmake --build /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/servo_mediator_cpp -- -j16 -l16

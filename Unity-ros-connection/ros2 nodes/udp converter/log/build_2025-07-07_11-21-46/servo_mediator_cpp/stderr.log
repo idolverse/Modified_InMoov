@@ -1,0 +1,8 @@
+[01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/src/main.cpp:5:10:[m[K [01;31m[Kfatal error: [m[Kservo_mediator_cpp/image_display_node.cpp: 没有那个文件或目录
+    5 | #include [01;31m[K"servo_mediator_cpp/image_display_node.cpp"[m[K  // ✅ 没有 .hpp 就直接 include .cpp
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/combined_node.dir/build.make:76：CMakeFiles/combined_node.dir/src/main.cpp.o] 错误 1
+gmake[2]: *** 正在等待未完成的任务....
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/combined_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

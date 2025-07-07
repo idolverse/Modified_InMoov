@@ -1,0 +1,8 @@
+[01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/src/websocket_receiver_node.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Kopencv2/opencv.hpp: 没有那个文件或目录
+    3 | #include [01;31m[K<opencv2/opencv.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/combined_node.dir/build.make:132：CMakeFiles/combined_node.dir/src/websocket_receiver_node.cpp.o] 错误 1
+gmake[2]: *** 正在等待未完成的任务....
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/combined_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

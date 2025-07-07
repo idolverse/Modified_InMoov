@@ -1,0 +1,11 @@
+/usr/bin/ld: CMakeFiles/combined_node.dir/src/main.cpp.o: in function `ImageDisplayNode::image_callback(std::shared_ptr<std_msgs::msg::String_<std::allocator<void> > >)':
+main.cpp:(.text._ZN16ImageDisplayNode14image_callbackESt10shared_ptrIN8std_msgs3msg7String_ISaIvEEEE[_ZN16ImageDisplayNode14image_callbackESt10shared_ptrIN8std_msgs3msg7String_ISaIvEEEE]+0x1b1): undefined reference to `cv::imdecode(cv::_InputArray const&, int)'
+/usr/bin/ld: main.cpp:(.text._ZN16ImageDisplayNode14image_callbackESt10shared_ptrIN8std_msgs3msg7String_ISaIvEEEE[_ZN16ImageDisplayNode14image_callbackESt10shared_ptrIN8std_msgs3msg7String_ISaIvEEEE]+0x1cf): undefined reference to `cv::Mat::empty() const'
+/usr/bin/ld: main.cpp:(.text._ZN16ImageDisplayNode14image_callbackESt10shared_ptrIN8std_msgs3msg7String_ISaIvEEEE[_ZN16ImageDisplayNode14image_callbackESt10shared_ptrIN8std_msgs3msg7String_ISaIvEEEE]+0x3ad): undefined reference to `cv::imshow(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, cv::_InputArray const&)'
+/usr/bin/ld: main.cpp:(.text._ZN16ImageDisplayNode14image_callbackESt10shared_ptrIN8std_msgs3msg7String_ISaIvEEEE[_ZN16ImageDisplayNode14image_callbackESt10shared_ptrIN8std_msgs3msg7String_ISaIvEEEE]+0x3e4): undefined reference to `cv::waitKey(int)'
+/usr/bin/ld: main.cpp:(.text._ZN16ImageDisplayNode14image_callbackESt10shared_ptrIN8std_msgs3msg7String_ISaIvEEEE[_ZN16ImageDisplayNode14image_callbackESt10shared_ptrIN8std_msgs3msg7String_ISaIvEEEE]+0x3f8): undefined reference to `cv::Mat::~Mat()'
+/usr/bin/ld: main.cpp:(.text._ZN16ImageDisplayNode14image_callbackESt10shared_ptrIN8std_msgs3msg7String_ISaIvEEEE[_ZN16ImageDisplayNode14image_callbackESt10shared_ptrIN8std_msgs3msg7String_ISaIvEEEE]+0x5ad): undefined reference to `cv::Mat::~Mat()'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/combined_node.dir/build.make:207：combined_node] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/combined_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

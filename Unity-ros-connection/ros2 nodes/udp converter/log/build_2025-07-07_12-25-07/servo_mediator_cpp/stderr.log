@@ -1,0 +1,14 @@
+In file included from [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/src/websocket_receiver_node.cpp:5[m[K:
+[01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_bridge.hpp:5:10:[m[K [01;31m[Kfatal error: [m[Kwebsocketpp/config/asio_no_tls.hpp: 没有那个文件或目录
+    5 | #include [01;31m[K<websocketpp/config/asio_no_tls.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/combined_node.dir/build.make:132：CMakeFiles/combined_node.dir/src/websocket_receiver_node.cpp.o] 错误 1
+gmake[2]: *** 正在等待未完成的任务....
+[01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/src/main.cpp:5:10:[m[K [01;31m[Kfatal error: [m[Kservo_mediator_cpp/websocket_receiver_node.hpp: 没有那个文件或目录
+    5 | #include [01;31m[K"servo_mediator_cpp/websocket_receiver_node.hpp"[m[K  // ✅ 加入 WebSocket 接收节点头文件
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/combined_node.dir/build.make:76：CMakeFiles/combined_node.dir/src/main.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/combined_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

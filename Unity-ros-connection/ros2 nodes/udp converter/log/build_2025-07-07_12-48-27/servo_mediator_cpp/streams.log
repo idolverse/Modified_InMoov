@@ -1,0 +1,19 @@
+[0.141s] Invoking command in '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/servo_mediator_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/local/bin/cmake --build /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/servo_mediator_cpp -- -j16 -l16
+[0.175s] [ 16%] [32mBuilding CXX object CMakeFiles/combined_node.dir/src/main.cpp.o[0m
+[0.175s] [ 33%] [32mBuilding CXX object CMakeFiles/combined_node.dir/src/websocket_receiver_node.cpp.o[0m
+[0.837s] In file included from [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/src/main.cpp:5[m[K:
+[0.838s] [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:11:10:[m[K [01;31m[Kfatal error: [m[Kservo_mediator_cpp/base64.hpp: 没有那个文件或目录
+[0.838s]    11 | #include [01;31m[K"servo_mediator_cpp/base64.hpp"[m[K
+[0.838s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.838s] compilation terminated.
+[0.839s] In file included from [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/src/websocket_receiver_node.cpp:1[m[K:
+[0.839s] [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:11:10:[m[K [01;31m[Kfatal error: [m[Kservo_mediator_cpp/base64.hpp: 没有那个文件或目录
+[0.839s]    11 | #include [01;31m[K"servo_mediator_cpp/base64.hpp"[m[K
+[0.839s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.839s] compilation terminated.
+[0.852s] gmake[2]: *** [CMakeFiles/combined_node.dir/build.make:132：CMakeFiles/combined_node.dir/src/websocket_receiver_node.cpp.o] 错误 1
+[0.852s] gmake[2]: *** 正在等待未完成的任务....
+[0.852s] gmake[2]: *** [CMakeFiles/combined_node.dir/build.make:76：CMakeFiles/combined_node.dir/src/main.cpp.o] 错误 1
+[0.853s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/combined_node.dir/all] 错误 2
+[0.853s] gmake: *** [Makefile:146：all] 错误 2
+[0.855s] Invoked command in '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/servo_mediator_cpp' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/local/bin/cmake --build /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/servo_mediator_cpp -- -j16 -l16

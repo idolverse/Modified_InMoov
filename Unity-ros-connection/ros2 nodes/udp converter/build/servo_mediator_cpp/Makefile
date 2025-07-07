@@ -258,6 +258,30 @@ src/servo_mediator_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/combined_node.dir/build.make CMakeFiles/combined_node.dir/src/servo_mediator_node.cpp.s
 .PHONY : src/servo_mediator_node.cpp.s
 
+src/tcp_receiver_node.o: src/tcp_receiver_node.cpp.o
+.PHONY : src/tcp_receiver_node.o
+
+# target to build an object file
+src/tcp_receiver_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/combined_node.dir/build.make CMakeFiles/combined_node.dir/src/tcp_receiver_node.cpp.o
+.PHONY : src/tcp_receiver_node.cpp.o
+
+src/tcp_receiver_node.i: src/tcp_receiver_node.cpp.i
+.PHONY : src/tcp_receiver_node.i
+
+# target to preprocess a source file
+src/tcp_receiver_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/combined_node.dir/build.make CMakeFiles/combined_node.dir/src/tcp_receiver_node.cpp.i
+.PHONY : src/tcp_receiver_node.cpp.i
+
+src/tcp_receiver_node.s: src/tcp_receiver_node.cpp.s
+.PHONY : src/tcp_receiver_node.s
+
+# target to generate assembly for a file
+src/tcp_receiver_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/combined_node.dir/build.make CMakeFiles/combined_node.dir/src/tcp_receiver_node.cpp.s
+.PHONY : src/tcp_receiver_node.cpp.s
+
 src/udp_receiver_node.o: src/udp_receiver_node.cpp.o
 .PHONY : src/udp_receiver_node.o
 
@@ -282,6 +306,30 @@ src/udp_receiver_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/combined_node.dir/build.make CMakeFiles/combined_node.dir/src/udp_receiver_node.cpp.s
 .PHONY : src/udp_receiver_node.cpp.s
 
+src/websocket_receiver_node.o: src/websocket_receiver_node.cpp.o
+.PHONY : src/websocket_receiver_node.o
+
+# target to build an object file
+src/websocket_receiver_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/combined_node.dir/build.make CMakeFiles/combined_node.dir/src/websocket_receiver_node.cpp.o
+.PHONY : src/websocket_receiver_node.cpp.o
+
+src/websocket_receiver_node.i: src/websocket_receiver_node.cpp.i
+.PHONY : src/websocket_receiver_node.i
+
+# target to preprocess a source file
+src/websocket_receiver_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/combined_node.dir/build.make CMakeFiles/combined_node.dir/src/websocket_receiver_node.cpp.i
+.PHONY : src/websocket_receiver_node.cpp.i
+
+src/websocket_receiver_node.s: src/websocket_receiver_node.cpp.s
+.PHONY : src/websocket_receiver_node.s
+
+# target to generate assembly for a file
+src/websocket_receiver_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/combined_node.dir/build.make CMakeFiles/combined_node.dir/src/websocket_receiver_node.cpp.s
+.PHONY : src/websocket_receiver_node.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -304,9 +352,15 @@ help:
 	@echo "... src/servo_mediator_node.o"
 	@echo "... src/servo_mediator_node.i"
 	@echo "... src/servo_mediator_node.s"
+	@echo "... src/tcp_receiver_node.o"
+	@echo "... src/tcp_receiver_node.i"
+	@echo "... src/tcp_receiver_node.s"
 	@echo "... src/udp_receiver_node.o"
 	@echo "... src/udp_receiver_node.i"
 	@echo "... src/udp_receiver_node.s"
+	@echo "... src/websocket_receiver_node.o"
+	@echo "... src/websocket_receiver_node.i"
+	@echo "... src/websocket_receiver_node.s"
 .PHONY : help
 
 

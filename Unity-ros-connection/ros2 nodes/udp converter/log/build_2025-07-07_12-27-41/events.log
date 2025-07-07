@@ -1,0 +1,134 @@
+[0.000000] (-) TimerEvent: {}
+[0.000566] (ce_python) JobQueued: {'identifier': 'ce_python', 'dependencies': OrderedDict()}
+[0.000616] (servo_mediator_cpp) JobQueued: {'identifier': 'servo_mediator_cpp', 'dependencies': OrderedDict()}
+[0.001277] (ce_python) JobStarted: {'identifier': 'ce_python'}
+[0.006118] (servo_mediator_cpp) JobStarted: {'identifier': 'servo_mediator_cpp'}
+[0.099988] (-) TimerEvent: {}
+[0.143600] (servo_mediator_cpp) JobProgress: {'identifier': 'servo_mediator_cpp', 'progress': 'cmake'}
+[0.144431] (servo_mediator_cpp) JobProgress: {'identifier': 'servo_mediator_cpp', 'progress': 'build'}
+[0.144482] (servo_mediator_cpp) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/servo_mediator_cpp', '--', '-j16', '-l16'], 'cwd': '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/servo_mediator_cpp', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('HTTPS_PROXY', 'http://127.0.0.1:10808/'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'guyi'), ('LC_TIME', 'zh_CN.UTF-8'), ('all_proxy', 'socks://127.0.0.1:10808/'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/guyi/inmoov_ros2/install/inmoov_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/guyi'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('NVM_BIN', '/home/guyi/.nvm/versions/node/v18.20.8/bin'), ('NVM_INC', '/home/guyi/.nvm/versions/node/v18.20.8/include/node'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '2157'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('NVM_DIR', '/home/guyi/.nvm'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:10808/'), ('COLCON_PREFIX_PATH', '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install:/home/guyi/inmoov_ros2/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'guyi'), ('ALL_PROXY', 'socks://127.0.0.1:10808/'), ('http_proxy', 'http://127.0.0.1:10808/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'guyi'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/guyi/.local/bin:/home/guyi/.nvm/versions/node/v18.20.8/bin:/opt/ros/humble/bin:/home/guyi/anaconda3/bin:/home/guyi/anaconda3/condabin:/home/guyi/.local/bin:/home/guyi/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/guyi-GTR:@/tmp/.ICE-unix/2129,unix/guyi-GTR:/tmp/.ICE-unix/2129'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('ftp_proxy', 'http://127.0.0.1:10808/'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/dd41c282_fcc2_4b01_817e_e464f8b5ccee'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.WQKW82'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.250'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/guyi/anaconda3/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python:/home/guyi/inmoov_ros2/install/inmoov_config_test:/home/guyi/inmoov_ros2/install/inmoov_tools:/home/guyi/inmoov_ros2/install/inmoov_bringup:/home/guyi/inmoov_ros2/install/inmoov_meshes:/home/guyi/inmoov_ros2/install/inmoov_msgs:/home/guyi/inmoov_ros2/install/inmoov_description:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/guyi/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/servo_mediator_cpp'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/guyi/anaconda3/bin/conda'), ('CLUTTER_IM_MODULE', 'xim'), ('FTP_PROXY', 'http://127.0.0.1:10808/'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python/lib/python3.10/site-packages:/home/guyi/inmoov_ros2/install/inmoov_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:10808/'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('CONDA_PREFIX', '/home/guyi/anaconda3'), ('GSETTINGS_SCHEMA_DIR_CONDA_BACKUP', ''), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp:/home/guyi/inmoov_ros2/install/inmoov_tools:/home/guyi/inmoov_ros2/install/inmoov_bringup:/home/guyi/inmoov_ros2/install/inmoov_msgs:/home/guyi/inmoov_ros2/install/inmoov_meshes:/home/guyi/inmoov_ros2/install/inmoov_config_test:/home/guyi/inmoov_ros2/install/inmoov_description:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python:/opt/ros/humble')]), 'shell': False}
+[0.170611] (servo_mediator_cpp) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/combined_node.dir/src/websocket_receiver_node.cpp.o\x1b[0m\n'}
+[0.171141] (servo_mediator_cpp) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/combined_node.dir/src/main.cpp.o\x1b[0m\n'}
+[0.200109] (-) TimerEvent: {}
+[0.300414] (-) TimerEvent: {}
+[0.348356] (ce_python) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/ce_python', 'build', '--build-base', '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/ce_python/build', 'install', '--record', '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/ce_python/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/ce_python', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'CONDA_PROMPT_MODIFIER': '(base)', 'HTTPS_PROXY': 'http://127.0.0.1:10808/', 'no_proxy': 'localhost,127.0.0.0/8,::1', 'LANGUAGE': 'zh_CN:en', 'USER': 'guyi', 'LC_TIME': 'zh_CN.UTF-8', 'all_proxy': 'socks://127.0.0.1:10808/', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/guyi/inmoov_ros2/install/inmoov_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/guyi', 'CONDA_SHLVL': '1', 'OLDPWD': '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes', 'DESKTOP_SESSION': 'ubuntu', 'NO_PROXY': 'localhost,127.0.0.0/8,::1', 'NVM_BIN': '/home/guyi/.nvm/versions/node/v18.20.8/bin', 'NVM_INC': '/home/guyi/.nvm/versions/node/v18.20.8/include/node', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'zh_CN.UTF-8', 'SYSTEMD_EXEC_PID': '2157', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'NVM_DIR': '/home/guyi/.nvm', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'https_proxy': 'http://127.0.0.1:10808/', 'COLCON_PREFIX_PATH': '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install:/home/guyi/inmoov_ros2/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'fcitx', 'LOGNAME': 'guyi', 'ALL_PROXY': 'socks://127.0.0.1:10808/', 'http_proxy': 'http://127.0.0.1:10808/', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'guyi', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/guyi/.local/bin:/home/guyi/.nvm/versions/node/v18.20.8/bin:/opt/ros/humble/bin:/home/guyi/anaconda3/bin:/home/guyi/anaconda3/condabin:/home/guyi/.local/bin:/home/guyi/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/guyi-GTR:@/tmp/.ICE-unix/2129,unix/guyi-GTR:/tmp/.ICE-unix/2129', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'zh_CN.UTF-8', 'ftp_proxy': 'http://127.0.0.1:10808/', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/dd41c282_fcc2_4b01_817e_e464f8b5ccee', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'zh_CN.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'zh_CN.UTF-8', 'XMODIFIERS': '@im=fcitx', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.WQKW82', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.250', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/guyi/anaconda3/share/glib-2.0/schemas', 'AMENT_PREFIX_PATH': '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python:/home/guyi/inmoov_ros2/install/inmoov_config_test:/home/guyi/inmoov_ros2/install/inmoov_tools:/home/guyi/inmoov_ros2/install/inmoov_bringup:/home/guyi/inmoov_ros2/install/inmoov_meshes:/home/guyi/inmoov_ros2/install/inmoov_msgs:/home/guyi/inmoov_ros2/install/inmoov_description:/opt/ros/humble', 'CONDA_PYTHON_EXE': '/home/guyi/anaconda3/bin/python', 'SHELL': '/bin/bash', 'LC_NAME': 'zh_CN.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CONDA_DEFAULT_ENV': 'base', 'LC_MEASUREMENT': 'zh_CN.UTF-8', 'LC_IDENTIFICATION': 'zh_CN.UTF-8', 'QT_IM_MODULE': 'fcitx', 'PWD': '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/ce_python', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/guyi/anaconda3/bin/conda', 'CLUTTER_IM_MODULE': 'xim', 'FTP_PROXY': 'http://127.0.0.1:10808/', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/ce_python/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python/lib/python3.10/site-packages:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python/lib/python3.10/site-packages:/home/guyi/inmoov_ros2/install/inmoov_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'HTTP_PROXY': 'http://127.0.0.1:10808/', 'LC_NUMERIC': 'zh_CN.UTF-8', 'CONDA_PREFIX': '/home/guyi/anaconda3', 'GSETTINGS_SCHEMA_DIR_CONDA_BACKUP': '', 'LC_PAPER': 'zh_CN.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp:/home/guyi/inmoov_ros2/install/inmoov_tools:/home/guyi/inmoov_ros2/install/inmoov_bringup:/home/guyi/inmoov_ros2/install/inmoov_msgs:/home/guyi/inmoov_ros2/install/inmoov_meshes:/home/guyi/inmoov_ros2/install/inmoov_config_test:/home/guyi/inmoov_ros2/install/inmoov_description'}, 'shell': False}
+[0.400487] (-) TimerEvent: {}
+[0.475776] (ce_python) StdoutLine: {'line': b'running egg_info\n'}
+[0.476063] (ce_python) StdoutLine: {'line': b'writing ../../build/ce_python/ce_python.egg-info/PKG-INFO\n'}
+[0.476221] (ce_python) StdoutLine: {'line': b'writing dependency_links to ../../build/ce_python/ce_python.egg-info/dependency_links.txt\n'}
+[0.476317] (ce_python) StdoutLine: {'line': b'writing entry points to ../../build/ce_python/ce_python.egg-info/entry_points.txt\n'}
+[0.476384] (ce_python) StdoutLine: {'line': b'writing requirements to ../../build/ce_python/ce_python.egg-info/requires.txt\n'}
+[0.476450] (ce_python) StdoutLine: {'line': b'writing top-level names to ../../build/ce_python/ce_python.egg-info/top_level.txt\n'}
+[0.477265] (ce_python) StdoutLine: {'line': b"reading manifest file '../../build/ce_python/ce_python.egg-info/SOURCES.txt'\n"}
+[0.478270] (ce_python) StdoutLine: {'line': b"writing manifest file '../../build/ce_python/ce_python.egg-info/SOURCES.txt'\n"}
+[0.478346] (ce_python) StdoutLine: {'line': b'running build\n'}
+[0.478382] (ce_python) StdoutLine: {'line': b'running build_py\n'}
+[0.478593] (ce_python) StdoutLine: {'line': b'running install\n'}
+[0.478740] (ce_python) StdoutLine: {'line': b'running install_lib\n'}
+[0.479341] (ce_python) StdoutLine: {'line': b'running install_data\n'}
+[0.479428] (ce_python) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.480296] (ce_python) StdoutLine: {'line': b"removing '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python/lib/python3.10/site-packages/ce_python-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[0.480510] (ce_python) StdoutLine: {'line': b'Copying ../../build/ce_python/ce_python.egg-info to /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python/lib/python3.10/site-packages/ce_python-0.0.0-py3.10.egg-info\n'}
+[0.480995] (ce_python) StdoutLine: {'line': b'running install_scripts\n'}
+[0.491755] (ce_python) StdoutLine: {'line': b'Installing angle_forwarder script to /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python/lib/ce_python\n'}
+[0.491924] (ce_python) StdoutLine: {'line': b'Installing image_publish_node script to /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python/lib/ce_python\n'}
+[0.492051] (ce_python) StdoutLine: {'line': b"writing list of installed files to '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/ce_python/install.log'\n"}
+[0.500581] (-) TimerEvent: {}
+[0.508823] (ce_python) CommandEnded: {'returncode': 0}
+[0.514714] (ce_python) JobEnded: {'identifier': 'ce_python', 'rc': 0}
+[0.601095] (-) TimerEvent: {}
+[0.701398] (-) TimerEvent: {}
+[0.801699] (-) TimerEvent: {}
+[0.902013] (-) TimerEvent: {}
+[1.002332] (-) TimerEvent: {}
+[1.102757] (-) TimerEvent: {}
+[1.203232] (-) TimerEvent: {}
+[1.303549] (-) TimerEvent: {}
+[1.403857] (-) TimerEvent: {}
+[1.504192] (-) TimerEvent: {}
+[1.604516] (-) TimerEvent: {}
+[1.705184] (-) TimerEvent: {}
+[1.805487] (-) TimerEvent: {}
+[1.905802] (-) TimerEvent: {}
+[2.006136] (-) TimerEvent: {}
+[2.106449] (-) TimerEvent: {}
+[2.207389] (-) TimerEvent: {}
+[2.307720] (-) TimerEvent: {}
+[2.408315] (-) TimerEvent: {}
+[2.508633] (-) TimerEvent: {}
+[2.608980] (-) TimerEvent: {}
+[2.695098] (servo_mediator_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/src/main.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.695335] (servo_mediator_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/src/main.cpp:14:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KWebSocketReceiverNode\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.695428] (servo_mediator_cpp) StderrLine: {'line': b'   14 |     auto image_node = std::make_shared<\x1b[01;31m\x1b[KWebSocketReceiverNode\x1b[m\x1b[K>();  // \xe2\x9c\x85 \xe5\x88\x9b\xe5\xbb\xba\xe5\x9b\xbe\xe5\x83\x8f\xe6\x8e\xa5\xe6\x94\xb6\xe8\x8a\x82\xe7\x82\xb9\n'}
+[2.695500] (servo_mediator_cpp) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.695567] (servo_mediator_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/src/main.cpp:14:62:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmake_shared<<expression error> >()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.695634] (servo_mediator_cpp) StderrLine: {'line': b'   14 |    auto image_node = \x1b[01;31m\x1b[Kstd::make_shared<WebSocketReceiverNode>()\x1b[m\x1b[K;  // \xe2\x9c\x85 \xe5\x88\x9b\xe5\xbb\xba\xe5\x9b\xbe\xe5\x83\x8f\xe6\x8e\xa5\xe6\x94\xb6\xe8\x8a\x82\xe7\x82\xb9\n'}
+[2.695814] (servo_mediator_cpp) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[2.695847] (servo_mediator_cpp) StderrLine: {'line': b'\n'}
+[2.695873] (servo_mediator_cpp) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[2.695897] (servo_mediator_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[2.695928] (servo_mediator_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/src/main.cpp:1\x1b[m\x1b[K:\n'}
+[2.695954] (servo_mediator_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:875:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.695977] (servo_mediator_cpp) StderrLine: {'line': b'  875 |     \x1b[01;36m\x1b[Kmake_shared\x1b[m\x1b[K(_Args&&... __args)\n'}
+[2.696000] (servo_mediator_cpp) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.696022] (servo_mediator_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:875:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.696044] (servo_mediator_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/src/main.cpp:14:62:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.696065] (servo_mediator_cpp) StderrLine: {'line': b'   14 |    auto image_node = \x1b[01;31m\x1b[Kstd::make_shared<WebSocketReceiverNode>()\x1b[m\x1b[K;  // \xe2\x9c\x85 \xe5\x88\x9b\xe5\xbb\xba\xe5\x9b\xbe\xe5\x83\x8f\xe6\x8e\xa5\xe6\x94\xb6\xe8\x8a\x82\xe7\x82\xb9\n'}
+[2.696087] (servo_mediator_cpp) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[2.696107] (servo_mediator_cpp) StderrLine: {'line': b'\n'}
+[2.709078] (-) TimerEvent: {}
+[2.809364] (-) TimerEvent: {}
+[2.909684] (-) TimerEvent: {}
+[3.010012] (-) TimerEvent: {}
+[3.110335] (-) TimerEvent: {}
+[3.210657] (-) TimerEvent: {}
+[3.310984] (-) TimerEvent: {}
+[3.411304] (-) TimerEvent: {}
+[3.511625] (-) TimerEvent: {}
+[3.611961] (-) TimerEvent: {}
+[3.712285] (-) TimerEvent: {}
+[3.812607] (-) TimerEvent: {}
+[3.912943] (-) TimerEvent: {}
+[3.973892] (servo_mediator_cpp) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/combined_node.dir/build.make:76\xef\xbc\x9aCMakeFiles/combined_node.dir/src/main.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[3.974039] (servo_mediator_cpp) StderrLine: {'line': b'gmake[2]: *** \xe6\xad\xa3\xe5\x9c\xa8\xe7\xad\x89\xe5\xbe\x85\xe6\x9c\xaa\xe5\xae\x8c\xe6\x88\x90\xe7\x9a\x84\xe4\xbb\xbb\xe5\x8a\xa1....\n'}
+[4.013071] (-) TimerEvent: {}
+[4.113386] (-) TimerEvent: {}
+[4.213709] (-) TimerEvent: {}
+[4.314006] (-) TimerEvent: {}
+[4.414334] (-) TimerEvent: {}
+[4.514659] (-) TimerEvent: {}
+[4.614980] (-) TimerEvent: {}
+[4.715300] (-) TimerEvent: {}
+[4.815626] (-) TimerEvent: {}
+[4.915957] (-) TimerEvent: {}
+[5.016257] (-) TimerEvent: {}
+[5.116558] (-) TimerEvent: {}
+[5.216856] (-) TimerEvent: {}
+[5.317168] (-) TimerEvent: {}
+[5.417486] (-) TimerEvent: {}
+[5.517786] (-) TimerEvent: {}
+[5.618158] (-) TimerEvent: {}
+[5.718460] (-) TimerEvent: {}
+[5.818741] (-) TimerEvent: {}
+[5.919062] (-) TimerEvent: {}
+[6.019368] (-) TimerEvent: {}
+[6.119665] (-) TimerEvent: {}
+[6.219972] (-) TimerEvent: {}
+[6.320281] (-) TimerEvent: {}
+[6.420592] (-) TimerEvent: {}
+[6.520842] (-) TimerEvent: {}
+[6.621165] (-) TimerEvent: {}
+[6.721491] (-) TimerEvent: {}
+[6.821799] (-) TimerEvent: {}
+[6.922125] (-) TimerEvent: {}
+[7.022431] (-) TimerEvent: {}
+[7.122739] (-) TimerEvent: {}
+[7.223068] (-) TimerEvent: {}
+[7.323386] (-) TimerEvent: {}
+[7.423700] (-) TimerEvent: {}
+[7.520844] (servo_mediator_cpp) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137\xef\xbc\x9aCMakeFiles/combined_node.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[7.521130] (servo_mediator_cpp) StderrLine: {'line': b'gmake: *** [Makefile:146\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[7.522706] (servo_mediator_cpp) CommandEnded: {'returncode': 2}
+[7.523932] (-) TimerEvent: {}
+[7.526494] (servo_mediator_cpp) JobEnded: {'identifier': 'servo_mediator_cpp', 'rc': 2}
+[7.536895] (-) EventReactorShutdown: {}

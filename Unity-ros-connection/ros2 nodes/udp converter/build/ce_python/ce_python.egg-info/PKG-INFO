@@ -1,7 +1,7 @@
 Metadata-Version: 2.1
 Name: ce-python
 Version: 0.0.0
-Summary: ROS2 UDP sender to ESP32
+Summary: ROS2 UDP + TCP + Image Processing Node
 Home-page: UNKNOWN
 Maintainer: guyi
 Maintainer-email: your@email.com

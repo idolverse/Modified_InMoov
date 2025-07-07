@@ -1,0 +1,172 @@
+[0.053s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.054s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7e1daac51690>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7e1daac51180>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7e1daac51180>>)
+[0.134s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.134s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.134s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.134s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.134s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.134s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.134s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/ce_python) by extensions ['ignore', 'ignore_ament_install']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/ce_python) by extension 'ignore'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/ce_python) by extension 'ignore_ament_install'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/ce_python) by extensions ['colcon_pkg']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/ce_python) by extension 'colcon_pkg'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/ce_python) by extensions ['colcon_meta']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/ce_python) by extension 'colcon_meta'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/ce_python) by extensions ['ros']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/ce_python) by extension 'ros'
+[0.142s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ce_python' with type 'ros.ament_python' and name 'ce_python'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/servo_mediator_cpp) by extensions ['ignore', 'ignore_ament_install']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/servo_mediator_cpp) by extension 'ignore'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/servo_mediator_cpp) by extension 'ignore_ament_install'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/servo_mediator_cpp) by extensions ['colcon_pkg']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/servo_mediator_cpp) by extension 'colcon_pkg'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/servo_mediator_cpp) by extensions ['colcon_meta']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/servo_mediator_cpp) by extension 'colcon_meta'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/servo_mediator_cpp) by extensions ['ros']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/servo_mediator_cpp) by extension 'ros'
+[0.142s] DEBUG:colcon.colcon_core.package_identification:Package 'src/servo_mediator_cpp' with type 'ros.ament_cmake' and name 'servo_mediator_cpp'
+[0.142s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.142s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.142s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.142s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.142s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.158s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.158s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.159s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install
+[0.160s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 6 installed packages in /home/guyi/inmoov_ros2/install
+[0.161s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 360 installed packages in /opt/ros/humble
+[0.161s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'ce_python' build argument 'cmake_args' from command line to 'None'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'ce_python' build argument 'cmake_target' from command line to 'None'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'ce_python' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'ce_python' build argument 'cmake_clean_cache' from command line to 'False'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'ce_python' build argument 'cmake_clean_first' from command line to 'False'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'ce_python' build argument 'cmake_force_configure' from command line to 'False'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'ce_python' build argument 'ament_cmake_args' from command line to 'None'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'ce_python' build argument 'catkin_cmake_args' from command line to 'None'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'ce_python' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.183s] DEBUG:colcon.colcon_core.verb:Building package 'ce_python' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/ce_python', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python', 'merge_install': False, 'path': '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/ce_python', 'symlink_install': False, 'test_result_base': None}
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'servo_mediator_cpp' build argument 'cmake_args' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'servo_mediator_cpp' build argument 'cmake_target' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'servo_mediator_cpp' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'servo_mediator_cpp' build argument 'cmake_clean_cache' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'servo_mediator_cpp' build argument 'cmake_clean_first' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'servo_mediator_cpp' build argument 'cmake_force_configure' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'servo_mediator_cpp' build argument 'ament_cmake_args' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'servo_mediator_cpp' build argument 'catkin_cmake_args' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'servo_mediator_cpp' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.184s] DEBUG:colcon.colcon_core.verb:Building package 'servo_mediator_cpp' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/servo_mediator_cpp', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp', 'merge_install': False, 'path': '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp', 'symlink_install': False, 'test_result_base': None}
+[0.184s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.184s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.184s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/ce_python' with build type 'ament_python'
+[0.185s] Level 1:colcon.colcon_core.shell:create_environment_hook('ce_python', 'ament_prefix_path')
+[0.186s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.186s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python/share/ce_python/hook/ament_prefix_path.ps1'
+[0.186s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python/share/ce_python/hook/ament_prefix_path.dsv'
+[0.186s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python/share/ce_python/hook/ament_prefix_path.sh'
+[0.187s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.187s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.189s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp' with build type 'ament_cmake'
+[0.190s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp'
+[0.190s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.190s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.330s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/ce_python'
+[0.330s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.330s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.336s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/servo_mediator_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/local/bin/cmake --build /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/servo_mediator_cpp -- -j16 -l16
+[0.544s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/ce_python': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/ce_python/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ce_python build --build-base /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/ce_python/build install --record /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/ce_python/install.log --single-version-externally-managed install_data
+[0.709s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/ce_python' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/ce_python/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ce_python build --build-base /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/ce_python/build install --record /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/ce_python/install.log --single-version-externally-managed install_data
+[0.710s] Level 1:colcon.colcon_core.environment:checking '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python' for CMake module files
+[0.711s] Level 1:colcon.colcon_core.environment:checking '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python' for CMake config files
+[0.711s] Level 1:colcon.colcon_core.environment:checking '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python/lib'
+[0.711s] Level 1:colcon.colcon_core.environment:checking '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python/bin'
+[0.711s] Level 1:colcon.colcon_core.environment:checking '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python/lib/pkgconfig/ce_python.pc'
+[0.711s] Level 1:colcon.colcon_core.environment:checking '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python/lib/python3.10/site-packages'
+[0.711s] Level 1:colcon.colcon_core.shell:create_environment_hook('ce_python', 'pythonpath')
+[0.712s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python/share/ce_python/hook/pythonpath.ps1'
+[0.712s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python/share/ce_python/hook/pythonpath.dsv'
+[0.712s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python/share/ce_python/hook/pythonpath.sh'
+[0.712s] Level 1:colcon.colcon_core.environment:checking '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python/bin'
+[0.712s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ce_python)
+[0.713s] INFO:colcon.colcon_core.shell:Creating package script '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python/share/ce_python/package.ps1'
+[0.713s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python/share/ce_python/package.dsv'
+[0.713s] INFO:colcon.colcon_core.shell:Creating package script '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python/share/ce_python/package.sh'
+[0.714s] INFO:colcon.colcon_core.shell:Creating package script '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python/share/ce_python/package.bash'
+[0.714s] INFO:colcon.colcon_core.shell:Creating package script '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python/share/ce_python/package.zsh'
+[0.717s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python/share/colcon-core/packages/ce_python)
+[3.291s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/servo_mediator_cpp' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/local/bin/cmake --build /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/build/servo_mediator_cpp -- -j16 -l16
+[3.291s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(servo_mediator_cpp)
+[3.291s] Level 1:colcon.colcon_core.environment:checking '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp' for CMake module files
+[3.291s] Level 1:colcon.colcon_core.environment:checking '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp' for CMake config files
+[3.292s] Level 1:colcon.colcon_core.shell:create_environment_hook('servo_mediator_cpp', 'cmake_prefix_path')
+[3.292s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/share/servo_mediator_cpp/hook/cmake_prefix_path.ps1'
+[3.292s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/share/servo_mediator_cpp/hook/cmake_prefix_path.dsv'
+[3.292s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/share/servo_mediator_cpp/hook/cmake_prefix_path.sh'
+[3.293s] Level 1:colcon.colcon_core.environment:checking '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/lib'
+[3.293s] Level 1:colcon.colcon_core.environment:checking '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/bin'
+[3.293s] Level 1:colcon.colcon_core.environment:checking '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/lib/pkgconfig/servo_mediator_cpp.pc'
+[3.293s] Level 1:colcon.colcon_core.environment:checking '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/lib/python3.10/site-packages'
+[3.293s] Level 1:colcon.colcon_core.environment:checking '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/bin'
+[3.293s] INFO:colcon.colcon_core.shell:Creating package script '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/share/servo_mediator_cpp/package.ps1'
+[3.293s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/share/servo_mediator_cpp/package.dsv'
+[3.293s] INFO:colcon.colcon_core.shell:Creating package script '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/share/servo_mediator_cpp/package.sh'
+[3.294s] INFO:colcon.colcon_core.shell:Creating package script '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/share/servo_mediator_cpp/package.bash'
+[3.294s] INFO:colcon.colcon_core.shell:Creating package script '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/share/servo_mediator_cpp/package.zsh'
+[3.294s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/share/colcon-core/packages/servo_mediator_cpp)
+[3.304s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.304s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.304s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[3.305s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.308s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.308s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.308s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.315s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.316s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/local_setup.ps1'
+[3.316s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/_local_setup_util_ps1.py'
+[3.317s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/setup.ps1'
+[3.317s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/local_setup.sh'
+[3.318s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/_local_setup_util_sh.py'
+[3.318s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/setup.sh'
+[3.319s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/local_setup.bash'
+[3.319s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/setup.bash'
+[3.319s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/local_setup.zsh'
+[3.320s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/setup.zsh'

@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target combined_node[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/combined_node.dir/src/main.cpp.o[0m
+[ 40%] [32m[1mLinking CXX executable combined_node[0m
+[100%] Built target combined_node
+-- Install configuration: ""
+-- Installing: /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/lib/servo_mediator_cpp/combined_node
+-- Set runtime path of "/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/lib/servo_mediator_cpp/combined_node" to ""
+-- Up-to-date: /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/share/ament_index/resource_index/package_run_dependencies/servo_mediator_cpp
+-- Installing: /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/share/ament_index/resource_index/parent_prefix_path/servo_mediator_cpp
+-- Up-to-date: /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/share/servo_mediator_cpp/environment/ament_prefix_path.sh
+-- Installing: /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/share/servo_mediator_cpp/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/share/servo_mediator_cpp/environment/path.sh
+-- Installing: /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/share/servo_mediator_cpp/environment/path.dsv
+-- Up-to-date: /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/share/servo_mediator_cpp/local_setup.bash
+-- Up-to-date: /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/share/servo_mediator_cpp/local_setup.sh
+-- Up-to-date: /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/share/servo_mediator_cpp/local_setup.zsh
+-- Installing: /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/share/servo_mediator_cpp/local_setup.dsv
+-- Installing: /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/share/servo_mediator_cpp/package.dsv
+-- Up-to-date: /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/share/ament_index/resource_index/packages/servo_mediator_cpp
+-- Up-to-date: /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/share/servo_mediator_cpp/cmake/servo_mediator_cppConfig.cmake
+-- Up-to-date: /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/share/servo_mediator_cpp/cmake/servo_mediator_cppConfig-version.cmake
+-- Up-to-date: /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp/share/servo_mediator_cpp/package.xml
