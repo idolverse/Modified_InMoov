@@ -1,0 +1,124 @@
+[0.288s] Invoking command in '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/build/servo_mediator_cpp': CMAKE_PREFIX_PATH=/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/servo_mediator_cpp:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/ros_tcp_endpoint:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/ce_python:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python:/opt/ros/humble:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/inmoov_description:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp:/home/guyi/inmoov_ros2/install/inmoov_tools:/home/guyi/inmoov_ros2/install/inmoov_bringup:/home/guyi/inmoov_ros2/install/inmoov_msgs:/home/guyi/inmoov_ros2/install/inmoov_meshes:/home/guyi/inmoov_ros2/install/inmoov_config_test:/home/guyi/inmoov_ros2/install/inmoov_description CONDA_PROMPT_MODIFIER=(base) /usr/local/bin/cmake --build /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/build/servo_mediator_cpp -- -j16 -l16
+[0.320s] [ 16%] [32mBuilding CXX object CMakeFiles/combined_node.dir/src/main.cpp.o[0m
+[0.320s] [ 33%] [32mBuilding CXX object CMakeFiles/combined_node.dir/src/websocket_receiver_node.cpp.o[0m
+[3.283s] In file included from [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/src/websocket_receiver_node.cpp:1[m[K:
+[3.283s] [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:41:23:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_msgs[m[K’ was not declared in this scope
+[3.283s]    41 |     rclcpp::Publisher<[01;31m[Ksensor_msgs[m[K::msg::Image>::SharedPtr image_pub_;
+[3.283s]       |                       [01;31m[K^~~~~~~~~~~[m[K
+[3.283s] [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:41:46:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.283s]    41 |     rclcpp::Publisher<sensor_msgs::msg::Image[01;31m[K>[m[K::SharedPtr image_pub_;
+[3.283s]       |                                              [01;31m[K^[m[K
+[3.289s] [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:41:49:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[3.289s]    41 |     rclcpp::Publisher<sensor_msgs::msg::Image>::[01;31m[KSharedPtr[m[K image_pub_;
+[3.289s]       |                                                 [01;31m[K^~~~~~~~~[m[K
+[3.290s]       |                                                          [32m[K;[m[K
+[3.294s] [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:41:59:[m[K [01;31m[Kerror: [m[K‘[01m[Kimage_pub_[m[K’ does not name a type
+[3.294s]    41 |     rclcpp::Publisher<sensor_msgs::msg::Image>::SharedPtr [01;31m[Kimage_pub_[m[K;
+[3.294s]       |                                                           [01;31m[K^~~~~~~~~~[m[K
+[3.302s] [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:[m[K In constructor ‘[01m[KWebSocketReceiverNode::WebSocketReceiverNode()[m[K’:
+[3.303s] [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:21:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kimage_pub_[m[K’ was not declared in this scope
+[3.303s]    21 |         [01;31m[Kimage_pub_[m[K = this->create_publisher<sensor_msgs::msg::Image>("/image_raw", 10);
+[3.303s]       |         [01;31m[K^~~~~~~~~~[m[K
+[3.310s] [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:21:45:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_msgs[m[K’ was not declared in this scope
+[3.310s]    21 |         image_pub_ = this->create_publisher<[01;31m[Ksensor_msgs[m[K::msg::Image>("/image_raw", 10);
+[3.310s]       |                                             [01;31m[K^~~~~~~~~~~[m[K
+[3.310s] [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:21:28:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[3.310s]    21 |         image_pub_ = this->[01;31m[Kcreate_publisher<sensor_msgs::msg::Image>[m[K("/image_raw", 10);
+[3.310s]       |                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.310s] [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:21:69:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KWebSocketReceiverNode::create_publisher<<expression error> >(const char [11], int)[m[K’
+[3.310s]    21 |         image_pub_ = [01;31m[Kthis->create_publisher<sensor_msgs::msg::Image>("/image_raw", 10)[m[K;
+[3.311s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[3.311s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.311s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[3.311s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.311s]                  from [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:3[m[K,
+[3.311s]                  from [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/src/websocket_receiver_node.cpp:1[m[K:
+[3.311s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+[3.311s]   195 |   [01;36m[Kcreate_publisher[m[K(
+[3.311s]       |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[3.311s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.311s] In file included from [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/src/websocket_receiver_node.cpp:1[m[K:
+[3.311s] [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:21:69:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.311s]    21 |         image_pub_ = [01;31m[Kthis->create_publisher<sensor_msgs::msg::Image>("/image_raw", 10)[m[K;
+[3.311s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[3.312s] In file included from [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/src/main.cpp:5[m[K:
+[3.312s] [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:41:23:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_msgs[m[K’ was not declared in this scope
+[3.313s]    41 |     rclcpp::Publisher<[01;31m[Ksensor_msgs[m[K::msg::Image>::SharedPtr image_pub_;
+[3.313s]       |                       [01;31m[K^~~~~~~~~~~[m[K
+[3.313s] [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:41:46:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.313s]    41 |     rclcpp::Publisher<sensor_msgs::msg::Image[01;31m[K>[m[K::SharedPtr image_pub_;
+[3.313s]       |                                              [01;31m[K^[m[K
+[3.313s] [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:41:49:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[3.313s]    41 |     rclcpp::Publisher<sensor_msgs::msg::Image>::[01;31m[KSharedPtr[m[K image_pub_;
+[3.313s]       |                                                 [01;31m[K^~~~~~~~~[m[K
+[3.313s]       |                                                          [32m[K;[m[K
+[3.316s] [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:41:59:[m[K [01;31m[Kerror: [m[K‘[01m[Kimage_pub_[m[K’ does not name a type
+[3.316s]    41 |     rclcpp::Publisher<sensor_msgs::msg::Image>::SharedPtr [01;31m[Kimage_pub_[m[K;
+[3.316s]       |                                                           [01;31m[K^~~~~~~~~~[m[K
+[3.318s] [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:[m[K In member function ‘[01m[Kvoid WebSocketReceiverNode::handle_message(const string&)[m[K’:
+[3.318s] [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:59:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_msgs[m[K’ has not been declared
+[3.318s]    59 |                     [01;31m[Kstd_msgs[m[K::msg::Header header;
+[3.318s]       |                     [01;31m[K^~~~~~~~[m[K
+[3.324s] [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:60:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kheader[m[K’ was not declared in this scope; did you mean ‘[01m[Kh_addr[m[K’?
+[3.324s]    60 |                     [01;31m[Kheader[m[K.stamp = this->now();
+[3.324s]       |                     [01;31m[K^~~~~~[m[K
+[3.324s]       |                     [32m[Kh_addr[m[K
+[3.324s] [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:63:21:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_msgs[m[K’ has not been declared
+[3.325s]    63 |                     [01;31m[Ksensor_msgs[m[K::msg::Image::SharedPtr ros_img =
+[3.325s]       |                     [01;31m[K^~~~~~~~~~~[m[K
+[3.325s] [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:[m[K In constructor ‘[01m[KWebSocketReceiverNode::WebSocketReceiverNode()[m[K’:
+[3.325s] [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:21:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kimage_pub_[m[K’ was not declared in this scope
+[3.325s]    21 |         [01;31m[Kimage_pub_[m[K = this->create_publisher<sensor_msgs::msg::Image>("/image_raw", 10);
+[3.325s]       |         [01;31m[K^~~~~~~~~~[m[K
+[3.332s] [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:65:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kimage_pub_[m[K’ was not declared in this scope
+[3.332s]    65 |                     [01;31m[Kimage_pub_[m[K->publish(*ros_img);
+[3.332s]       |                     [01;31m[K^~~~~~~~~~[m[K
+[3.333s] [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:21:45:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_msgs[m[K’ was not declared in this scope
+[3.333s]    21 |         image_pub_ = this->create_publisher<[01;31m[Ksensor_msgs[m[K::msg::Image>("/image_raw", 10);
+[3.333s]       |                                             [01;31m[K^~~~~~~~~~~[m[K
+[3.333s] [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:21:28:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[3.333s]    21 |         image_pub_ = this->[01;31m[Kcreate_publisher<sensor_msgs::msg::Image>[m[K("/image_raw", 10);
+[3.333s]       |                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.333s] [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:21:69:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KWebSocketReceiverNode::create_publisher<<expression error> >(const char [11], int)[m[K’
+[3.333s]    21 | image_pub_ = [01;31m[Kthis->create_publisher<sensor_msgs::msg::Image>("/image_raw", 10)[m[K;
+[3.333s]       |              [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[3.333s] 
+[3.333s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.333s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[3.333s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.333s]                  from [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/src/main.cpp:1[m[K:
+[3.333s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+[3.333s]   195 |   [01;36m[Kcreate_publisher[m[K(
+[3.333s]       |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[3.333s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.333s] In file included from [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/src/main.cpp:5[m[K:
+[3.333s] [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:21:69:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.333s]    21 | image_pub_ = [01;31m[Kthis->create_publisher<sensor_msgs::msg::Image>("/image_raw", 10)[m[K;
+[3.333s]       |              [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[3.333s] 
+[3.338s] [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:65:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kros_img[m[K’ was not declared in this scope
+[3.338s]    65 |                     image_pub_->publish(*[01;31m[Kros_img[m[K);
+[3.339s]       |                                          [01;31m[K^~~~~~~[m[K
+[3.342s] [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:[m[K In member function ‘[01m[Kvoid WebSocketReceiverNode::handle_message(const string&)[m[K’:
+[3.342s] [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:59:36:[m[K [01;31m[Kerror: [m[K‘[01m[KHeader[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’
+[3.342s]    59 |                     std_msgs::msg::[01;31m[KHeader[m[K header;
+[3.342s]       |                                    [01;31m[K^~~~~~[m[K
+[3.348s] [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:60:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kheader[m[K’ was not declared in this scope; did you mean ‘[01m[Kh_addr[m[K’?
+[3.348s]    60 |                     [01;31m[Kheader[m[K.stamp = this->now();
+[3.348s]       |                     [01;31m[K^~~~~~[m[K
+[3.348s]       |                     [32m[Kh_addr[m[K
+[3.348s] [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:63:21:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_msgs[m[K’ has not been declared
+[3.348s]    63 |                     [01;31m[Ksensor_msgs[m[K::msg::Image::SharedPtr ros_img =
+[3.348s]       |                     [01;31m[K^~~~~~~~~~~[m[K
+[3.356s] [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:65:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kimage_pub_[m[K’ was not declared in this scope
+[3.356s]    65 |                     [01;31m[Kimage_pub_[m[K->publish(*ros_img);
+[3.356s]       |                     [01;31m[K^~~~~~~~~~[m[K
+[3.362s] [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:65:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kros_img[m[K’ was not declared in this scope
+[3.362s]    65 |                     image_pub_->publish(*[01;31m[Kros_img[m[K);
+[3.362s]       |                                          [01;31m[K^~~~~~~[m[K
+[5.340s] gmake[2]: *** [CMakeFiles/combined_node.dir/build.make:132：CMakeFiles/combined_node.dir/src/websocket_receiver_node.cpp.o] 错误 1
+[5.340s] gmake[2]: *** 正在等待未完成的任务....
+[5.536s] gmake[2]: *** [CMakeFiles/combined_node.dir/build.make:76：CMakeFiles/combined_node.dir/src/main.cpp.o] 错误 1
+[5.537s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/combined_node.dir/all] 错误 2
+[5.537s] gmake: *** [Makefile:146：all] 错误 2
+[5.538s] Invoked command in '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/build/servo_mediator_cpp' returned '2': CMAKE_PREFIX_PATH=/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/servo_mediator_cpp:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/ros_tcp_endpoint:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/ce_python:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/ce_python:/opt/ros/humble:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/inmoov_description:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/install/servo_mediator_cpp:/home/guyi/inmoov_ros2/install/inmoov_tools:/home/guyi/inmoov_ros2/install/inmoov_bringup:/home/guyi/inmoov_ros2/install/inmoov_msgs:/home/guyi/inmoov_ros2/install/inmoov_meshes:/home/guyi/inmoov_ros2/install/inmoov_config_test:/home/guyi/inmoov_ros2/install/inmoov_description CONDA_PROMPT_MODIFIER=(base) /usr/local/bin/cmake --build /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/build/servo_mediator_cpp -- -j16 -l16

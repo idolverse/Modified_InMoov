@@ -25,6 +25,7 @@ setup(
         'console_scripts': [
             'angle_forwarder = ce_python.angle_forwarder:main',
             'image_publish_node = ce_python.image_publish_node:main',
+            'hand_gesture_node = ce_python.hand_detection_node:main',  # ✅ 添加此行
         ],
     },
 )

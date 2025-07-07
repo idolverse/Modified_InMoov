@@ -1,0 +1,38 @@
+In file included from [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/src/websocket_receiver_node.cpp:1[m[K:
+[01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:38:32:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+   38 |     std::thread server_thread_;
+      |                                [01;31m[K^[m[K
+In file included from [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/src/websocket_receiver_node.cpp:1[m[K:
+[01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:16:51:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   16 | class WebSocketReceiverNode : public rclcpp::Node [01;36m[K{[m[K
+      |                                                   [01;36m[K^[m[K
+In file included from [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/src/websocket_receiver_node.cpp:1[m[K:
+[01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:[m[K In lambda function:
+[01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:26:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass WebSocketReceiverNode[m[K’ has no member named ‘[01m[Khandle_message[m[K’
+   26 |                 this->[01;31m[Khandle_message[m[K(msg->get_payload());
+      |                       [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:[m[K At global scope:
+[01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:38:32:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+   38 |     std::thread server_thread_;
+      |                                [01;31m[K^[m[K
+[01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/src/main.cpp:28:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+   28 | }
+      |  [01;31m[K^[m[K
+In file included from [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/src/main.cpp:5[m[K:
+[01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:16:51:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   16 | class WebSocketReceiverNode : public rclcpp::Node [01;36m[K{[m[K
+      |                                                   [01;36m[K^[m[K
+In file included from [01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/src/main.cpp:5[m[K:
+[01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:[m[K In lambda function:
+[01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/include/servo_mediator_cpp/websocket_receiver_node.hpp:26:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass WebSocketReceiverNode[m[K’ has no member named ‘[01m[Khandle_message[m[K’
+   26 |                 this->[01;31m[Khandle_message[m[K(msg->get_payload());
+      |                       [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/src/main.cpp:[m[K At global scope:
+[01m[K/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/servo_mediator_cpp/src/main.cpp:28:2:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+   28 | }
+      |  [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/combined_node.dir/build.make:132：CMakeFiles/combined_node.dir/src/websocket_receiver_node.cpp.o] 错误 1
+gmake[2]: *** 正在等待未完成的任务....
+gmake[2]: *** [CMakeFiles/combined_node.dir/build.make:76：CMakeFiles/combined_node.dir/src/main.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/combined_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

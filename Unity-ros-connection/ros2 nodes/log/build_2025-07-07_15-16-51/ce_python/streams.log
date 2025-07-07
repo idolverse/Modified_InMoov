@@ -1,0 +1,23 @@
+[0.546s] Invoking command in '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/ce_python': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/build/ce_python/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/ce_python/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/ce_python build --build-base /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/build/ce_python/build install --record /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/build/ce_python/install.log --single-version-externally-managed install_data
+[0.684s] running egg_info
+[0.685s] writing ../../../build/ce_python/ce_python.egg-info/PKG-INFO
+[0.685s] writing dependency_links to ../../../build/ce_python/ce_python.egg-info/dependency_links.txt
+[0.685s] writing entry points to ../../../build/ce_python/ce_python.egg-info/entry_points.txt
+[0.685s] writing requirements to ../../../build/ce_python/ce_python.egg-info/requires.txt
+[0.685s] writing top-level names to ../../../build/ce_python/ce_python.egg-info/top_level.txt
+[0.686s] reading manifest file '../../../build/ce_python/ce_python.egg-info/SOURCES.txt'
+[0.687s] writing manifest file '../../../build/ce_python/ce_python.egg-info/SOURCES.txt'
+[0.687s] running build
+[0.687s] running build_py
+[0.687s] running install
+[0.687s] running install_lib
+[0.688s] running install_data
+[0.688s] running install_egg_info
+[0.689s] removing '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/ce_python/lib/python3.10/site-packages/ce_python-0.0.0-py3.10.egg-info' (and everything under it)
+[0.689s] Copying ../../../build/ce_python/ce_python.egg-info to /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/ce_python/lib/python3.10/site-packages/ce_python-0.0.0-py3.10.egg-info
+[0.690s] running install_scripts
+[0.701s] Installing angle_forwarder script to /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/ce_python/lib/ce_python
+[0.701s] Installing hand_gesture_node script to /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/ce_python/lib/ce_python
+[0.701s] Installing image_publish_node script to /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/ce_python/lib/ce_python
+[0.702s] writing list of installed files to '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/build/ce_python/install.log'
+[0.722s] Invoked command in '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/udp converter/src/ce_python' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/build/ce_python/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/ce_python/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/ce_python build --build-base /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/build/ce_python/build install --record /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/build/ce_python/install.log --single-version-externally-managed install_data

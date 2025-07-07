@@ -1,6 +1,8 @@
 #pragma once
 
 #include "rclcpp/rclcpp.hpp"
+#include "sensor_msgs/msg/image.hpp"
+#include "cv_bridge/cv_bridge.h"
 #include "nlohmann/json.hpp"
 #include <opencv2/opencv.hpp>
 #include <websocketpp/config/asio_no_tls.hpp>
@@ -18,7 +20,8 @@ public:
     WebSocketReceiverNode() : Node("websocket_receiver_node") {
         RCLCPP_INFO(this->get_logger(), "✅ WebSocketReceiverNode started.");
 
-        // 启动 websocket 服务线程
+        publisher_ = this->create_publisher<sensor_msgs::msg::Image>("/image_raw", 10);
+
         server_thread_ = std::thread([this]() {
             server_.init_asio();
 
@@ -36,33 +39,40 @@ public:
 private:
     WebSocketServer server_;
     std::thread server_thread_;
+    rclcpp::Publisher<sensor_msgs::msg::Image>::SharedPtr publisher_;
 
-void handle_message(const std::string& message) {
-    try {
-        auto j = json::parse(message);
-        std::string topic = j.at("topic");
-        std::string payload = j.at("data");
+    void handle_message(const std::string& message) {
+        RCLCPP_INFO(this->get_logger(), "📨 Raw WebSocket msg: '%s'", message.c_str());
 
-        if (topic == "/image_raw") {
-            auto data_json = json::parse(payload);
-            std::string img_b64 = data_json["img"];
+        try {
+            auto j = json::parse(message);
+            std::string topic = j.at("topic");
 
-            std::string img_data = base64_decode(img_b64);
-            std::vector<uchar> buffer(img_data.begin(), img_data.end());
-            cv::Mat img = cv::imdecode(buffer, cv::IMREAD_COLOR);
+            if (topic == "/image_raw") {
+                std::string img_b64 = j["data"]["img"];
 
-            if (!img.empty()) {
-                cv::imshow("WebSocket Image", img);
-                cv::waitKey(1);
+                std::string img_data = base64_decode(img_b64);
+                std::vector<uchar> buffer(img_data.begin(), img_data.end());
+                cv::Mat img = cv::imdecode(buffer, cv::IMREAD_COLOR);
+
+                if (!img.empty()) {
+                    // ✅ 发布 ROS2 图像消息
+                    auto msg = cv_bridge::CvImage(std_msgs::msg::Header(), "bgr8", img).toImageMsg();
+                    msg->header.stamp = this->get_clock()->now();
+                    publisher_->publish(*msg);
+
+                    // ✅ 显示图像窗口
+                    //cv::imshow("WebSocket Image", img);
+                    //cv::waitKey(1);
+                } else {
+                    RCLCPP_WARN(this->get_logger(), "⚠️ 图像解码失败！");
+                }
             } else {
-                RCLCPP_WARN(this->get_logger(), "⚠️ 图像解码失败！");
+                RCLCPP_INFO(this->get_logger(), "📨 Received non-image topic: %s", topic.c_str());
             }
-        } else {
-            RCLCPP_INFO(this->get_logger(), "📨 Received non-image topic: %s", topic.c_str());
-        }
 
-    } catch (const std::exception& e) {
-        RCLCPP_ERROR(this->get_logger(), "❌ JSON/Base64 解析错误: %s", e.what());
+        } catch (const std::exception& e) {
+            RCLCPP_ERROR(this->get_logger(), "❌ JSON/Base64 解析错误: %s", e.what());
+        }
     }
-}
 };

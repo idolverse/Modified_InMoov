@@ -4,7 +4,6 @@
 #include <netinet/in.h>
 #include <unistd.h>
 #include <cstring>
-
 using json = nlohmann::json;
 
 UdpReceiverNode::UdpReceiverNode() : Node("udp_receiver_node") {

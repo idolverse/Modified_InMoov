@@ -1,0 +1,24 @@
+[0.527s] Invoking command in '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/ros-bridge/src/ros_tcp_endpoint': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/build/ros_tcp_endpoint/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/ros_tcp_endpoint/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/ros_tcp_endpoint build --build-base /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/build/ros_tcp_endpoint/build install --record /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/build/ros_tcp_endpoint/install.log --install-scripts $base/lib/ros_tcp_endpoint --single-version-externally-managed install_data
+[0.651s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[0.651s]   warnings.warn(
+[0.656s] running egg_info
+[0.656s] writing ../../../build/ros_tcp_endpoint/ros_tcp_endpoint.egg-info/PKG-INFO
+[0.657s] writing dependency_links to ../../../build/ros_tcp_endpoint/ros_tcp_endpoint.egg-info/dependency_links.txt
+[0.657s] writing entry points to ../../../build/ros_tcp_endpoint/ros_tcp_endpoint.egg-info/entry_points.txt
+[0.657s] writing requirements to ../../../build/ros_tcp_endpoint/ros_tcp_endpoint.egg-info/requires.txt
+[0.657s] writing top-level names to ../../../build/ros_tcp_endpoint/ros_tcp_endpoint.egg-info/top_level.txt
+[0.658s] reading manifest file '../../../build/ros_tcp_endpoint/ros_tcp_endpoint.egg-info/SOURCES.txt'
+[0.658s] adding license file 'LICENSE'
+[0.659s] writing manifest file '../../../build/ros_tcp_endpoint/ros_tcp_endpoint.egg-info/SOURCES.txt'
+[0.659s] running build
+[0.659s] running build_py
+[0.659s] running install
+[0.660s] running install_lib
+[0.661s] running install_data
+[0.661s] running install_egg_info
+[0.662s] removing '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/ros_tcp_endpoint/lib/python3.10/site-packages/ros_tcp_endpoint-0.0.1-py3.10.egg-info' (and everything under it)
+[0.663s] Copying ../../../build/ros_tcp_endpoint/ros_tcp_endpoint.egg-info to /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/ros_tcp_endpoint/lib/python3.10/site-packages/ros_tcp_endpoint-0.0.1-py3.10.egg-info
+[0.663s] running install_scripts
+[0.676s] Installing default_server_endpoint script to /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/ros_tcp_endpoint/lib/ros_tcp_endpoint
+[0.676s] writing list of installed files to '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/build/ros_tcp_endpoint/install.log'
+[0.699s] Invoked command in '/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/ros-bridge/src/ros_tcp_endpoint' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/build/ros_tcp_endpoint/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/install/ros_tcp_endpoint/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/ros_tcp_endpoint build --build-base /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/build/ros_tcp_endpoint/build install --record /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/build/ros_tcp_endpoint/install.log --install-scripts $base/lib/ros_tcp_endpoint --single-version-externally-managed install_data
