@@ -8,7 +8,7 @@
     name="shoulder_link">
     <inertial>
       <origin
-        xyz="0.151457308727922 0.000403999989546937 -0.00383115241924482"
+        xyz="0.15146 -0.0038312 -0.000404"
         rpy="0 0 0" />
       <mass
         value="0.243427734576419" />
@@ -86,7 +86,7 @@
   </link>
   <joint
     name="elbow_joint"
-    type="fixed">
+    type="revolute">
     <origin
       xyz="0.20500155343 -0.00151891118282245 5.75223328378366E-05"
       rpy="-1.60864900555086 0 0" />
@@ -95,7 +95,7 @@
     <child
       link="upper_arm_link" />
     <axis
-      xyz="0 0 0" />
+      xyz="0 0 1" />
     <limit
       lower="0"
       upper="0"
@@ -106,7 +106,7 @@
     name="forearm_link">
     <inertial>
       <origin
-        xyz="-0.186161585408388 -0.00387076982900833 0.000657865954753756"
+        xyz="-0.416161585408388 -0.00387076982900833 0.000657865954753756"
         rpy="0 0 0" />
       <mass
         value="0.0906405879929624" />
@@ -120,7 +120,7 @@
     </inertial>
     <visual>
       <origin
-        xyz="0 0 0"
+        xyz="0.23 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
@@ -134,7 +134,7 @@
     </visual>
     <collision>
       <origin
-        xyz="0 0 0"
+        xyz="0.23 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
@@ -144,16 +144,16 @@
   </link>
   <joint
     name="forearm_updown_joint"
-    type="fixed">
+    type="revolute">
     <origin
-      xyz="0.00051304 0.4837 -0.00034787"
+      xyz="0.00051304 0.2537 -0.00034787"
       rpy="-1.5708 0 1.5708" />
     <parent
       link="upper_arm_link" />
     <child
       link="forearm_link" />
     <axis
-      xyz="0 0 0" />
+      xyz="0 0 1" />
     <limit
       lower="0"
       upper="0"
@@ -178,7 +178,7 @@
     </inertial>
     <visual>
       <origin
-        xyz="0 0 0"
+        xyz="0.23 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
@@ -192,7 +192,7 @@
     </visual>
     <collision>
       <origin
-        xyz="0 0 0"
+        xyz="0.23 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
@@ -202,7 +202,7 @@
   </link>
   <joint
     name="foreamr_roll_joint"
-    type="fixed">
+    type="revolute">
     <origin
       xyz="0 0 0"
       rpy="0 0 0" />
@@ -211,7 +211,7 @@
     <child
       link="forearm_roll_link" />
     <axis
-      xyz="0 0 0" />
+      xyz="1 0 0" />
     <limit
       lower="0"
       upper="0"
