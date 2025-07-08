@@ -1,0 +1,7 @@
+requests
+websocket-client
+pygame
+pyserial
+numpy
+librosa
+soundfile
