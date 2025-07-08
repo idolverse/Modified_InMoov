@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="ArmsnHandsR.SLDASM">
+  <link
+    name="shoulder_link">
+    <inertial>
+      <origin
+        xyz="-0.151457309905491 0.000403840935773192 -0.00383939712673924"
+        rpy="0 0 0" />
+      <mass
+        value="0.243427715540983" />
+      <inertia
+        ixx="0.000225446629973009"
+        ixy="-6.30428895307121E-08"
+        ixz="-5.4183510591183E-06"
+        iyy="0.000136202329917266"
+        iyz="8.81269486130966E-06"
+        izz="0.000132528356667364" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ArmsnHandsR.SLDASM/meshes/shoulder_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.866666666666667 0.909803921568627 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ArmsnHandsR.SLDASM/meshes/shoulder_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="upper_arm_link">
+    <inertial>
+      <origin
+        xyz="-0.411648578068681 0.1250183369068 0.00385273194207978"
+        rpy="0 0 0" />
+      <mass
+        value="0.246153488378973" />
+      <inertia
+        ixx="0.000489331993629412"
+        ixy="-1.67968277103578E-05"
+        ixz="-7.62186662099606E-07"
+        iyy="0.000136947016771834"
+        iyz="-2.54861606800049E-05"
+        izz="0.000466071468129534" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ArmsnHandsR.SLDASM/meshes/upper_arm_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ArmsnHandsR.SLDASM/meshes/upper_arm_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="elbow_joint"
+    type="revolute">
+    <origin
+      xyz="0.205 -0.0015189 5.7522E-05"
+      rpy="-1.6086 0 0" />
+    <parent
+      link="shoulder_link" />
+    <child
+      link="upper_arm_link" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="forearm_link">
+    <inertial>
+      <origin
+        xyz="-0.185541907347801 -0.0150824724077675 0.410481974916605"
+        rpy="0 0 0" />
+      <mass
+        value="0.0919060400214775" />
+      <inertia
+        ixx="4.3922262377694E-05"
+        ixy="-5.56812690644716E-06"
+        ixz="-2.61896873681283E-07"
+        iyy="0.000100313939083286"
+        iyz="4.26103279248783E-07"
+        izz="0.000125586128270564" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ArmsnHandsR.SLDASM/meshes/forearm_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ArmsnHandsR.SLDASM/meshes/forearm_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="forearm_updown_joint"
+    type="revolute">
+    <origin
+      xyz="0.00051304 0.4837 -0.00034787"
+      rpy="-1.5708 0 1.5708" />
+    <parent
+      link="upper_arm_link" />
+    <child
+      link="forearm_link" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="forearm_roll_link">
+    <inertial>
+      <origin
+        xyz="-0.0725236479903559 -0.0135368957534619 0.40820341160639"
+        rpy="0 0 0" />
+      <mass
+        value="0.0943389281240488" />
+      <inertia
+        ixx="4.48140555820522E-05"
+        ixy="1.04055400695505E-05"
+        ixz="-5.85994076208939E-06"
+        iyy="0.000166681544263414"
+        iyz="-3.29374118055969E-07"
+        izz="0.000139484500391422" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ArmsnHandsR.SLDASM/meshes/forearm_roll_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ArmsnHandsR.SLDASM/meshes/forearm_roll_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="foreamr_roll_joint"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="forearm_link" />
+    <child
+      link="forearm_roll_link" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
