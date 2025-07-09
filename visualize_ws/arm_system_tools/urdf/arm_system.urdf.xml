@@ -1,0 +1,271 @@
+<?xml version="1.0"?>
+<robot name="arm_system" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <link name="shoulder_link">
+   <inertial>
+    <origin rpy="0 0 0" xyz="0.15146 -0.0038312 -0.000404"/>
+    <mass value="0.243427734576419"/>
+    <inertia ixx="0.000225446645886005" ixy="6.23090628975225E-08" ixz="5.37973314021635E-06" iyy="0.000136237604304921" iyz="9.74405583681102E-06" izz="0.000132493098344907"/>
+   </inertial>
+   <visual>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+     <mesh filename="package://arm_system_tools/meshes/left/shoulder_link.STL"/>
+    </geometry>
+    <material name="">
+     <color rgba="0.796078431372549 0.823529411764706 0.937254901960784 1"/>
+    </material>
+   </visual>
+   <collision>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+     <mesh filename="package://arm_system_tools/meshes/left/shoulder_link.STL"/>
+    </geometry>
+   </collision>
+  </link>
+  <link name="upper_arm_link">
+   <inertial>
+    <origin rpy="0 0 0" xyz="0.0017415455549592 0.125022178875143 -0.000874751284204336"/>
+    <mass value="0.238225282155877"/>
+    <inertia ixx="0.000486624161557905" ixy="1.68148762429348E-05" ixz="1.25678103705738E-07" iyy="0.000130133939057714" iyz="-1.29677657841813E-05" izz="0.000464820958515725"/>
+   </inertial>
+   <visual>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+     <mesh filename="package://arm_system_tools/meshes/left/upper_arm_link.STL"/>
+    </geometry>
+    <material name="">
+     <color rgba="1 1 1 1"/>
+    </material>
+   </visual>
+   <collision>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+     <mesh filename="package://arm_system_tools/meshes/left/upper_arm_link.STL"/>
+    </geometry>
+   </collision>
+  </link>
+  <joint name="elbow_joint" type="revolute">
+   <origin rpy="-1.60864900555086 0 0" xyz="0.20500155343 -0.00151891118282245 5.75223328378366E-05"/>
+   <parent link="shoulder_link"/>
+   <child link="upper_arm_link"/>
+   <axis xyz="0 0 1"/>
+   <limit effort="1.0" lower="-1.57" upper="1.57" velocity="1.0"/>
+  </joint>
+  <link name="forearm_link">
+   <inertial>
+    <origin rpy="0 0 0" xyz="-0.416161585408388 -0.00387076982900833 0.000657865954753756"/>
+    <mass value="0.0906405879929624"/>
+    <inertia ixx="4.37886771211888E-05" ixy="-7.56029988557634E-06" ixz="4.08574553516471E-07" iyy="9.86840247941789E-05" iyz="-4.07840125076158E-07" izz="0.000124330526323733"/>
+   </inertial>
+   <visual>
+    <origin rpy="0 0 0" xyz="0.23 0 0"/>
+    <geometry>
+     <mesh filename="package://arm_system_tools/meshes/left/forearm_link.STL"/>
+    </geometry>
+    <material name="">
+     <color rgba="1 1 1 1"/>
+    </material>
+   </visual>
+   <collision>
+    <origin rpy="0 0 0" xyz="0.23 0 0"/>
+    <geometry>
+     <mesh filename="package://arm_system_tools/meshes/left/forearm_link.STL"/>
+    </geometry>
+   </collision>
+  </link>
+  <joint name="forearm_updown_joint" type="revolute">
+   <origin rpy="-1.5708 0 1.5708" xyz="0.00051304 0.2537 -0.00034787"/>
+   <parent link="upper_arm_link"/>
+   <child link="forearm_link"/>
+   <axis xyz="0 0 1"/>
+   <limit effort="1.0" lower="-1.57" upper="1.57" velocity="1.0"/>
+  </joint>
+  <link name="forearm_roll_link">
+   <inertial>
+    <origin rpy="0 0 0" xyz="-0.0737767630409266 0.00187971694429238 -0.00221282379229593"/>
+    <mass value="0.0943405173279478"/>
+    <inertia ixx="4.42015546953826E-05" ixy="5.76816635925245E-06" ixz="-5.84325592233798E-06" iyy="0.000167297555403946" iyz="-5.50841589971345E-07" izz="0.000139488253732576"/>
+   </inertial>
+   <visual>
+    <origin rpy="0 0 0" xyz="0.23 0 0"/>
+    <geometry>
+     <mesh filename="package://arm_system_tools/meshes/left/forearm_roll_link.STL"/>
+    </geometry>
+    <material name="">
+     <color rgba="1 1 1 1"/>
+    </material>
+   </visual>
+   <collision>
+    <origin rpy="0 0 0" xyz="0.23 0 0"/>
+    <geometry>
+     <mesh filename="package://arm_system_tools/meshes/left/forearm_roll_link.STL"/>
+    </geometry>
+   </collision>
+  </link>
+  <joint name="forearm_roll_joint" type="revolute">
+   <origin rpy="0 0 0" xyz="0 0 0"/>
+   <parent link="forearm_link"/>
+   <child link="forearm_roll_link"/>
+   <axis xyz="1 0 0"/>
+   <limit effort="1.0" lower="-1.57" upper="1.57" velocity="1.0"/>
+  </joint>
+  <link name="r_shoulder_link">
+   <inertial>
+    <origin rpy="0 0 0" xyz="-0.151457309905491 0.000403840935773192 -0.00383939712673924"/>
+    <mass value="0.243427715540983"/>
+    <inertia ixx="0.000225446629973009" ixy="-6.30428895307121E-08" ixz="-5.4183510591183E-06" iyy="0.000136202329917266" iyz="8.81269486130966E-06" izz="0.000132528356667364"/>
+   </inertial>
+   <visual>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+     <mesh filename="package://arm_system_tools/meshes/right/shoulder_link.STL"/>
+    </geometry>
+    <material name="">
+     <color rgba="0.866666666666667 0.909803921568627 1 1"/>
+    </material>
+   </visual>
+   <collision>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+     <mesh filename="package://arm_system_tools/meshes/right/shoulder_link.STL"/>
+    </geometry>
+   </collision>
+  </link>
+  <link name="r_upper_arm_link">
+   <inertial>
+    <origin rpy="0 0 0" xyz="-0.411648578068681 0.1250183369068 0.00385273194207978"/>
+    <mass value="0.246153488378973"/>
+    <inertia ixx="0.000489331993629412" ixy="-1.67968277103578E-05" ixz="-7.62186662099606E-07" iyy="0.000136947016771834" iyz="-2.54861606800049E-05" izz="0.000466071468129534"/>
+   </inertial>
+   <visual>
+    <origin rpy="0 0 0" xyz="0.41 0 0"/>
+    <geometry>
+     <mesh filename="package://arm_system_tools/meshes/right/upper_arm_link.STL"/>
+    </geometry>
+    <material name="">
+     <color rgba="1 1 1 1"/>
+    </material>
+   </visual>
+   <collision>
+    <origin rpy="0 0 0" xyz="0.41 0 0"/>
+    <geometry>
+     <mesh filename="package://arm_system_tools/meshes/right/upper_arm_link.STL"/>
+    </geometry>
+   </collision>
+  </link>
+  <joint name="r_elbow_joint" type="revolute">
+   <origin rpy="-1.6086 0 0" xyz="-0.205 -0.0015189 5.7522E-05"/>
+   <parent link="r_shoulder_link"/>
+   <child link="r_upper_arm_link"/>
+   <axis xyz="0 0 1"/>
+   <limit effort="1.0" lower="-1.57" upper="1.57" velocity="1.0"/>
+  </joint>
+  <link name="r_forearm_link">
+   <inertial>
+    <origin rpy="0 0 0" xyz="-0.185541907347801 -0.0150824724077675 0.410481974916605"/>
+    <mass value="0.0919060400214775"/>
+    <inertia ixx="4.3922262377694E-05" ixy="-5.56812690644716E-06" ixz="-2.61896873681283E-07" iyy="0.000100313939083286" iyz="4.26103279248783E-07" izz="0.000125586128270564"/>
+   </inertial>
+   <visual>
+    <origin rpy="0 0 0" xyz="0.23 0 -0.41"/>
+    <geometry>
+     <mesh filename="package://arm_system_tools/meshes/right/forearm_link.STL"/>
+    </geometry>
+    <material name="">
+     <color rgba="1 1 1 1"/>
+    </material>
+   </visual>
+   <collision>
+    <origin rpy="0 0 0" xyz="0.23 0 -0.41"/>
+    <geometry>
+     <mesh filename="package://arm_system_tools/meshes/right/forearm_link.STL"/>
+    </geometry>
+   </collision>
+  </link>
+  <joint name="r_forearm_updown_joint" type="revolute">
+   <origin rpy="-1.5708 0 1.5708" xyz="0.00051304 0.2537 -0.00034787"/>
+   <parent link="r_upper_arm_link"/>
+   <child link="r_forearm_link"/>
+   <axis xyz="0 0 1"/>
+   <limit effort="1.0" lower="-1.57" upper="1.57" velocity="1.0"/>
+  </joint>
+  <link name="r_forearm_roll_link">
+   <inertial>
+    <origin rpy="0 0 0" xyz="-0.0725236479903559 -0.0135368957534619 0.40820341160639"/>
+    <mass value="0.0943389281240488"/>
+    <inertia ixx="4.48140555820522E-05" ixy="1.04055400695505E-05" ixz="-5.85994076208939E-06" iyy="0.000166681544263414" iyz="-3.29374118055969E-07" izz="0.000139484500391422"/>
+   </inertial>
+   <visual>
+    <origin rpy="0 0 0" xyz="0.23 0.01309 -0.41037"/>
+    <geometry>
+     <mesh filename="package://arm_system_tools/meshes/right/forearm_roll_link.STL"/>
+    </geometry>
+    <material name="">
+     <color rgba="1 1 1 1"/>
+    </material>
+   </visual>
+   <collision>
+    <origin rpy="0 0 0" xyz="0.23 0.01309 -0.41037"/>
+    <geometry>
+     <mesh filename="package://arm_system_tools/meshes/right/forearm_roll_link.STL"/>
+    </geometry>
+   </collision>
+  </link>
+  <joint name="r_forearm_roll_joint" type="revolute">
+   <origin rpy="0 0 0" xyz="0 -0.01309 0"/>
+   <parent link="r_forearm_link"/>
+   <child link="r_forearm_roll_link"/>
+   <axis xyz="1 0 0"/>
+   <limit effort="1.0" lower="-1.57" upper="1.57" velocity="1.0"/>
+  </joint>
+  <ros2_control name="ArmSystem" type="system">
+   <hardware>
+    <plugin>
+     ros2_control_demo_hardware/GenericSystem
+    </plugin>
+   </hardware>
+   <joint name="elbow_joint">
+    <command_interface name="position"/>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+   </joint>
+   <joint name="forearm_roll_joint">
+    <command_interface name="position"/>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+   </joint>
+   <joint name="forearm_updown_joint">
+    <command_interface name="position"/>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+   </joint>
+      <joint name="r_elbow_joint">
+    <command_interface name="position"/>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+   </joint>
+   <joint name="r_forearm_roll_joint">
+    <command_interface name="position"/>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+   </joint>
+   <joint name="r_forearm_updown_joint">
+    <command_interface name="position"/>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+   </joint>
+  </ros2_control>
+ <!-- Base Link -->
+ <link name="base_link"/>
+ <!-- Mount Joints -->
+ <joint name="left_arm_mount" type="fixed">
+  <parent link="base_link"/>
+  <child link="shoulder_link"/>
+  <origin rpy="0 0 0" xyz="0.2 0.3 0.0"/>
+ </joint>
+ <joint name="right_arm_mount" type="fixed">
+  <parent link="base_link"/>
+  <child link="r_shoulder_link"/>
+  <origin rpy="0 0 0" xyz="0.2 0.3 0.0"/>
+ </joint>
+</robot>

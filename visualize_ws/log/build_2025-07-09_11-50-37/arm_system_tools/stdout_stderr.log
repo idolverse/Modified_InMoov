@@ -1,0 +1,20 @@
+running egg_info
+writing ../build/arm_system_tools/arm_system_tools.egg-info/PKG-INFO
+writing dependency_links to ../build/arm_system_tools/arm_system_tools.egg-info/dependency_links.txt
+writing entry points to ../build/arm_system_tools/arm_system_tools.egg-info/entry_points.txt
+writing requirements to ../build/arm_system_tools/arm_system_tools.egg-info/requires.txt
+writing top-level names to ../build/arm_system_tools/arm_system_tools.egg-info/top_level.txt
+reading manifest file '../build/arm_system_tools/arm_system_tools.egg-info/SOURCES.txt'
+writing manifest file '../build/arm_system_tools/arm_system_tools.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+copying launch/demo.launch.py -> /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_tools/share/arm_system_tools/launch
+running install_egg_info
+removing '/home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_tools/lib/python3.10/site-packages/arm_system_tools-0.1.0-py3.10.egg-info' (and everything under it)
+Copying ../build/arm_system_tools/arm_system_tools.egg-info to /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_tools/lib/python3.10/site-packages/arm_system_tools-0.1.0-py3.10.egg-info
+running install_scripts
+Installing state_publisher script to /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_tools/lib/arm_system_tools
+writing list of installed files to '/home/guyi/github/Modified_InMoov/visualize_ws/build/arm_system_tools/install.log'

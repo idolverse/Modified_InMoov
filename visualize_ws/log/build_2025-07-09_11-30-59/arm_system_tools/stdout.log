@@ -1,0 +1,44 @@
+running egg_info
+creating ../build/arm_system_tools/arm_system_tools.egg-info
+writing ../build/arm_system_tools/arm_system_tools.egg-info/PKG-INFO
+writing dependency_links to ../build/arm_system_tools/arm_system_tools.egg-info/dependency_links.txt
+writing entry points to ../build/arm_system_tools/arm_system_tools.egg-info/entry_points.txt
+writing requirements to ../build/arm_system_tools/arm_system_tools.egg-info/requires.txt
+writing top-level names to ../build/arm_system_tools/arm_system_tools.egg-info/top_level.txt
+writing manifest file '../build/arm_system_tools/arm_system_tools.egg-info/SOURCES.txt'
+reading manifest file '../build/arm_system_tools/arm_system_tools.egg-info/SOURCES.txt'
+writing manifest file '../build/arm_system_tools/arm_system_tools.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/guyi/github/Modified_InMoov/visualize_ws/build/arm_system_tools/build
+creating /home/guyi/github/Modified_InMoov/visualize_ws/build/arm_system_tools/build/lib
+creating /home/guyi/github/Modified_InMoov/visualize_ws/build/arm_system_tools/build/lib/arm_system_tools
+copying arm_system_tools/state_publisher.py -> /home/guyi/github/Modified_InMoov/visualize_ws/build/arm_system_tools/build/lib/arm_system_tools
+copying arm_system_tools/__init__.py -> /home/guyi/github/Modified_InMoov/visualize_ws/build/arm_system_tools/build/lib/arm_system_tools
+running install
+running install_lib
+creating /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_tools/lib/python3.10/site-packages/arm_system_tools
+copying /home/guyi/github/Modified_InMoov/visualize_ws/build/arm_system_tools/build/lib/arm_system_tools/state_publisher.py -> /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_tools/lib/python3.10/site-packages/arm_system_tools
+copying /home/guyi/github/Modified_InMoov/visualize_ws/build/arm_system_tools/build/lib/arm_system_tools/__init__.py -> /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_tools/lib/python3.10/site-packages/arm_system_tools
+byte-compiling /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_tools/lib/python3.10/site-packages/arm_system_tools/state_publisher.py to state_publisher.cpython-310.pyc
+byte-compiling /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_tools/lib/python3.10/site-packages/arm_system_tools/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_tools/share/ament_index
+creating /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_tools/share/ament_index/resource_index
+creating /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_tools/share/ament_index/resource_index/packages
+copying resource/arm_system_tools -> /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_tools/share/ament_index/resource_index/packages
+copying package.xml -> /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_tools/share/arm_system_tools
+creating /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_tools/share/arm_system_tools/launch
+copying launch/demo.launch.py -> /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_tools/share/arm_system_tools/launch
+creating /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_tools/share/arm_system_tools/urdf
+copying urdf/arm_system.urdf.xml -> /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_tools/share/arm_system_tools/urdf
+creating /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_tools/share/arm_system_tools/meshes
+copying meshes/right/forearm_roll_link.STL -> /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_tools/share/arm_system_tools/meshes
+copying meshes/right/shoulder_link.STL -> /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_tools/share/arm_system_tools/meshes
+copying meshes/right/forearm_link.STL -> /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_tools/share/arm_system_tools/meshes
+copying meshes/right/upper_arm_link.STL -> /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_tools/share/arm_system_tools/meshes
+running install_egg_info
+Copying ../build/arm_system_tools/arm_system_tools.egg-info to /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_tools/lib/python3.10/site-packages/arm_system_tools-0.1.0-py3.10.egg-info
+running install_scripts
+Installing state_publisher script to /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_tools/lib/arm_system_tools
+writing list of installed files to '/home/guyi/github/Modified_InMoov/visualize_ws/build/arm_system_tools/install.log'

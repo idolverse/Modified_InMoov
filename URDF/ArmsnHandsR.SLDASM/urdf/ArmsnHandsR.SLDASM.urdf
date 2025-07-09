@@ -62,7 +62,7 @@
     </inertial>
     <visual>
       <origin
-        xyz="0 0 0"
+        xyz="0.41 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
@@ -76,7 +76,7 @@
     </visual>
     <collision>
       <origin
-        xyz="0 0 0"
+        xyz="0.41 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
@@ -88,14 +88,14 @@
     name="elbow_joint"
     type="revolute">
     <origin
-      xyz="0.205 -0.0015189 5.7522E-05"
+      xyz="-0.205 -0.0015189 5.7522E-05"
       rpy="-1.6086 0 0" />
     <parent
       link="shoulder_link" />
     <child
       link="upper_arm_link" />
     <axis
-      xyz="0 0 0" />
+      xyz="0 0 1" />
     <limit
       lower="0"
       upper="0"
@@ -120,7 +120,7 @@
     </inertial>
     <visual>
       <origin
-        xyz="0 0 0"
+        xyz="0.23 0 -0.41"
         rpy="0 0 0" />
       <geometry>
         <mesh
@@ -134,7 +134,7 @@
     </visual>
     <collision>
       <origin
-        xyz="0 0 0"
+        xyz="0.23 0 -0.41"
         rpy="0 0 0" />
       <geometry>
         <mesh
@@ -146,14 +146,14 @@
     name="forearm_updown_joint"
     type="revolute">
     <origin
-      xyz="0.00051304 0.4837 -0.00034787"
+      xyz="0.00051304 0.2537 -0.00034787"
       rpy="-1.5708 0 1.5708" />
     <parent
       link="upper_arm_link" />
     <child
       link="forearm_link" />
     <axis
-      xyz="0 0 0" />
+      xyz="0 0 1" />
     <limit
       lower="0"
       upper="0"
@@ -178,7 +178,7 @@
     </inertial>
     <visual>
       <origin
-        xyz="0 0 0"
+        xyz="0.23 0.01309 -0.41037"
         rpy="0 0 0" />
       <geometry>
         <mesh
@@ -192,7 +192,7 @@
     </visual>
     <collision>
       <origin
-        xyz="0 0 0"
+        xyz="0.23 0.01309 -0.41037"
         rpy="0 0 0" />
       <geometry>
         <mesh
@@ -204,18 +204,38 @@
     name="foreamr_roll_joint"
     type="revolute">
     <origin
-      xyz="0 0 0"
+      xyz="0 -0.01309 0"
       rpy="0 0 0" />
     <parent
       link="forearm_link" />
     <child
       link="forearm_roll_link" />
     <axis
-      xyz="0 0 0" />
+      xyz="1 0 0" />
     <limit
       lower="0"
       upper="0"
       effort="0"
       velocity="0" />
   </joint>
+    <ros2_control name="ArmSystem" type="system">
+    <hardware>
+      <plugin>ros2_control_demo_hardware/GenericSystem</plugin>
+    </hardware>
+    <joint name="elbow_joint">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="foreamr_roll_joint">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="forearm_updown_joint">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+  </ros2_control>
 </robot>

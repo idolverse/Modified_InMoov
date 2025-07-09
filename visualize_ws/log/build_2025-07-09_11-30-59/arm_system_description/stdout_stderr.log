@@ -1,0 +1,49 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /home/guyi/anaconda3/bin/python3 (found version "3.12.7") found components: Interpreter 
+-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/guyi/github/Modified_InMoov/visualize_ws/build/arm_system_description
+-- Install configuration: ""
+-- Installing: /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_description/share/arm_system_description/launch
+-- Installing: /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_description/share/arm_system_description/launch/view_robot.launch.py
+-- Installing: /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_description/share/arm_system_description/urdf
+-- Installing: /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_description/share/arm_system_description/urdf/arm_system_combined.urdf
+-- Installing: /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_description/share/arm_system_description/meshes
+-- Installing: /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_description/share/arm_system_description/meshes/right
+-- Installing: /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_description/share/arm_system_description/meshes/right/forearm_roll_link.STL
+-- Installing: /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_description/share/arm_system_description/meshes/right/shoulder_link.STL
+-- Installing: /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_description/share/arm_system_description/meshes/right/forearm_link.STL
+-- Installing: /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_description/share/arm_system_description/meshes/right/upper_arm_link.STL
+-- Installing: /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_description/share/arm_system_description/meshes/left
+-- Installing: /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_description/share/arm_system_description/meshes/left/forearm_roll_link.STL
+-- Installing: /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_description/share/arm_system_description/meshes/left/shoulder_link.STL
+-- Installing: /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_description/share/arm_system_description/meshes/left/forearm_link.STL
+-- Installing: /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_description/share/arm_system_description/meshes/left/upper_arm_link.STL
+-- Installing: /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_description/share/ament_index/resource_index/package_run_dependencies/arm_system_description
+-- Installing: /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_description/share/ament_index/resource_index/parent_prefix_path/arm_system_description
+-- Installing: /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_description/share/arm_system_description/environment/ament_prefix_path.sh
+-- Installing: /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_description/share/arm_system_description/environment/ament_prefix_path.dsv
+-- Installing: /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_description/share/arm_system_description/environment/path.sh
+-- Installing: /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_description/share/arm_system_description/environment/path.dsv
+-- Installing: /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_description/share/arm_system_description/local_setup.bash
+-- Installing: /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_description/share/arm_system_description/local_setup.sh
+-- Installing: /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_description/share/arm_system_description/local_setup.zsh
+-- Installing: /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_description/share/arm_system_description/local_setup.dsv
+-- Installing: /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_description/share/arm_system_description/package.dsv
+-- Installing: /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_description/share/ament_index/resource_index/packages/arm_system_description
+-- Installing: /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_description/share/arm_system_description/cmake/arm_system_descriptionConfig.cmake
+-- Installing: /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_description/share/arm_system_description/cmake/arm_system_descriptionConfig-version.cmake
+-- Installing: /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_description/share/arm_system_description/package.xml
