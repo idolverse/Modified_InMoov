@@ -1,0 +1,22 @@
+[0.593s] Invoking command in '/home/guyi/github/Modified_InMoov/visualize_ws/arm_system_model': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/guyi/github/Modified_InMoov/visualize_ws/build/arm_system_model/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_model/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/arm_system_model build --build-base /home/guyi/github/Modified_InMoov/visualize_ws/build/arm_system_model/build install --record /home/guyi/github/Modified_InMoov/visualize_ws/build/arm_system_model/install.log --single-version-externally-managed install_data
+[0.738s] running egg_info
+[0.739s] writing ../build/arm_system_model/arm_system_model.egg-info/PKG-INFO
+[0.739s] writing dependency_links to ../build/arm_system_model/arm_system_model.egg-info/dependency_links.txt
+[0.739s] writing entry points to ../build/arm_system_model/arm_system_model.egg-info/entry_points.txt
+[0.739s] writing requirements to ../build/arm_system_model/arm_system_model.egg-info/requires.txt
+[0.739s] writing top-level names to ../build/arm_system_model/arm_system_model.egg-info/top_level.txt
+[0.740s] reading manifest file '../build/arm_system_model/arm_system_model.egg-info/SOURCES.txt'
+[0.740s] adding license file 'LICENSE'
+[0.741s] writing manifest file '../build/arm_system_model/arm_system_model.egg-info/SOURCES.txt'
+[0.741s] running build
+[0.741s] running build_py
+[0.741s] running install
+[0.741s] running install_lib
+[0.742s] running install_data
+[0.742s] running install_egg_info
+[0.743s] removing '/home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_model/lib/python3.10/site-packages/arm_system_model-0.0.1-py3.10.egg-info' (and everything under it)
+[0.743s] Copying ../build/arm_system_model/arm_system_model.egg-info to /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_model/lib/python3.10/site-packages/arm_system_model-0.0.1-py3.10.egg-info
+[0.744s] running install_scripts
+[0.773s] Installing state_publisher script to /home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_model/lib/arm_system_model
+[0.773s] writing list of installed files to '/home/guyi/github/Modified_InMoov/visualize_ws/build/arm_system_model/install.log'
+[0.815s] Invoked command in '/home/guyi/github/Modified_InMoov/visualize_ws/arm_system_model' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/guyi/github/Modified_InMoov/visualize_ws/build/arm_system_model/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_model/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/arm_system_model build --build-base /home/guyi/github/Modified_InMoov/visualize_ws/build/arm_system_model/build install --record /home/guyi/github/Modified_InMoov/visualize_ws/build/arm_system_model/install.log --single-version-externally-managed install_data

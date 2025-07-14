@@ -1,0 +1,41 @@
+[0.012s] Invoking command in '/home/guyi/github/Modified_InMoov/visualize_ws/build/sup_moveit_config_2': AMENT_PREFIX_PATH=/home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_model:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_tools:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_model/lib/python3.10/site-packages:${PYTHONPATH} /usr/local/bin/cmake --build /home/guyi/github/Modified_InMoov/visualize_ws/build/sup_moveit_config_2 -- -j16 -l16
+[0.025s] Invoked command in '/home/guyi/github/Modified_InMoov/visualize_ws/build/sup_moveit_config_2' returned '0': AMENT_PREFIX_PATH=/home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_model:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_tools:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_model/lib/python3.10/site-packages:${PYTHONPATH} /usr/local/bin/cmake --build /home/guyi/github/Modified_InMoov/visualize_ws/build/sup_moveit_config_2 -- -j16 -l16
+[0.027s] Invoking command in '/home/guyi/github/Modified_InMoov/visualize_ws/build/sup_moveit_config_2': AMENT_PREFIX_PATH=/home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_model:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_tools:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_model/lib/python3.10/site-packages:${PYTHONPATH} /usr/local/bin/cmake --install /home/guyi/github/Modified_InMoov/visualize_ws/build/sup_moveit_config_2
+[0.028s] -- Install configuration: ""
+[0.028s] -- Up-to-date: /home/guyi/github/Modified_InMoov/visualize_ws/install/sup_moveit_config_2/share/ament_index/resource_index/package_run_dependencies/sup_moveit_config_2
+[0.028s] -- Up-to-date: /home/guyi/github/Modified_InMoov/visualize_ws/install/sup_moveit_config_2/share/ament_index/resource_index/parent_prefix_path/sup_moveit_config_2
+[0.028s] -- Up-to-date: /home/guyi/github/Modified_InMoov/visualize_ws/install/sup_moveit_config_2/share/sup_moveit_config_2/environment/ament_prefix_path.sh
+[0.028s] -- Up-to-date: /home/guyi/github/Modified_InMoov/visualize_ws/install/sup_moveit_config_2/share/sup_moveit_config_2/environment/ament_prefix_path.dsv
+[0.028s] -- Up-to-date: /home/guyi/github/Modified_InMoov/visualize_ws/install/sup_moveit_config_2/share/sup_moveit_config_2/environment/path.sh
+[0.028s] -- Up-to-date: /home/guyi/github/Modified_InMoov/visualize_ws/install/sup_moveit_config_2/share/sup_moveit_config_2/environment/path.dsv
+[0.028s] -- Up-to-date: /home/guyi/github/Modified_InMoov/visualize_ws/install/sup_moveit_config_2/share/sup_moveit_config_2/local_setup.bash
+[0.028s] -- Up-to-date: /home/guyi/github/Modified_InMoov/visualize_ws/install/sup_moveit_config_2/share/sup_moveit_config_2/local_setup.sh
+[0.028s] -- Up-to-date: /home/guyi/github/Modified_InMoov/visualize_ws/install/sup_moveit_config_2/share/sup_moveit_config_2/local_setup.zsh
+[0.028s] -- Up-to-date: /home/guyi/github/Modified_InMoov/visualize_ws/install/sup_moveit_config_2/share/sup_moveit_config_2/local_setup.dsv
+[0.028s] -- Up-to-date: /home/guyi/github/Modified_InMoov/visualize_ws/install/sup_moveit_config_2/share/sup_moveit_config_2/package.dsv
+[0.029s] -- Up-to-date: /home/guyi/github/Modified_InMoov/visualize_ws/install/sup_moveit_config_2/share/ament_index/resource_index/packages/sup_moveit_config_2
+[0.029s] -- Up-to-date: /home/guyi/github/Modified_InMoov/visualize_ws/install/sup_moveit_config_2/share/sup_moveit_config_2/cmake/sup_moveit_config_2Config.cmake
+[0.029s] -- Up-to-date: /home/guyi/github/Modified_InMoov/visualize_ws/install/sup_moveit_config_2/share/sup_moveit_config_2/cmake/sup_moveit_config_2Config-version.cmake
+[0.029s] -- Up-to-date: /home/guyi/github/Modified_InMoov/visualize_ws/install/sup_moveit_config_2/share/sup_moveit_config_2/package.xml
+[0.029s] -- Up-to-date: /home/guyi/github/Modified_InMoov/visualize_ws/install/sup_moveit_config_2/share/sup_moveit_config_2/launch
+[0.029s] -- Up-to-date: /home/guyi/github/Modified_InMoov/visualize_ws/install/sup_moveit_config_2/share/sup_moveit_config_2/launch/setup_assistant.launch.py
+[0.029s] -- Up-to-date: /home/guyi/github/Modified_InMoov/visualize_ws/install/sup_moveit_config_2/share/sup_moveit_config_2/launch/rsp.launch.py
+[0.029s] -- Up-to-date: /home/guyi/github/Modified_InMoov/visualize_ws/install/sup_moveit_config_2/share/sup_moveit_config_2/launch/spawn_controllers.launch.py
+[0.029s] -- Installing: /home/guyi/github/Modified_InMoov/visualize_ws/install/sup_moveit_config_2/share/sup_moveit_config_2/launch/demo.launch.py
+[0.029s] -- Up-to-date: /home/guyi/github/Modified_InMoov/visualize_ws/install/sup_moveit_config_2/share/sup_moveit_config_2/launch/warehouse_db.launch.py
+[0.029s] -- Up-to-date: /home/guyi/github/Modified_InMoov/visualize_ws/install/sup_moveit_config_2/share/sup_moveit_config_2/launch/static_virtual_joint_tfs.launch.py
+[0.029s] -- Up-to-date: /home/guyi/github/Modified_InMoov/visualize_ws/install/sup_moveit_config_2/share/sup_moveit_config_2/launch/moveit_rviz.launch.py
+[0.029s] -- Up-to-date: /home/guyi/github/Modified_InMoov/visualize_ws/install/sup_moveit_config_2/share/sup_moveit_config_2/launch/move_group.launch.py
+[0.029s] -- Up-to-date: /home/guyi/github/Modified_InMoov/visualize_ws/install/sup_moveit_config_2/share/sup_moveit_config_2/config
+[0.029s] -- Up-to-date: /home/guyi/github/Modified_InMoov/visualize_ws/install/sup_moveit_config_2/share/sup_moveit_config_2/config/ArmsnHands.ros2_control.xacro
+[0.029s] -- Up-to-date: /home/guyi/github/Modified_InMoov/visualize_ws/install/sup_moveit_config_2/share/sup_moveit_config_2/config/ros2_controllers.yaml
+[0.029s] -- Up-to-date: /home/guyi/github/Modified_InMoov/visualize_ws/install/sup_moveit_config_2/share/sup_moveit_config_2/config/pilz_cartesian_limits.yaml
+[0.029s] -- Up-to-date: /home/guyi/github/Modified_InMoov/visualize_ws/install/sup_moveit_config_2/share/sup_moveit_config_2/config/initial_positions.yaml
+[0.029s] -- Up-to-date: /home/guyi/github/Modified_InMoov/visualize_ws/install/sup_moveit_config_2/share/sup_moveit_config_2/config/moveit_controllers.yaml
+[0.029s] -- Up-to-date: /home/guyi/github/Modified_InMoov/visualize_ws/install/sup_moveit_config_2/share/sup_moveit_config_2/config/moveit.rviz
+[0.029s] -- Up-to-date: /home/guyi/github/Modified_InMoov/visualize_ws/install/sup_moveit_config_2/share/sup_moveit_config_2/config/joint_limits.yaml
+[0.029s] -- Up-to-date: /home/guyi/github/Modified_InMoov/visualize_ws/install/sup_moveit_config_2/share/sup_moveit_config_2/config/kinematics.yaml
+[0.029s] -- Up-to-date: /home/guyi/github/Modified_InMoov/visualize_ws/install/sup_moveit_config_2/share/sup_moveit_config_2/config/ArmsnHands.urdf.xacro
+[0.029s] -- Up-to-date: /home/guyi/github/Modified_InMoov/visualize_ws/install/sup_moveit_config_2/share/sup_moveit_config_2/config/ArmsnHands.srdf
+[0.029s] -- Up-to-date: /home/guyi/github/Modified_InMoov/visualize_ws/install/sup_moveit_config_2/share/sup_moveit_config_2/.setup_assistant
+[0.030s] Invoked command in '/home/guyi/github/Modified_InMoov/visualize_ws/build/sup_moveit_config_2' returned '0': AMENT_PREFIX_PATH=/home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_model:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_tools:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/guyi/github/Modified_InMoov/visualize_ws/install/arm_system_model/lib/python3.10/site-packages:${PYTHONPATH} /usr/local/bin/cmake --install /home/guyi/github/Modified_InMoov/visualize_ws/build/sup_moveit_config_2

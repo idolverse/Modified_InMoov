@@ -25,6 +25,7 @@
 /home/guyi/github/Modified_InMoov/visualize_ws/install/sup_moveit_config_2/share/sup_moveit_config_2/config/ros2_controllers.yaml
 /home/guyi/github/Modified_InMoov/visualize_ws/install/sup_moveit_config_2/share/sup_moveit_config_2/config/pilz_cartesian_limits.yaml
 /home/guyi/github/Modified_InMoov/visualize_ws/install/sup_moveit_config_2/share/sup_moveit_config_2/config/initial_positions.yaml
+/home/guyi/github/Modified_InMoov/visualize_ws/install/sup_moveit_config_2/share/sup_moveit_config_2/config/trajectory_execution.yaml
 /home/guyi/github/Modified_InMoov/visualize_ws/install/sup_moveit_config_2/share/sup_moveit_config_2/config/moveit_controllers.yaml
 /home/guyi/github/Modified_InMoov/visualize_ws/install/sup_moveit_config_2/share/sup_moveit_config_2/config/moveit.rviz
 /home/guyi/github/Modified_InMoov/visualize_ws/install/sup_moveit_config_2/share/sup_moveit_config_2/config/joint_limits.yaml

@@ -1,0 +1,10 @@
+/home/guyi/github/Modified_InMoov/build/decode_node/CMakeFiles/uninstall.dir
+/home/guyi/github/Modified_InMoov/build/decode_node/CMakeFiles/decode_node_uninstall.dir
+/home/guyi/github/Modified_InMoov/build/decode_node/CMakeFiles/image_decoder_node.dir
+/home/guyi/github/Modified_InMoov/build/decode_node/CMakeFiles/test.dir
+/home/guyi/github/Modified_InMoov/build/decode_node/CMakeFiles/edit_cache.dir
+/home/guyi/github/Modified_InMoov/build/decode_node/CMakeFiles/rebuild_cache.dir
+/home/guyi/github/Modified_InMoov/build/decode_node/CMakeFiles/list_install_components.dir
+/home/guyi/github/Modified_InMoov/build/decode_node/CMakeFiles/install.dir
+/home/guyi/github/Modified_InMoov/build/decode_node/CMakeFiles/install/local.dir
+/home/guyi/github/Modified_InMoov/build/decode_node/CMakeFiles/install/strip.dir

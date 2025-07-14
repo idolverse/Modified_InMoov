@@ -1,0 +1,16 @@
+[0.961s] Invoking command in '/home/guyi/github/Modified_InMoov/build/udptest': CONDA_PROMPT_MODIFIER=(base) /usr/local/bin/cmake /home/guyi/github/Modified_InMoov/Universal-UDP/udptest -DCMAKE_INSTALL_PREFIX=/home/guyi/github/Modified_InMoov/install/udptest
+[1.003s] -- The C compiler identification is GNU 11.4.0
+[1.044s] -- The CXX compiler identification is GNU 11.4.0
+[1.051s] -- Detecting C compiler ABI info
+[1.097s] -- Detecting C compiler ABI info - done
+[1.105s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.105s] -- Detecting C compile features
+[1.106s] -- Detecting C compile features - done
+[1.109s] -- Detecting CXX compiler ABI info
+[1.157s] -- Detecting CXX compiler ABI info - done
+[1.166s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.166s] -- Detecting CXX compile features
+[1.166s] -- Detecting CXX compile features - done
+[1.167s] -- Configuring done
+[1.169s] -- Generating done
+[1.170s] -- Build files have been written to: /home/guyi/github/Modified_InMoov/build/udptest

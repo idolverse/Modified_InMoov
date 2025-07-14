@@ -1,0 +1,2 @@
+Invoking command in '/home/guyi/github/Modified_InMoov/build/ArmsnHands.SLDASM': CONDA_PROMPT_MODIFIER=(base) /usr/local/bin/cmake /home/guyi/github/Modified_InMoov/URDF/ArmsnHands.SLDASM -DCMAKE_INSTALL_PREFIX=/home/guyi/github/Modified_InMoov/install/ArmsnHands.SLDASM
+Invoked command in '/home/guyi/github/Modified_InMoov/build/ArmsnHands.SLDASM' returned '1': CONDA_PROMPT_MODIFIER=(base) /usr/local/bin/cmake /home/guyi/github/Modified_InMoov/URDF/ArmsnHands.SLDASM -DCMAKE_INSTALL_PREFIX=/home/guyi/github/Modified_InMoov/install/ArmsnHands.SLDASM

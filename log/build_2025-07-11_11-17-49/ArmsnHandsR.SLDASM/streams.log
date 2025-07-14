@@ -1,0 +1,41 @@
+[0.203s] Invoking command in '/home/guyi/github/Modified_InMoov/build/ArmsnHandsR.SLDASM': CONDA_PROMPT_MODIFIER=(base) /usr/local/bin/cmake /home/guyi/github/Modified_InMoov/URDF/ArmsnHandsR.SLDASM -DCMAKE_INSTALL_PREFIX=/home/guyi/github/Modified_InMoov/install/ArmsnHandsR.SLDASM
+[0.986s] -- The C compiler identification is GNU 11.4.0
+[0.986s] -- The CXX compiler identification is GNU 11.4.0
+[0.986s] -- Detecting C compiler ABI info
+[0.986s] -- Detecting C compiler ABI info - done
+[0.986s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.986s] -- Detecting C compile features
+[0.986s] -- Detecting C compile features - done
+[0.986s] -- Detecting CXX compiler ABI info
+[0.986s] -- Detecting CXX compiler ABI info - done
+[0.986s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.986s] -- Detecting CXX compile features
+[0.986s] -- Detecting CXX compile features - done
+[0.986s] -- Configuring incomplete, errors occurred!
+[0.986s] See also "/home/guyi/github/Modified_InMoov/build/ArmsnHandsR.SLDASM/CMakeFiles/CMakeOutput.log".
+[0.986s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.986s]   Compatibility with CMake < 2.8.12 will be removed from a future version of
+[0.986s]   CMake.
+[0.986s] 
+[0.987s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.987s]   CMake that the project does not need compatibility with older versions.
+[0.987s] 
+[0.987s] [0m
+[0.987s] [31mCMake Error at CMakeLists.txt:5 (find_package):
+[0.987s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[0.987s]   asked CMake to find a package configuration file provided by "catkin", but
+[0.987s]   CMake did not find one.
+[0.987s] 
+[0.987s]   Could not find a package configuration file provided by "catkin" with any
+[0.987s]   of the following names:
+[0.987s] 
+[0.988s]     catkinConfig.cmake
+[0.988s]     catkin-config.cmake
+[0.988s] 
+[0.988s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[0.988s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[0.988s]   provides a separate development package or SDK, be sure it has been
+[0.989s]   installed.
+[0.989s] 
+[0.989s] [0m
+[0.996s] Invoked command in '/home/guyi/github/Modified_InMoov/build/ArmsnHandsR.SLDASM' returned '1': CONDA_PROMPT_MODIFIER=(base) /usr/local/bin/cmake /home/guyi/github/Modified_InMoov/URDF/ArmsnHandsR.SLDASM -DCMAKE_INSTALL_PREFIX=/home/guyi/github/Modified_InMoov/install/ArmsnHandsR.SLDASM

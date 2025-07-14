@@ -1,0 +1,4 @@
+source;share/sup_moveit_model/local_setup.bash
+source;share/sup_moveit_model/local_setup.dsv
+source;share/sup_moveit_model/local_setup.sh
+source;share/sup_moveit_model/local_setup.zsh

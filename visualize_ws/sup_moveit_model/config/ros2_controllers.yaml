@@ -1,0 +1,50 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100  # Hz
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    left_arm_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+    right_arm_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+left_arm_controller:
+  ros__parameters:
+    joints:
+      - l_shoulder_ud_joint
+      - l_shoulder_io_joint
+      - l_upper_arm_roll_joint
+      - l_forearm_ud_joint
+      - l_forearm_roll_joint
+      - l_hand_dumb_joint
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+    allow_partial_joints_goal: true
+    constraints:
+      goal_time: 1.0
+      stopped_velocity_tolerance: 0.01
+
+right_arm_controller:
+  ros__parameters:
+    joints:
+      - r_shoulder_ud_joint
+      - r_shoulder_io_joint
+      - r_upper_arm_roll_joint
+      - r_forearm_ud_joint
+      - r_forearm_roll_joint
+      - r_hand_dumb_joint
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+    allow_partial_joints_goal: true
+    constraints:
+      goal_time: 1.0
+      stopped_velocity_tolerance: 0.01

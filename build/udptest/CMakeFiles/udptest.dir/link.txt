@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/udptest.dir/main.cpp.o -o udptest   -L/home/guyi/github/Modified_InMoov/Universal-UDP/udptest/include/opencv/build/x64/vc16/lib  -Wl,-rpath,/home/guyi/github/Modified_InMoov/Universal-UDP/udptest/include/opencv/build/x64/vc16/lib -lopencv_world4120.lib 

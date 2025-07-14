@@ -1,0 +1,1 @@
+Invoking command in '/home/guyi/github/Modified_InMoov/build/inmoov_description': CONDA_PROMPT_MODIFIER=(base) /usr/local/bin/cmake /home/guyi/github/Modified_InMoov/Unity-ros-connection/ros2 nodes/ros-bridge/src/inmoov_description -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/guyi/github/Modified_InMoov/install/inmoov_description
