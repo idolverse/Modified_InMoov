@@ -1,1 +1,3 @@
 # Modified_InMoov
+目前服务器测试版在new_platform中。
+目前功能有ai对答和语音识别还有头部控制
