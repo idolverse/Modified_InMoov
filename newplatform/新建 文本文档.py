@@ -1,7 +1,7 @@
 import requests
 import time
 import statistics
-
+# 这个文件用来测试发送json包的速度 为了和ping的速度对比
 
 def diagnose_send_speed():
     """诊断发送速度瓶颈"""
