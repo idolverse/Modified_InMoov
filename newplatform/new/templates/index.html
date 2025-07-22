@@ -1,0 +1,1846 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>语音机器人控制台</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            min-height: 100vh;
+            animation: gradientShift 15s ease infinite;
+        }
+        
+        @keyframes gradientShift {
+            0% { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+            50% { background: linear-gradient(135deg, #764ba2 0%, #667eea 100%); }
+            100% { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .card {
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            border: none;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            background: rgba(255,255,255,0.95);
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+        }
+        
+        .card-header {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border-radius: 20px 20px 0 0 !important;
+            padding: 25px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .card-header:hover::before {
+            left: 100%;
+        }
+        
+        .btn {
+            border-radius: 25px;
+            padding: 12px 30px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: none;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255,255,255,0.2);
+            border-radius: 50%;
+            transition: all 0.5s ease;
+            transform: translate(-50%, -50%);
+        }
+        
+        .btn:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.5);
+        }
+        
+        .btn-danger {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+        }
+        
+        .btn-danger:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 107, 107, 0.5);
+        }
+        
+        .btn-outline-info {
+            border: 2px solid #17a2b8;
+            color: #17a2b8;
+            background: transparent;
+        }
+        
+        .btn-outline-info:hover {
+            background: linear-gradient(45deg, #17a2b8, #138496);
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .voice-btn {
+            background: linear-gradient(45deg, #28a745, #20c997);
+            border: none;
+            color: white;
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            font-size: 26px;
+            transition: all 0.3s ease;
+            position: relative;
+            box-shadow: 0 8px 20px rgba(40, 167, 69, 0.3);
+        }
+        
+        .voice-btn:hover {
+            transform: scale(1.1) translateY(-3px);
+            box-shadow: 0 12px 30px rgba(40, 167, 69, 0.4);
+        }
+        
+        .voice-btn:active {
+            transform: scale(0.95);
+        }
+        
+        .voice-btn.recording {
+            background: linear-gradient(45deg, #dc3545, #fd7e14);
+            animation: recordingPulse 1.5s infinite;
+            box-shadow: 0 8px 20px rgba(220, 53, 69, 0.4);
+        }
+        
+        .voice-btn.recording::after {
+            content: '';
+            position: absolute;
+            top: -8px;
+            left: -8px;
+            right: -8px;
+            bottom: -8px;
+            border: 3px solid #dc3545;
+            border-radius: 50%;
+            animation: recordingRipple 2s infinite;
+        }
+        
+        @keyframes recordingPulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        @keyframes recordingRipple {
+            0% { transform: scale(1); opacity: 1; }
+            100% { transform: scale(1.4); opacity: 0; }
+        }
+        
+        .chat-container {
+            height: 450px;
+            overflow-y: auto;
+            border: 2px solid #e0e0e0;
+            border-radius: 15px;
+            padding: 20px;
+            background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+            scroll-behavior: smooth;
+        }
+        
+        .chat-container::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        .chat-container::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        
+        .chat-container::-webkit-scrollbar-thumb {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 10px;
+        }
+        
+        .message {
+            margin-bottom: 20px;
+            padding: 15px 20px;
+            border-radius: 20px;
+            max-width: 85%;
+            word-wrap: break-word;
+            animation: messageSlide 0.3s ease;
+            position: relative;
+        }
+        
+        @keyframes messageSlide {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .message.user {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            margin-left: auto;
+            border-bottom-right-radius: 5px;
+        }
+        
+        .message.bot {
+            background: linear-gradient(45deg, #e9ecef, #ffffff);
+            color: #333;
+            margin-right: auto;
+            border-bottom-left-radius: 5px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .message.system {
+            background: linear-gradient(45deg, #e3f2fd, #f0f8ff);
+            color: #1976d2;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 14px;
+            border-radius: 15px;
+        }
+        
+        .status-indicator {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 10px;
+            animation: statusPulse 2s infinite;
+        }
+        
+        @keyframes statusPulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.6; }
+            100% { opacity: 1; }
+        }
+        
+        .status-ok {
+            background: radial-gradient(circle, #28a745, #20c997);
+            box-shadow: 0 0 10px rgba(40, 167, 69, 0.5);
+        }
+        
+        .status-error {
+            background: radial-gradient(circle, #dc3545, #c82333);
+            box-shadow: 0 0 10px rgba(220, 53, 69, 0.5);
+        }
+        
+        .status-warning {
+            background: radial-gradient(circle, #ffc107, #e0a800);
+            box-shadow: 0 0 10px rgba(255, 193, 7, 0.5);
+        }
+        
+        .voice-status {
+            background: linear-gradient(45deg, #f8f9fa, #ffffff);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 2px dashed #dee2e6;
+            transition: all 0.3s ease;
+        }
+        
+        .voice-status.active {
+            border-color: #28a745;
+            background: linear-gradient(45deg, #d4edda, #e8f5e8);
+            transform: scale(1.02);
+        }
+        
+        .recording-progress {
+            width: 100%;
+            height: 8px;
+            background: #e9ecef;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 15px;
+            position: relative;
+        }
+        
+        .recording-progress::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            animation: progressShimmer 2s infinite;
+        }
+        
+        @keyframes progressShimmer {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+        
+        .recording-progress-bar {
+            height: 100%;
+            background: linear-gradient(45deg, #28a745, #20c997);
+            transition: width 0.1s ease;
+            border-radius: 10px;
+            position: relative;
+        }
+        
+        .loading {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .loading.show {
+            display: block;
+            opacity: 1;
+        }
+        
+        .spinner-border {
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .form-control {
+            border-radius: 15px;
+            border: 2px solid #e0e0e0;
+            padding: 12px 20px;
+            transition: all 0.3s ease;
+            background: rgba(255,255,255,0.9);
+        }
+        
+        .form-control:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 20px rgba(102, 126, 234, 0.3);
+            transform: translateY(-2px);
+        }
+        
+        .form-select {
+            border-radius: 15px;
+            border: 2px solid #e0e0e0;
+            padding: 8px 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .form-select:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 15px rgba(102, 126, 234, 0.3);
+        }
+        
+        .input-group {
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        
+        .title-glow {
+            text-shadow: 0 0 20px rgba(255,255,255,0.5);
+            animation: titleGlow 3s ease-in-out infinite alternate;
+        }
+        
+        @keyframes titleGlow {
+            from { text-shadow: 0 0 20px rgba(255,255,255,0.5); }
+            to { text-shadow: 0 0 30px rgba(255,255,255,0.8); }
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.8s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .status-row {
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            padding: 15px;
+            margin-bottom: 5px;
+            transition: all 0.3s ease;
+        }
+        
+        .status-row:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-2px);
+        }
+        
+        .floating-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            font-size: 24px;
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+        
+        .floating-btn:hover {
+            transform: scale(1.1) translateY(-3px);
+            box-shadow: 0 12px 30px rgba(102, 126, 234, 0.6);
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .card {
+                margin-bottom: 15px;
+            }
+            
+            .chat-container {
+                height: 350px;
+            }
+            
+            .voice-btn {
+                width: 60px;
+                height: 60px;
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container fade-in">
+        <div class="text-center mb-5">
+            <h1 class="text-white title-glow">
+                <i class="fas fa-robot me-3"></i>
+                智能语音机器人
+            </h1>
+            <p class="text-white-50 fs-5">科大讯飞TTS/ASR + 豆包AI + Arduino嘴部控制</p>
+        </div>
+
+        <!-- 状态栏 -->
+        <div class="card mb-4 fade-in">
+            <div class="card-body">
+                <div class="row text-center">
+                    <div class="col-lg-3 col-md-6 mb-3">
+                        <div class="status-row">
+                            <h6><i class="fas fa-robot me-2"></i>机器人状态</h6>
+                            <span id="robot-status" class="status-indicator status-error"></span>
+                            <span id="robot-status-text">未启动</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-3">
+                        <div class="status-row">
+                            <h6><i class="fas fa-volume-up me-2"></i>语音状态</h6>
+                            <span id="voice-status" class="status-indicator status-error"></span>
+                            <span id="voice-status-text">静音</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-3">
+                        <div class="status-row">
+                            <h6><i class="fas fa-microphone me-2"></i>麦克风状态</h6>
+                            <span id="microphone-status" class="status-indicator status-error"></span>
+                            <span id="microphone-status-text">未检测</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-3">
+                        <div class="status-row">
+                            <h6><i class="fas fa-cog me-2"></i>Arduino状态</h6>
+                            <span id="arduino-status" class="status-indicator status-warning"></span>
+                            <span id="arduino-status-text">待检测</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 控制面板 -->
+        <div class="card mb-4 fade-in">
+            <div class="card-header">
+                <h4 class="mb-0">
+                    <i class="fas fa-gamepad me-2"></i>
+                    智能控制中心
+                </h4>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                            <button id="start-btn" class="btn btn-primary me-md-2">
+                                <i class="fas fa-play me-2"></i>启动机器人
+                            </button>
+                            <button id="stop-btn" class="btn btn-danger me-md-2" disabled>
+                                <i class="fas fa-stop me-2"></i>停止机器人
+                            </button>
+                            <button id="test-mic-btn" class="btn btn-outline-info">
+                                <i class="fas fa-microphone me-2"></i>测试麦克风
+                            </button>
+                            <button id="test-tts-btn" class="btn btn-outline-warning ms-2">
+                                <i class="fas fa-volume-up me-2"></i>测试语音
+                            </button>
+                            <button id="test-audio-simple-btn" class="btn btn-outline-success ms-2">
+                                <i class="fas fa-file-audio me-2"></i>生成音频文件
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                        <div class="d-inline-block">
+                            <small class="text-muted">系统运行时间: </small>
+                            <span id="runtime" class="badge bg-info">00:00:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 语音识别状态 -->
+        <div id="voice-recognition-status" class="voice-status" style="display: none;">
+            <div class="text-center">
+                <div class="spinner-border text-success me-3" role="status">
+                    <span class="visually-hidden">识别中...</span>
+                </div>
+                <span id="recognition-text" class="fw-bold">正在录音，请说话...</span>
+                <div class="recording-progress">
+                    <div id="recording-progress-bar" class="recording-progress-bar" style="width: 0%"></div>
+                </div>
+                <small class="text-muted mt-3 d-block">
+                    <i class="fas fa-info-circle me-1"></i>
+                    录音中可以再次点击麦克风按钮提前结束
+                </small>
+            </div>
+        </div>
+
+        <!-- 对话界面 -->
+        <div class="card fade-in">
+            <div class="card-header">
+                <h4 class="mb-0">
+                    <i class="fas fa-comments me-2"></i>
+                    智能对话中心
+                </h4>
+            </div>
+            <div class="card-body">
+                <div id="chat-container" class="chat-container mb-4">
+                    <div class="message bot">
+                        <i class="fas fa-robot me-2"></i>
+                        🤖 你好！我是智能语音机器人，请先启动机器人然后与我对话。您可以输入文字或使用语音输入。
+                    </div>
+                </div>
+                
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="record-duration" class="form-label">
+                            <i class="fas fa-clock me-2"></i>最长录音时长:
+                        </label>
+                        <select id="record-duration" class="form-select">
+                            <option value="3">3秒 - 快速</option>
+                            <option value="5" selected>5秒 - 标准</option>
+                            <option value="8">8秒 - 较长</option>
+                            <option value="10">10秒 - 最长</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">
+                            <i class="fas fa-info-circle me-2"></i>操作提示:
+                        </label>
+                        <div class="text-muted small">
+                            录音中点击麦克风可提前结束 | 支持键盘快捷键 Enter 发送
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="input-group mb-3">
+                    <input 
+                        type="text" 
+                        id="chat-input" 
+                        class="form-control" 
+                        placeholder="🎤 输入您的消息或点击麦克风按钮说话..."
+                        disabled
+                    >
+                    <button id="voice-input-btn" class="btn voice-btn" disabled title="点击开始语音输入">
+                        <i class="fas fa-microphone"></i>
+                    </button>
+                    <button id="send-btn" class="btn btn-primary" disabled>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+                
+                <div id="chat-loading" class="loading text-center mt-3">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">处理中...</span>
+                    </div>
+                    <p class="mt-2 fw-bold">🤖 AI正在思考并准备语音回复...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Arduino连接管理 - 新增区域 -->
+        <div class="card mb-4 fade-in">
+            <div class="card-header">
+                <h4 class="mb-0">
+                    <i class="fas fa-plug me-2"></i>
+                    Arduino设备连接
+                </h4>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="row g-3 align-items-center">
+                            <div class="col-auto">
+                                <label for="arduino-port" class="form-label">
+                                    <i class="fas fa-usb me-2"></i>串口:
+                                </label>
+                            </div>
+                            <div class="col-auto">
+                                <select id="arduino-port" class="form-select" style="width: 120px;">
+                                    <option value="">选择串口</option>
+                                </select>
+                            </div>
+                            <div class="col-auto">
+                                <label for="arduino-baud" class="form-label">波特率:</label>
+                            </div>
+                            <div class="col-auto">
+                                <select id="arduino-baud" class="form-select" style="width: 100px;">
+                                    <option value="9600">9600</option>
+                                    <option value="115200" selected>115200</option>
+                                </select>
+                            </div>
+                            <div class="col-auto">
+                                <button id="refresh-ports-btn" class="btn btn-outline-secondary">
+                                    <i class="fas fa-sync-alt me-2"></i>刷新
+                                </button>
+                            </div>
+                            <div class="col-auto">
+                                <button id="connect-arduino-btn" class="btn btn-primary">
+                                    <i class="fas fa-plug me-2"></i>连接
+                                </button>
+                            </div>
+                            <div class="col-auto">
+                                <button id="disconnect-arduino-btn" class="btn btn-danger" disabled>
+                                    <i class="fas fa-unlink me-2"></i>断开
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-end">
+                            <div class="d-inline-block">
+                                <span id="arduino-connection-status" class="badge bg-secondary">
+                                    <i class="fas fa-circle me-1"></i>未连接
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 连接提示信息 -->
+                <div class="mt-3">
+                    <div id="arduino-connection-info" class="alert alert-info" style="display: none;">
+                        <i class="fas fa-info-circle me-2"></i>
+                        <span id="arduino-info-text">连接信息将在这里显示</span>
+                    </div>
+                </div>
+                
+                <!-- Arduino测试区域 -->
+                <div id="arduino-test-section" class="mt-3" style="display: none;">
+                    <hr>
+                    <h6><i class="fas fa-vial me-2"></i>设备测试</h6>
+                    <div class="row g-2">
+                        <div class="col-auto">
+                            <button id="test-arduino-btn" class="btn btn-outline-info btn-sm">
+                                <i class="fas fa-play-circle me-2"></i>测试舵机
+                            </button>
+                        </div>
+                        <div class="col-auto">
+                            <button id="center-servos-btn" class="btn btn-outline-warning btn-sm">
+                                <i class="fas fa-crosshairs me-2"></i>回中位
+                            </button>
+                        </div>
+                        <div class="col-auto">
+                            <button id="test-expression-btn" class="btn btn-outline-success btn-sm">
+                                <i class="fas fa-smile me-2"></i>测试表情
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 舵机调试功能 -->
+        <div class="card fade-in mt-4">
+            <div class="card-header">
+                <h4 class="mb-0">
+                    <i class="fas fa-sliders-h me-2"></i>
+                    舵机调试工具
+                    <span id="servo-debug-status" class="badge bg-warning ms-2">需要连接Arduino</span>
+                </h4>
+            </div>
+            <div class="card-body" id="servo-debug-body">
+                <div class="row g-3 align-items-center mb-3">
+                    <div class="col-auto">
+                        <label for="servoChannel" class="col-form-label">通道号(0-15):</label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="number" id="servoChannel" class="form-control" min="0" max="15" value="0" style="width:80px;">
+                    </div>
+                    <div class="col-auto">
+                        <label for="servoAngle" class="col-form-label">角度(0-180):</label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="number" id="servoAngle" class="form-control" min="0" max="180" value="90" style="width:80px;">
+                    </div>
+                    <div class="col-auto">
+                        <button class="btn btn-primary" onclick="debugServo()">发送</button>
+                    </div>
+                </div>
+                <div class="mt-2" id="servoDebugResult" style="color:#888;"></div>
+                <hr>
+                <div class="row" id="servo-control-panel">
+                    <!-- 动态生成舵机滑块 -->
+                </div>
+                <div class="mt-3 text-end">
+                    <button class="btn btn-outline-info" onclick="resetAllServos()">
+                        <i class="fas fa-sync-alt me-2"></i>全部回中位
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 返回顶部按钮 -->
+    <button id="back-to-top" class="floating-btn" onclick="scrollToTop()" title="返回顶部">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let robotActive = false;
+        let speaking = false;
+        let recording = false;
+        let recordingStartTime = 0;
+        let recordingMaxDuration = 5;
+        let recordingInterval = null;
+        let startTime = Date.now();
+        let runtimeInterval = null;
+        let arduinoConnected = false;
+        let currentPort = null;
+
+        // 页面加载完成后初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            setupEventListeners();
+            updateStatus();
+            startRuntimeClock();
+            setInterval(updateStatus, 2000);
+            renderServoControls();
+            
+            // 初始化Arduino连接功能
+            initArduinoConnection();
+            
+            // 添加页面加载动画
+            setTimeout(() => {
+                document.body.style.opacity = '1';
+            }, 100);
+        });
+
+        // 测试TTS功能
+        async function testTTS() {
+            const testBtn = document.getElementById('test-tts-btn');
+            const originalText = testBtn.innerHTML;
+            
+            try {
+                testBtn.disabled = true;
+                testBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>测试中...';
+                
+                const response = await fetch('/api/debug_tts', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        text: '你好，这是语音合成测试'
+                    })
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    addMessage('✅ TTS测试成功！' + data.message, 'system');
+                    addMessage(`📊 文件信息: 大小${data.file_size}字节`, 'system');
+                    addMessage(`🔊 播放测试结果:`, 'system');
+                    
+                    if (data.all_tests) {
+                        if (data.all_tests.winsound && data.all_tests.winsound.includes('SUCCESS')) {
+                            addMessage(`✅ winsound: ${data.all_tests.winsound}`, 'system');
+                        } else {
+                            addMessage(`❌ winsound: ${data.all_tests.winsound}`, 'system');
+                        }
+                        
+                        if (data.all_tests.system && data.all_tests.system.includes('SUCCESS')) {
+                            addMessage(`✅ 系统播放器: ${data.all_tests.system}`, 'system');
+                        } else if (data.all_tests.system !== '未测试') {
+                            addMessage(`❌ 系统播放器: ${data.all_tests.system}`, 'system');
+                        }
+                        
+                        if (data.all_tests.pygame && data.all_tests.pygame.includes('SUCCESS')) {
+                            addMessage(`✅ pygame: ${data.all_tests.pygame}`, 'system');
+                        } else if (data.all_tests.pygame !== '未测试') {
+                            addMessage(`❌ pygame: ${data.all_tests.pygame}`, 'system');
+                        }
+                    }
+                    
+                    addMessage(`🎯 推荐播放器: ${data.recommended_player}`, 'system');
+                    showNotification('TTS测试成功！已找到可用的播放方法', 'success');
+                    
+                } else {
+                    addMessage('❌ TTS测试失败: ' + data.error, 'system');
+                    if (data.debug_info) {
+                        addMessage('🔍 调试信息: ' + data.debug_info, 'system');
+                    }
+                    if (data.api_config) {
+                        addMessage(`🔑 API配置: ID=${data.api_config.app_id}, Key=${data.api_config.api_key_partial}`, 'system');
+                    }
+                    showNotification('TTS测试失败', 'danger');
+                }
+                
+            } catch (error) {
+                addMessage('❌ TTS测试错误: ' + error.message, 'system');
+                showNotification('TTS测试错误', 'danger');
+            } finally {
+                testBtn.disabled = false;
+                testBtn.innerHTML = originalText;
+            }
+        }
+
+        // 测试简单音频生成
+        async function testAudioSimple() {
+            const testBtn = document.getElementById('test-audio-simple-btn');
+            const originalText = testBtn.innerHTML;
+            
+            try {
+                testBtn.disabled = true;
+                testBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>生成中...';
+                
+                const response = await fetch('/api/test_audio_simple', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    }
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    addMessage('✅ 音频文件生成成功！', 'system');
+                    addMessage(`📁 文件路径: ${data.file_path}`, 'system');
+                    addMessage(`📊 文件大小: ${data.file_size} 字节`, 'system');
+                    addMessage(`🎵 ${data.instruction}`, 'system');
+                    showNotification('音频文件已生成，请手动播放测试！', 'success');
+                } else {
+                    addMessage('❌ 音频生成失败: ' + data.error, 'system');
+                    showNotification('音频生成失败', 'danger');
+                }
+                
+            } catch (error) {
+                addMessage('❌ 音频生成错误: ' + error.message, 'system');
+                showNotification('音频生成错误', 'danger');
+            } finally {
+                testBtn.disabled = false;
+                testBtn.innerHTML = originalText;
+            }
+        }
+
+        function setupEventListeners() {
+            // 启动机器人
+            document.getElementById('start-btn').addEventListener('click', startRobot);
+            
+            // 停止机器人
+            document.getElementById('stop-btn').addEventListener('click', stopRobot);
+            
+            // 发送消息
+            document.getElementById('send-btn').addEventListener('click', sendMessage);
+            
+            // 语音输入
+            document.getElementById('voice-input-btn').addEventListener('click', toggleVoiceInput);
+            
+            // 测试麦克风
+            document.getElementById('test-mic-btn').addEventListener('click', testMicrophone);
+            
+            // 测试TTS
+            document.getElementById('test-tts-btn').addEventListener('click', testTTS);
+            
+            // 测试简单音频生成
+            document.getElementById('test-audio-simple-btn').addEventListener('click', testAudioSimple);
+            
+            // 回车发送
+            document.getElementById('chat-input').addEventListener('keypress', function(e) {
+                if (e.key === 'Enter' && !e.shiftKey) {
+                    e.preventDefault();
+                    sendMessage();
+                }
+            });
+            
+            // 输入框聚焦效果
+            document.getElementById('chat-input').addEventListener('focus', function() {
+                this.style.transform = 'translateY(-2px)';
+            });
+            
+            document.getElementById('chat-input').addEventListener('blur', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        }
+
+        function startRuntimeClock() {
+            runtimeInterval = setInterval(() => {
+                const elapsed = Date.now() - startTime;
+                const hours = Math.floor(elapsed / 3600000);
+                const minutes = Math.floor((elapsed % 3600000) / 60000);
+                const seconds = Math.floor((elapsed % 60000) / 1000);
+                
+                document.getElementById('runtime').textContent = 
+                    `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            }, 1000);
+        }
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        function showNotification(message, type = 'info') {
+            const notification = document.createElement('div');
+            notification.className = `alert alert-${type} alert-dismissible fade show position-fixed`;
+            notification.style.cssText = 'top: 20px; right: 20px; z-index: 9999; min-width: 300px;';
+            notification.innerHTML = `
+                ${message}
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            `;
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.remove();
+            }, 3000);
+        }
+
+        async function startRobot() {
+            const startBtn = document.getElementById('start-btn');
+            const stopBtn = document.getElementById('stop-btn');
+            
+            try {
+                startBtn.disabled = true;
+                startBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>正在启动...';
+                
+                const response = await fetch('/api/start', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    }
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    robotActive = true;
+                    startBtn.disabled = true;
+                    stopBtn.disabled = false;
+                    document.getElementById('chat-input').disabled = false;
+                    document.getElementById('send-btn').disabled = false;
+                    document.getElementById('voice-input-btn').disabled = false;
+                    
+                    addMessage('🚀 机器人已启动，可以开始愉快的对话了！支持文字和语音输入。', 'bot');
+                    showNotification('机器人启动成功！', 'success');
+                } else {
+                    showNotification('启动失败: ' + data.error, 'danger');
+                }
+                
+            } catch (error) {
+                showNotification('启动失败: ' + error.message, 'danger');
+            } finally {
+                startBtn.innerHTML = '<i class="fas fa-play me-2"></i>启动机器人';
+                if (!robotActive) {
+                    startBtn.disabled = false;
+                }
+            }
+        }
+
+        async function stopRobot() {
+            const startBtn = document.getElementById('start-btn');
+            const stopBtn = document.getElementById('stop-btn');
+            
+            try {
+                stopBtn.disabled = true;
+                stopBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>正在停止...';
+                
+                const response = await fetch('/api/stop', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    }
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    robotActive = false;
+                    startBtn.disabled = false;
+                    stopBtn.disabled = true;
+                    document.getElementById('chat-input').disabled = true;
+                    document.getElementById('send-btn').disabled = true;
+                    document.getElementById('voice-input-btn').disabled = true;
+                    
+                    addMessage('🛑 机器人已停止运行', 'bot');
+                    showNotification('机器人已停止', 'info');
+                } else {
+                    showNotification('停止失败: ' + data.error, 'danger');
+                }
+                
+            } catch (error) {
+                showNotification('停止失败: ' + error.message, 'danger');
+            } finally {
+                stopBtn.innerHTML = '<i class="fas fa-stop me-2"></i>停止机器人';
+                if (robotActive) {
+                    stopBtn.disabled = false;
+                }
+            }
+        }
+
+        async function toggleVoiceInput() {
+            if (recording) {
+                await stopVoiceRecording();
+            } else {
+                await startVoiceInput();
+            }
+        }
+
+        async function startVoiceInput() {
+            if (recording || !robotActive) {
+                if (!robotActive) {
+                    showNotification('请先启动机器人', 'warning');
+                }
+                return;
+            }
+            
+            const voiceBtn = document.getElementById('voice-input-btn');
+            const statusDiv = document.getElementById('voice-recognition-status');
+            const recognitionText = document.getElementById('recognition-text');
+            const progressBar = document.getElementById('recording-progress-bar');
+            recordingMaxDuration = parseInt(document.getElementById('record-duration').value);
+            
+            try {
+                recording = true;
+                recordingStartTime = Date.now();
+                
+                voiceBtn.classList.add('recording');
+                voiceBtn.innerHTML = '<i class="fas fa-stop"></i>';
+                voiceBtn.title = '点击停止录音';
+                
+                statusDiv.style.display = 'block';
+                statusDiv.classList.add('active');
+                recognitionText.innerHTML = `🎤 正在录音中，请说话... (最长${recordingMaxDuration}秒)`;
+                
+                // 开始进度条更新
+                recordingInterval = setInterval(() => {
+                    const elapsed = (Date.now() - recordingStartTime) / 1000;
+                    const progress = (elapsed / recordingMaxDuration) * 100;
+                    progressBar.style.width = Math.min(progress, 100) + '%';
+                    
+                    if (elapsed >= recordingMaxDuration) {
+                        clearInterval(recordingInterval);
+                    }
+                }, 100);
+                
+                // 启动录音识别
+                const response = await fetch('/api/voice_recognition', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        duration: recordingMaxDuration
+                    })
+                });
+                
+                // 检查响应格式
+                const contentType = response.headers.get('content-type');
+                if (!contentType || !contentType.includes('application/json')) {
+                    throw new Error('服务器返回了非JSON响应，可能是API路由错误');
+                }
+                
+                const data = await response.json();
+                
+                if (data.success && data.text) {
+                    document.getElementById('chat-input').value = data.text;
+                    addMessage('🎤 语音识别结果: ' + data.text, 'system');
+                    showNotification('语音识别成功！', 'success');
+                    
+                    // 自动发送识别的文本
+                    setTimeout(() => {
+                        sendMessage();
+                    }, 500);
+                } else {
+                    addMessage('❌ 语音识别失败: ' + (data.error || '未识别到内容'), 'system');
+                    showNotification('语音识别失败', 'warning');
+                }
+                
+            } catch (error) {
+                addMessage('❌ 语音识别错误: ' + error.message, 'system');
+                showNotification('语音识别错误: ' + error.message, 'danger');
+                console.error('语音识别详细错误:', error);
+            } finally {
+                resetVoiceRecording();
+            }
+        }
+
+        async function stopVoiceRecording() {
+            if (!recording) return;
+            
+            const recognitionText = document.getElementById('recognition-text');
+            
+            try {
+                const response = await fetch('/api/stop_recording', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    }
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    recognitionText.innerHTML = '🔄 录音已停止，正在识别中...';
+                    console.log('录音已提前停止');
+                } else {
+                    console.log('停止录音失败:', data.message);
+                }
+                
+            } catch (error) {
+                console.error('停止录音错误:', error);
+            }
+        }
+
+        function resetVoiceRecording() {
+            const voiceBtn = document.getElementById('voice-input-btn');
+            const statusDiv = document.getElementById('voice-recognition-status');
+            const progressBar = document.getElementById('recording-progress-bar');
+            
+            recording = false;
+            
+            if (recordingInterval) {
+                clearInterval(recordingInterval);
+                recordingInterval = null;
+            }
+            
+            voiceBtn.classList.remove('recording');
+            voiceBtn.innerHTML = '<i class="fas fa-microphone"></i>';
+            voiceBtn.title = '点击开始语音输入';
+            
+            statusDiv.style.display = 'none';
+            statusDiv.classList.remove('active');
+            progressBar.style.width = '0%';
+        }
+
+        async function testMicrophone() {
+            const testBtn = document.getElementById('test-mic-btn');
+            const originalText = testBtn.innerHTML;
+            
+            try {
+                testBtn.disabled = true;
+                testBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>测试中...';
+                
+                const response = await fetch('/api/test_microphone', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    }
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    addMessage('✅ 麦克风测试成功！设备工作正常。', 'system');
+                    showNotification('麦克风测试成功！', 'success');
+                } else {
+                    addMessage('❌ 麦克风测试失败: ' + (data.error || '未知错误'), 'system');
+                    showNotification('麦克风测试失败', 'danger');
+                }
+                
+            } catch (error) {
+                addMessage('❌ 麦克风测试失败: ' + error.message, 'system');
+                showNotification('麦克风测试失败', 'danger');
+            } finally {
+                testBtn.disabled = false;
+                testBtn.innerHTML = originalText;
+            }
+        }
+
+        async function sendMessage() {
+            const input = document.getElementById('chat-input');
+            const message = input.value.trim();
+            const sendBtn = document.getElementById('send-btn');
+            const loading = document.getElementById('chat-loading');
+            
+            if (!message) {
+                showNotification('请输入消息内容', 'warning');
+                return;
+            }
+            
+            if (!robotActive) {
+                showNotification('请先启动机器人', 'warning');
+                return;
+            }
+            
+            // 添加用户消息
+            addMessage(message, 'user');
+            input.value = '';
+            
+            // 显示加载状态
+            sendBtn.disabled = true;
+            loading.classList.add('show');
+            
+            try {
+                const response = await fetch('/api/chat', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        message: message
+                    })
+                });
+                
+                // 检查响应格式
+                const contentType = response.headers.get('content-type');
+                if (!contentType || !contentType.includes('application/json')) {
+                    throw new Error('服务器返回了非JSON响应，请检查API路由配置');
+                }
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    // 添加AI回复
+                    addMessage(data.response, 'bot');
+                    
+                    if (data.speaking) {
+                        addMessage('🔊 正在播放语音并同步控制嘴部动作...', 'system');
+                    }
+                } else {
+                    addMessage('❌ 系统错误: ' + data.error, 'bot');
+                    showNotification('AI回复失败: ' + data.error, 'danger');
+                }
+                
+            } catch (error) {
+                addMessage('❌ 网络错误: ' + error.message, 'bot');
+                showNotification('请求失败: ' + error.message, 'danger');
+                console.error('发送消息详细错误:', error);
+            } finally {
+                sendBtn.disabled = false;
+                loading.classList.remove('show');
+            }
+        }
+
+        async function updateStatus() {
+            try {
+                const response = await fetch('/api/status');
+                
+                // 检查响应是否为JSON格式
+                const contentType = response.headers.get('content-type');
+                if (!contentType || !contentType.includes('application/json')) {
+                    console.error('API返回非JSON响应');
+                    return;
+                }
+                
+                const data = await response.json();
+                
+                // 更新机器人状态
+                const robotStatus = document.getElementById('robot-status');
+                const robotStatusText = document.getElementById('robot-status-text');
+                
+                if (data.robot_active) {
+                    robotStatus.className = 'status-indicator status-ok';
+                    robotStatusText.textContent = '运行中';
+                    robotActive = true;
+                } else {
+                    robotStatus.className = 'status-indicator status-error';
+                    robotStatusText.textContent = '未启动';
+                    robotActive = false;
+                }
+                
+                // 更新语音状态
+                const voiceStatus = document.getElementById('voice-status');
+                const voiceStatusText = document.getElementById('voice-status-text');
+                
+                if (data.speaking) {
+                    voiceStatus.className = 'status-indicator status-ok';
+                    voiceStatusText.textContent = '播放中';
+                } else {
+                    voiceStatus.className = 'status-indicator status-error';
+                    voiceStatusText.textContent = '静音';
+                }
+                
+                // 更新麦克风状态
+                const microphoneStatus = document.getElementById('microphone-status');
+                const microphoneStatusText = document.getElementById('microphone-status-text');
+                
+                if (data.microphone_available) {
+                    microphoneStatus.className = 'status-indicator status-ok';
+                    microphoneStatusText.textContent = '可用';
+                } else {
+                    microphoneStatus.className = 'status-indicator status-error';
+                    microphoneStatusText.textContent = '不可用';
+                }
+                
+                // 更新Arduino状态 - 检查串口连接
+                const arduinoStatus = document.getElementById('arduino-status');
+                const arduinoStatusText = document.getElementById('arduino-status-text');
+                
+                // 通过检查串口连接状态来更新Arduino状态
+                fetch('/api/ports')
+                    .then(r => r.json())
+                    .then(portData => {
+                        if (portData.success && portData.ports && portData.ports.length > 0) {
+                            arduinoStatus.className = 'status-indicator status-ok';
+                            arduinoStatusText.textContent = '已检测';
+                        } else {
+                            arduinoStatus.className = 'status-indicator status-warning';
+                            arduinoStatusText.textContent = '未连接';
+                        }
+                    })
+                    .catch(() => {
+                        arduinoStatus.className = 'status-indicator status-error';
+                        arduinoStatusText.textContent = '检测失败';
+                    });
+                
+                // 更新录音状态
+                if (data.recording !== recording) {
+                    recording = data.recording;
+                    if (!recording) {
+                        resetVoiceRecording();
+                    }
+                }
+                
+                speaking = data.speaking;
+                
+            } catch (error) {
+                console.error('状态更新失败:', error);
+                // 网络错误时的状态更新
+                document.getElementById('robot-status').className = 'status-indicator status-error';
+                document.getElementById('robot-status-text').textContent = '连接失败';
+            }
+        }
+
+        function addMessage(text, sender) {
+            const chatContainer = document.getElementById('chat-container');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${sender}`;
+            
+            if (sender === 'user') {
+                messageDiv.innerHTML = `<i class="fas fa-user me-2"></i>${text}`;
+            } else if (sender === 'bot') {
+                messageDiv.innerHTML = `<i class="fas fa-robot me-2"></i>${text}`;
+            } else if (sender === 'system') {
+                messageDiv.innerHTML = `<i class="fas fa-info-circle me-2"></i>${text}`;
+            }
+            
+            chatContainer.appendChild(messageDiv);
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+            
+            // 滚动到底部时显示动画
+            setTimeout(() => {
+                chatContainer.scrollTop = chatContainer.scrollHeight;
+            }, 100);
+        }
+
+        // 页面滚动时显示/隐藏返回顶部按钮
+        window.addEventListener('scroll', function() {
+            const backToTopBtn = document.getElementById('back-to-top');
+            if (window.pageYOffset > 300) {
+                backToTopBtn.style.display = 'block';
+            } else {
+                backToTopBtn.style.display = 'none';
+            }
+        });
+
+        // Arduino连接管理功能
+        function initArduinoConnection() {
+            // 刷新串口列表
+            refreshPorts();
+            
+            // 绑定Arduino连接事件
+            document.getElementById('refresh-ports-btn').addEventListener('click', refreshPorts);
+            document.getElementById('connect-arduino-btn').addEventListener('click', connectArduino);
+            document.getElementById('disconnect-arduino-btn').addEventListener('click', disconnectArduino);
+            document.getElementById('test-arduino-btn').addEventListener('click', testArduino);
+            document.getElementById('center-servos-btn').addEventListener('click', centerServos);
+            document.getElementById('test-expression-btn').addEventListener('click', testExpression);
+        }
+
+        async function refreshPorts() {
+            const refreshBtn = document.getElementById('refresh-ports-btn');
+            const portSelect = document.getElementById('arduino-port');
+            const originalText = refreshBtn.innerHTML;
+            
+            try {
+                refreshBtn.disabled = true;
+                refreshBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>刷新中...';
+                
+                const response = await fetch('/api/ports');
+                const data = await response.json();
+                
+                // 清空现有选项
+                portSelect.innerHTML = '<option value="">选择串口</option>';
+                
+                if (data.success && data.ports.length > 0) {
+                    data.ports.forEach(port => {
+                        const option = document.createElement('option');
+                        option.value = port;
+                        option.textContent = port;
+                        portSelect.appendChild(option);
+                    });
+                    
+                    // 如果之前有连接的端口，优先选择
+                    if (currentPort && data.ports.includes(currentPort)) {
+                        portSelect.value = currentPort;
+                    }
+                    
+                    showArduinoInfo(`发现 ${data.ports.length} 个串口: ${data.ports.join(', ')}`, 'info');
+                } else {
+                    showArduinoInfo('未发现可用串口，请检查Arduino连接', 'warning');
+                }
+                
+            } catch (error) {
+                showArduinoInfo('刷新串口失败: ' + error.message, 'danger');
+            } finally {
+                refreshBtn.disabled = false;
+                refreshBtn.innerHTML = originalText;
+            }
+        }
+
+        async function connectArduino() {
+            const port = document.getElementById('arduino-port').value;
+            const baudRate = document.getElementById('arduino-baud').value;
+            const connectBtn = document.getElementById('connect-arduino-btn');
+            const disconnectBtn = document.getElementById('disconnect-arduino-btn');
+            
+            if (!port) {
+                showArduinoInfo('请先选择串口', 'warning');
+                return;
+            }
+            
+            const originalText = connectBtn.innerHTML;
+            
+            try {
+                connectBtn.disabled = true;
+                connectBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>连接中...';
+                
+                const response = await fetch('/api/connect', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        port: port,
+                        baud_rate: parseInt(baudRate)
+                    })
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    arduinoConnected = true;
+                    currentPort = port;
+                    
+                    updateArduinoConnectionStatus(true, port);
+                    showArduinoInfo(data.message, 'success');
+                    
+                    connectBtn.disabled = true;
+                    disconnectBtn.disabled = false;
+                    
+                    // 显示测试区域
+                    document.getElementById('arduino-test-section').style.display = 'block';
+                    
+                    // 更新舵机调试状态
+                    updateServoDebugStatus(true);
+                    
+                    showNotification('Arduino连接成功！', 'success');
+                    
+                } else {
+                    showArduinoInfo('连接失败: ' + data.error, 'danger');
+                    showNotification('Arduino连接失败: ' + data.error, 'danger');
+                }
+                
+            } catch (error) {
+                showArduinoInfo('连接错误: ' + error.message, 'danger');
+                showNotification('连接错误: ' + error.message, 'danger');
+            } finally {
+                connectBtn.innerHTML = originalText;
+                if (!arduinoConnected) {
+                    connectBtn.disabled = false;
+                }
+            }
+        }
+
+        async function disconnectArduino() {
+            const connectBtn = document.getElementById('connect-arduino-btn');
+            const disconnectBtn = document.getElementById('disconnect-arduino-btn');
+            
+            try {
+                const response = await fetch('/api/disconnect', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    }
+                });
+                
+                const data = await response.json();
+                
+                arduinoConnected = false;
+                currentPort = null;
+                
+                updateArduinoConnectionStatus(false);
+                showArduinoInfo(data.message || '已断开连接', 'info');
+                
+                connectBtn.disabled = false;
+                disconnectBtn.disabled = true;
+                
+                // 隐藏测试区域
+                document.getElementById('arduino-test-section').style.display = 'none';
+                
+                // 更新舵机调试状态
+                updateServoDebugStatus(false);
+                
+                showNotification('Arduino已断开连接', 'info');
+                
+            } catch (error) {
+                showArduinoInfo('断开连接错误: ' + error.message, 'danger');
+            }
+        }
+
+        async function testArduino() {
+            const testBtn = document.getElementById('test-arduino-btn');
+            const originalText = testBtn.innerHTML;
+            
+            try {
+                testBtn.disabled = true;
+                testBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>测试中...';
+                
+                const response = await fetch('/api/arduino/test', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    }
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    showArduinoInfo('Arduino测试成功！舵机响应正常', 'success');
+                    showNotification('Arduino测试成功！', 'success');
+                } else {
+                    showArduinoInfo('Arduino测试失败: ' + data.error, 'danger');
+                }
+                
+            } catch (error) {
+                showArduinoInfo('测试错误: ' + error.message, 'danger');
+            } finally {
+                testBtn.disabled = false;
+                testBtn.innerHTML = originalText;
+            }
+        }
+
+        async function centerServos() {
+            try {
+                const response = await fetch('/api/servo', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        part: 'CENTER'
+                    })
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    showArduinoInfo('所有舵机已回到中位', 'success');
+                } else {
+                    showArduinoInfo('回中位失败: ' + data.error, 'danger');
+                }
+                
+            } catch (error) {
+                showArduinoInfo('回中位错误: ' + error.message, 'danger');
+            }
+        }
+
+        async function testExpression() {
+            const testBtn = document.getElementById('test-expression-btn');
+            const originalText = testBtn.innerHTML;
+            
+            try {
+                testBtn.disabled = true;
+                testBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>测试中...';
+                
+                // 测试眨眼表情
+                showArduinoInfo('正在测试眨眼表情...', 'info');
+                
+                // 这里可以调用表情控制API（如果有的话）
+                setTimeout(() => {
+                    showArduinoInfo('表情测试完成', 'success');
+                }, 2000);
+                
+            } catch (error) {
+                showArduinoInfo('表情测试错误: ' + error.message, 'danger');
+            } finally {
+                testBtn.disabled = false;
+                testBtn.innerHTML = originalText;
+            }
+        }
+
+        function updateArduinoConnectionStatus(connected, port = null) {
+            const statusBadge = document.getElementById('arduino-connection-status');
+            
+            if (connected) {
+                statusBadge.className = 'badge bg-success';
+                statusBadge.innerHTML = `<i class="fas fa-circle me-1"></i>已连接 ${port || ''}`;
+            } else {
+                statusBadge.className = 'badge bg-secondary';
+                statusBadge.innerHTML = '<i class="fas fa-circle me-1"></i>未连接';
+            }
+        }
+
+        function showArduinoInfo(message, type = 'info') {
+            const infoDiv = document.getElementById('arduino-connection-info');
+            const infoText = document.getElementById('arduino-info-text');
+            
+            const alertClass = {
+                'success': 'alert-success',
+                'danger': 'alert-danger',
+                'warning': 'alert-warning',
+                'info': 'alert-info'
+            };
+            
+            const iconClass = {
+                'success': 'fas fa-check-circle',
+                'danger': 'fas fa-exclamation-circle',
+                'warning': 'fas fa-exclamation-triangle',
+                'info': 'fas fa-info-circle'
+            };
+            
+            infoDiv.className = `alert ${alertClass[type]}`;
+            infoText.innerHTML = `<i class="${iconClass[type]} me-2"></i>${message}`;
+            infoDiv.style.display = 'block';
+            
+            // 3秒后自动隐藏
+            setTimeout(() => {
+                infoDiv.style.display = 'none';
+            }, 5000);
+        }
+
+        function updateServoDebugStatus(connected) {
+            const statusBadge = document.getElementById('servo-debug-status');
+            const debugBody = document.getElementById('servo-debug-body');
+            
+            if (connected) {
+                statusBadge.className = 'badge bg-success ms-2';
+                statusBadge.textContent = 'Arduino已连接';
+                debugBody.style.opacity = '1';
+                debugBody.style.pointerEvents = 'auto';
+            } else {
+                statusBadge.className = 'badge bg-warning ms-2';
+                statusBadge.textContent = '需要连接Arduino';
+                debugBody.style.opacity = '0.5';
+                debugBody.style.pointerEvents = 'none';
+            }
+        }
+
+        // 修改现有的舵机调试函数，添加连接检查
+        async function debugServo() {
+            if (!arduinoConnected) {
+                showNotification('请先连接Arduino设备', 'warning');
+                return;
+            }
+            
+            const channel = parseInt(document.getElementById('servoChannel').value);
+            const angle = parseInt(document.getElementById('servoAngle').value);
+            
+            if (isNaN(channel) || isNaN(angle)) {
+                document.getElementById('servoDebugResult').textContent = '请输入有效的数字';
+                document.getElementById('servoDebugResult').style.color = '#dc3545';
+                return;
+            }
+            
+            try {
+                const response = await fetch('/api/servo', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({part: null, channel: channel, angle: angle})
+                });
+                
+                const data = await response.json();
+                const result = document.getElementById('servoDebugResult');
+                
+                if(data.success) {
+                    result.textContent = `通道${channel}已设置为${angle}°`;
+                    result.style.color = "#28a745";
+                } else {
+                    result.textContent = data.error || "设置失败";
+                    result.style.color = "#dc3545";
+                }
+            } catch (error) {
+                const result = document.getElementById('servoDebugResult');
+                result.textContent = '网络错误: ' + error.message;
+                result.style.color = '#dc3545';
+            }
+        }
+
+        // 设置单个舵机
+        async function setServo(part, angle) {
+            if (!arduinoConnected) {
+                showNotification('请先连接Arduino设备', 'warning');
+                return;
+            }
+            
+            try {
+                const response = await fetch('/api/servo', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({part: part, angle: parseInt(angle)})
+                });
+                
+                const data = await response.json();
+                if(!data.success) {
+                    showNotification(data.error, 'danger');
+                }
+            } catch (error) {
+                showNotification('舵机控制失败: ' + error.message, 'danger');
+            }
+        }
+
+        // 重置单个舵机
+        function resetServo(part) {
+            const [min, max] = servoRanges[part];
+            const mid = Math.round((min + max) / 2);
+            document.getElementById('servo_'+part).value = mid;
+            document.getElementById('servo_val_'+part).textContent = mid;
+            setServo(part, mid);
+        }
+
+        // 全部回中位
+        function resetAllServos() {
+            if (!arduinoConnected) {
+                showNotification('请先连接Arduino设备', 'warning');
+                return;
+            }
+            
+            servoParts.forEach(p => resetServo(p.name));
+        }
+
+        // 页面加载时渲染舵机控制
+        document.addEventListener('DOMContentLoaded', function() {
+            renderServoControls();
+        });
+
+        // 让AI和TTS功能在未连接机器人时也可用
+        // 只需保证 /api/chat /api/tts 等接口后端不依赖串口连接即可
+
+        // 舵机部位定义和角度范围 - 添加缺失的定义
+        const servoParts = [
+            {name: "LEFT_EYE_V", label: "左眼球上下"},
+            {name: "LEFT_EYE_H", label: "左眼球左右"},
+            {name: "RIGHT_EYE_V", label: "右眼球上下"},
+            {name: "RIGHT_EYE_H", label: "右眼球左右"},
+            {name: "PHILTRUM", label: "人中"},
+            {name: "CHIN", label: "下巴"},
+            {name: "LEFT_UPPER_EYELID", label: "左上眼皮"},
+            {name: "LEFT_LOWER_EYELID", label: "左下眼皮"},
+            {name: "RIGHT_UPPER_EYELID", label: "右上眼皮"},
+            {name: "RIGHT_LOWER_EYELID", label: "右下眼皮"},
+            {name: "LEFT_EYEBROW", label: "左眉毛"},
+            {name: "RIGHT_EYEBROW", label: "右眉毛"},
+            {name: "LEFT_FOREHEAD", label: "左前额"},
+            {name: "RIGHT_FOREHEAD", label: "右前额"},
+            {name: "LEFT_CHEEK", label: "左脸颊"},
+            {name: "RIGHT_CHEEK", label: "右脸颊"}
+        ];
+
+        // 舵机角度范围
+        const servoRanges = {
+            "LEFT_EYE_V": [30, 150],
+            "LEFT_EYE_H": [30, 150],
+            "RIGHT_EYE_V": [30, 150],
+            "RIGHT_EYE_H": [30, 150],
+            "PHILTRUM": [45, 135],
+            "CHIN": [45, 135],
+            "LEFT_UPPER_EYELID": [45, 135],
+            "LEFT_LOWER_EYELID": [45, 135],
+            "RIGHT_UPPER_EYELID": [45, 135],
+            "RIGHT_LOWER_EYELID": [45, 135],
+            "LEFT_EYEBROW": [30, 150],
+            "RIGHT_EYEBROW": [30, 150],
+            "LEFT_FOREHEAD": [30, 150],
+            "RIGHT_FOREHEAD": [30, 150],
+            "LEFT_CHEEK": [45, 135],
+            "RIGHT_CHEEK": [45, 135]
+        };
+
+        // 动态生成舵机滑块
+        function renderServoControls() {
+            const panel = document.getElementById('servo-control-panel');
+            panel.innerHTML = '';
+            servoParts.forEach((part, idx) => {
+                const [min, max] = servoRanges[part.name];
+                const defaultVal = Math.round((min + max) / 2);
+                const col = document.createElement('div');
+                col.className = 'col-md-6 mb-3';
+                col.innerHTML = `
+                    <label class="form-label fw-bold">${part.label}</label>
+                    <div class="d-flex align-items-center">
+                        <input type="range" min="${min}" max="${max}" value="${defaultVal}" 
+                            class="form-range me-3" id="servo_${part.name}" 
+                            oninput="document.getElementById('servo_val_${part.name}').textContent=this.value"
+                            onchange="setServo('${part.name}', this.value)">
+                        <span id="servo_val_${part.name}" class="badge bg-primary">${defaultVal}</span>
+                        <button class="btn btn-sm btn-outline-secondary ms-3" onclick="resetServo('${part.name}')">重置</button>
+                    </div>
+                `;
+                panel.appendChild(col);
+            });
+        }
+    </script>
+</body>
+</html>
